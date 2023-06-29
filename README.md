@@ -1,6 +1,6 @@
 # gym2024data
 
-The goal for gym2024data is to scrap data of Artistic Gymnastics results from PDFs into CSVs.
+The goal for ‘gym2024data’ is to scrap data of Artistic Gymnastics results from PDFs into CSVs.
 
 ## Instructions on Output
 
@@ -32,3 +32,13 @@ Some other challenges with the data in general:
 1. Name may be listed as FirstName LastName or LastName FirstName. If one of the names is capitalized, it is the last (family) name.
 2. The scores may be listed as D-Score, then E-Score, or in the opposite order, so the column header must be checked when scraping.
 3. The scores may be listed using decimal points (as done in the USA) or commas (as done in some European countries and other parts of the world)
+
+## Data Source
+
+2023 European Artistic Gymnastics Championship  
+https://gymnasticsresults.com
+
+2023 Pan Am Artistic Gymnastics Championships  
+https://usagym.org/results/2023/
+
+ 
