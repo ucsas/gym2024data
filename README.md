@@ -1,3 +1,7 @@
+JY: what is the linewidth?
+
+JY: remove the trailing spaces.
+
 # gym2024data
 
 The goal for ‘gym2024data’ is to scrap data of Artistic Gymnastics results from PDFs into CSVs.
