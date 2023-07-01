@@ -8,24 +8,22 @@ The goal for ‘gym2024data’ is to scrap data of Artistic Gymnastics results f
 
 ## Instructions on Output
 
-The ideal data structure would be separate CSV files for Men and Women 
-consisting of the scores for all the routines 
-performed in the set of competitions in 2022 and 2023.
+The ideal data structure would be separate CSV files for Men and Women consisting of the scores for all the routines performed in the set of competitions in 2022 and 2023.
 
 Each row of data would have the following fields:
 
-First Name  
-Last Name  
-Country  
-Competition Date  
-Competition Name  
-Competition Round (e.g., Qualifying, Apparatus Final)  
-Competition Location (City and Country)  
-Apparatus  
-Placement on specified Apparatus in a given round  
-D-Score (Difficulty)  
-E-Score (Execution)  
-Penalty (Pen or ND, which is a Neutral Deduction)  
+First Name\
+Last Name\
+Country\
+Competition Date\
+Competition Name\ 
+Competition Round (e.g., Qualifying, Apparatus Final)\
+Competition Location (City and Country)\
+Apparatus\
+Placement on specified Apparatus in a given round\
+D-Score (Difficulty)\
+E-Score (Execution)\
+Penalty (Pen or ND, which is a Neutral Deduction)\
 Score (D-Score + E-Score – Penalty)
 
 
@@ -39,10 +37,10 @@ Some other challenges with the data in general:
 
 ## Data Source
 
-2023 European Artistic Gymnastics Championship  
+2023 European Artistic Gymnastics Championship\
 https://gymnasticsresults.com
 
-2023 Pan Am Artistic Gymnastics Championships  
+2023 Pan Am Artistic Gymnastics Championships\
 https://usagym.org/results/2023/
 
  
