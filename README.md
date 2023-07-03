@@ -16,7 +16,7 @@ First Name\
 Last Name\
 Country\
 Competition Date\
-Competition Name\ 
+Competition Name\
 Competition Round (e.g., Qualifying, Apparatus Final)\
 Competition Location (City and Country)\
 Apparatus\
