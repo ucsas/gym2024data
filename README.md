@@ -43,4 +43,13 @@ https://gymnasticsresults.com
 2023 Pan Am Artistic Gymnastics Championships\
 https://usagym.org/results/2023/
 
- 
+## Acronym Convention for Naming
+BB = balanced beam\
+VT = vault 2\
+FX = floor exercise\
+UB = uneven bars\
+AA = all around\
+RG = rings\
+PH = pommel horse\
+PB = parallel bars\
+HB = horizontal bars
