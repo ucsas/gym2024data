@@ -2,23 +2,28 @@ library(pdftools)
 library(tabulizer)
 library(tidyverse)
 
-setwd("/Users/minzefang/gym2024data/pdfs_2023")
-
-## Cairo Non-Vault
+## Cairo World Cup
 
 
 # set areas of pdf for table extraction
-
 area_1 <- list(c(124, 8.9, 810, 585))   # Page 1: Let top=124 to include the column name
 area_2 <- list(c(73, 9, 810, 585)) # Page 2
 
 
 
 # get file paths for each PDF
-paths <- list.files("/Users/minzefang/Downloads/gym2024data/pdfs_2023/cairo", full.names = T)
+folder_path <- "/Users/minzefang/Downloads/gym2024_fork/pdfs_2023/cairo"
+all_paths <- list.files(folder_path, full.names = T)
+vt_paths <- list.files(folder_path, pattern = "VT", full.names = TRUE) |> 
+  set_names(basename)
+paths <- setdiff(all_paths, vt_paths) |>  # paths for all non-VT files
+  set_names(basename)
 
 col_names <- c("Rank", "bib", "name", "noc", "D_Score", "E_Score", "Penalty", "Score")
+col_names_vt <- c("Rank", "bib", "name", "noc", "D_Score", "E_Score", "Penalty", "Score", "Total")
 
+
+## Non-Vault Data
 
 # extract tables from the 1st page of each PDF
 p1 <- paths |> 
@@ -108,7 +113,75 @@ all <- c(p1, p2) |>
            Apparatus, Rank, D_Score, E_Score, Penalty, Score )|> 
   select(!bib:noc)
 
-write_csv(all, "/Users/minzefang/gym2024data/cleandata/cairo_data.csv")
+
+
+
+## For Vault Data
+
+# generate data from page_1 for vault results
+vt1 <- map(vt_paths, ~ extract_tables(file = .x, pages = 1, guess = F, area = area_1, output = "data.frame")) |> 
+  map(~ unlist(.x, recursive = F, use.names = TRUE)) |>  # use.names
+  map(as_tibble, .name_repair = "minimal") |>
+  map(~ select(.x, -c("Rank", "BIB", "PEN", "Score", "Total"))) |>
+  map( ~ if ("X.5" %in% colnames(.x) && "Q" %in% .x$X.5) {
+    .x %>% select(-X.5)
+  } else {
+    .x
+  }) |> 
+  map(~ {
+    if (ncol(.x) == 8) {
+      mutate(.x, PEN = NA) |> 
+        relocate(PEN, .after = "E.Score")              
+    } else {
+      .x
+    }
+  }) |> 
+  map(~ set_names(.x, col_names_vt)) |>
+  map(~ mutate_all(.x, ~ ifelse(. == "", lag(.), .))) |> 
+  map(~ mutate_at(.x, vars(-Penalty), ~ ifelse(is.na(.), lag(.), .)))
+
+
+one_pages <- map_lgl(vt_paths, ~ pdf_info(.x)$pages == 1)
+vt2 <- map_if(vt_paths, !one_pages, ~ extract_tables(.x, pages = 2, guess = FALSE, area = area_2)) |>
+  discard(one_pages) |> 
+  unlist(recursive = F, use.names = TRUE) |>  # use.names
+  map(as_tibble, .name_repair = "minimal") |> 
+  map(~ {
+    if (ncol(.x) == 10) {
+      .x[, -9]              
+    } else {
+      .x
+    }
+  }) |> 
+  map(~ set_names(.x, col_names_vt)) |>
+  map(~ mutate_all(.x, ~ ifelse(. == "", lag(.), .))) |>
+  map(~ mutate_at(.x, vars(-name, -noc), as.numeric))
+
+
+vt_all <- c(vt1, vt2) |> 
+  map(~ rename_all(.x, ~ col_names_vt)) |> 
+  list_rbind(names_to = "title") |>
+  separate_wider_delim(
+    title,
+    delim = "_",
+    names = c("City", "Gender", "Round", "Apparatus")
+  ) |>
+  mutate(FirstName = map_chr(str_extract_all(name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
+  mutate(LastName = map_chr(str_extract_all(name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
+  mutate(Apparatus = str_remove(Apparatus, "\\.pdf$")) |> 
+  mutate(Date = "27–30 Apr 2023", Competition = "World Cup", Location = "Cairo, Egypt") |> 
+  mutate(Country = noc) |> 
+  relocate(FirstName, LastName, Country, Date, Competition, Round, Location, 
+           Apparatus, Rank, D_Score, E_Score, Penalty, Score )|> 
+  select(!bib:Total) |> 
+  mutate(Apparatus = ifelse(row_number() %% 2 == 1, "VT_1", "VT_2")) |>     # VT_1: odd row; VT_2: even row
+  mutate(Penalty = replace(Penalty, Penalty == 0, NA))
+
+
+cairo_all <- bind_rows(all, vt_all)
+
+
+write_csv(cairo_all, "/Users/minzefang/gym2024data/cleandata/cairo_data.csv")
 
 
 
