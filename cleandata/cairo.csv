@@ -1,0 +1,468 @@
+FirstName,LastName,Gender,Country,Date,Competition,Round,Location,Apparatus,Rank,D_Score,E_Score,Penalty,Score
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,1,6.2,8.233,NA,14.433
+Aurel,BENOVIC,m,CRO,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,2,6.2,7.966,NA,14.166
+Eamon,MONTGOMERY,m,IRL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,3,5.9,8.166,NA,14.066
+Hayden,SKINNER,m,GBR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,4,6.1,7.7,NA,13.8
+Sam,MOSTOWFI,m,GBR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,5,5.6,8.066,NA,13.666
+Milad,KARIMI,m,KAZ,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,6,6.1,7.166,NA,13.266
+Michalis,CHARI,m,CYP,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,7,5.7,6.5,NA,12.2
+Kameron,NELSON,m,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,8,6,5.8,NA,11.8
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,1,5.7,8.4,NA,14.1
+Maxime,GENTGES,m,BEL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,2,5.5,8.266,NA,13.766
+Casimir,SCHMIDT,m,NED,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,3,5.2,8.333,NA,13.533
+Carlo,HOERR,m,GER,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,4,5.3,8.233,NA,13.533
+Ahmed,ELMARAGHY,m,EGY,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,5,5.7,7.466,NA,13.166
+Mert Efe,KILICER,m,TUR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,6,5.1,7.3,NA,12.4
+Isaac,NUNEZ,m,MEX,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,7,4.7,7.4,NA,12.1
+Ivan,DEJANOVIC,m,SRB,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",HB,8,4.8,7.3,NA,12.1
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,1,6,8.833,NA,14.833
+Mohamed,AFIFY,m,EGY,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,2,6,8.066,NA,14.066
+Nicolo,MOZZATO,m,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,3,5.6,8.433,NA,14.033
+Mario,MACCHIATI,m,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,4,5.9,8.1,NA,14
+Loran,DE MUNCK,m,NED,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,5,5.6,8.333,NA,13.933
+Casimir,SCHMIDT,m,NED,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,6,5.5,8.333,NA,13.833
+Isaac,NUNEZ,m,MEX,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,7,5.6,8.066,NA,13.666
+Hasan,BULUT,m,TUR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PB,8,4.3,7.7,NA,12
+Chih Kai,LEE,m,TPE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,1,6.5,8.533,NA,15.033
+Gagik,KHACHIKYAN,m,ARM,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,2,6.2,8.533,NA,14.733
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,3,6,8.566,NA,14.566
+Harutyun,MERDINYAN,m,ARM,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,3,6,8.566,NA,14.566
+Ian,SKIRKEY,m,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,5,6.1,8.166,NA,14.266
+Loran,DE MUNCK,m,NED,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,6,6.5,7.133,NA,13.633
+Nariman,KURBANOV,m,KAZ,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,7,6.2,7.366,NA,13.566
+Filip,UDE,m,CRO,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",PH,8,5.5,7.3,0.3,12.5
+Nikita,SIMONOV,m,AZE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,1,6.2,8.766,NA,14.966
+Salvatore,MARESCA,m,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,2,6.2,8.5,NA,14.7
+Artur,AVETISYAN,m,ARM,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,3,5.9,8.766,NA,14.666
+Sokratis,PILAKOURIS,m,CYP,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,4,5.9,8.633,NA,14.533
+Ali,ZAHRAN,m,EGY,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,5,6.1,8.433,NA,14.533
+Glen,CUYLE,m,BEL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,6,6,8.366,NA,14.366
+Artur,DAVTYAN,m,ARM,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,7,5.3,8.866,NA,14.166
+Konstantinos,KONSTANTINIDIS,m,GRE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",RG,8,5.7,8.4,NA,14.1
+Eamon,MONTGOMERY,m,IRL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,1,5.9,7.8,NA,13.7
+Milad,KARIMI,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,2,5.9,7.733,NA,13.633
+Aurel,BENOVIC,m,CRO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,3,6.2,7.433,NA,13.633
+Hayden,SKINNER,m,GBR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,4,6.1,7.666,0.2,13.566
+Michalis,CHARI,m,CYP,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,5,5.7,7.8,NA,13.5
+Sam,MOSTOWFI,m,GBR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,6,6,7.7,0.3,13.4
+Kameron,NELSON,m,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,7,6,7.5,0.1,13.4
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,8,6.2,7.3,0.1,13.4
+Neofytos,KYRIAKOU,m,CYP,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,9,5.2,8.166,NA,13.366
+Ares,FEDERICI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,10,6.2,7.433,0.3,13.333
+Sebastian,GAWRONSKI,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,11,5.7,7.7,0.1,13.3
+Ivan,TIKHONOV,m,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,12,5.5,7.7,NA,13.2
+Luka,VAN DEN KEYBUS,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,13,5.5,7.833,0.2,13.133
+Mario,MACCHIATI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,14,5.5,7.733,0.1,13.133
+Dominick,CUNNINGHAM,m,IRL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,15,5.6,7.6,0.1,13.1
+Ilyas,AZIZOV,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,16,5.8,7.666,0.4,13.066
+Hai Khang,TRINH,m,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,17,5.6,7.466,NA,13.066
+Abdulaziz,MIRVALIEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,18,5.4,7.733,0.1,13.033
+Guilherme,CAMPOS,m,POR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,19,5.4,7.7,0.1,13
+Ricardo,RUDY,m,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,20,5,8,0.1,12.9
+Dusan,DORDEVIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,21,5.4,7.466,NA,12.866
+Utkirbek,JURAEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,22,5.3,7.533,0.1,12.733
+Jose,NOGUEIRA,m,POR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,23,5.6,7.133,NA,12.733
+Donnell,WHITTENBURG,m,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,24,6,6.733,NA,12.733
+Omar,MOHAMED,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,25,5.8,6.9,NA,12.7
+Ricards,PLATE,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,26,4.8,7.866,NA,12.666
+Petar,VEFIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,27,5.4,7.266,NA,12.666
+Carlo,HOERR,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,28,5.3,7.533,0.2,12.633
+Isaac,NUNEZ,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,29,5.4,7.366,0.2,12.566
+Antonios,TANTALIDIS,m,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,30,5.6,7.333,0.4,12.533
+Javier,ROJO,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,31,5.3,7.133,NA,12.433
+Houssem Eddine,HAMADOUCHE,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,32,5.1,7.233,NA,12.333
+Dario,SISSAKIS,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,33,5.8,6.6,0.1,12.3
+Ondrej,KALNY,m,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,34,5.2,6.8,NA,12
+Filip,SASNAL,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,35,5.6,6.666,0.3,11.966
+Marko,JOVICIC,m,CRO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,36,5.1,6.666,NA,11.766
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,1,5.7,8.4,NA,14.1
+Ahmed,ELMARAGHY,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,2,5.7,8.366,NA,14.066
+Maxime,GENTGES,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,3,5.5,8.5,NA,14
+Isaac,NUNEZ,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,4,5.1,8.733,NA,13.833
+Casimir,SCHMIDT,m,NED,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,5,5.2,8.266,NA,13.466
+Mert Efe,KILICER,m,TUR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,6,4.9,8.5,NA,13.4
+Carlo,HOERR,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,7,5.3,8.1,NA,13.4
+Ivan,DEJANOVIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,8,5,8.366,NA,13.366
+Marios,GEORGIOU,m,CYP,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,9,5.3,8,NA,13.3
+Donnell,WHITTENBURG,m,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,10,5.2,8,NA,13.2
+Noah,KUAVITA,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,11,5.9,7.2,NA,13.1
+Robert,TVOROGAL,m,LTU,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,12,5.2,7.866,NA,13.066
+Ares,FEDERICI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,13,4.8,8.233,NA,13.033
+Utkirbek,JURAEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,14,4.8,8.166,NA,12.966
+Hasan,BULUT,m,TUR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,15,4.5,8.4,NA,12.9
+Ricards,PLATE,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,16,4.8,8.066,NA,12.866
+Sam,MOSTOWFI,m,GBR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,17,4.9,7.966,NA,12.866
+Ahmed Riadh,ALIOUAT,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,18,4.6,8.233,NA,12.833
+Zaid,KHATER,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,19,4.7,8.133,NA,12.833
+Petar,VEFIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,20,4.4,8.233,NA,12.633
+Jose,NOGUEIRA,m,POR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,21,4.6,8.033,NA,12.633
+Neofytos,KYRIAKOU,m,CYP,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,22,4.9,7.733,NA,12.633
+Sebastian,GAWRONSKI,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,23,4.7,7.666,NA,12.366
+Javier,ROJO,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,23,4.7,7.666,NA,12.366
+Tomas,KUZMICKAS,m,LTU,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,25,4.8,7.533,NA,12.333
+Ivan,TIKHONOV,m,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,26,5,7.3,NA,12.3
+Anze,HRIBAR,m,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,27,4.2,7.933,NA,12.133
+Khabibullo,ERGASHEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,28,4.6,7.533,NA,12.133
+Kevin George,BUCKLEY,m,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,29,4.5,7.233,NA,11.733
+Nicolo,MOZZATO,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,30,4.6,6.6,NA,11.2
+Milad,KARIMI,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,31,5.1,5.366,NA,10.466
+Diyas,TOISHYBEK,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,32,5.3,4.4,NA,9.7
+Filip,SASNAL,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",HB,33,1.8,8.166,6,3.966
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,1,6.3,8.933,NA,15.233
+Mario,MACCHIATI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,2,5.5,8.533,NA,14.033
+Mohamed,AFIFY,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,3,6,8.033,NA,14.033
+Nicolo,MOZZATO,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,4,5.6,8.3,NA,13.9
+Isaac,NUNEZ,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,5,5.6,8.266,NA,13.866
+Hasan,BULUT,m,TUR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,6,5,8.7,NA,13.7
+Loran,DE MUNCK,m,NED,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,7,5.6,8.066,NA,13.666
+Casimir,SCHMIDT,m,NED,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,8,5.5,8.1,NA,13.6
+Milad,KARIMI,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,9,5.9,7.666,NA,13.566
+Mert Efe,KILICER,m,TUR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,10,4.7,8.733,NA,13.433
+Ahmed Riadh,ALIOUAT,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,11,4.9,8.433,NA,13.333
+Nicola,CUYLE,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,12,5.6,7.7,NA,13.3
+Carlo,HOERR,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,13,5.2,8.066,NA,13.266
+Dario,SISSAKIS,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,14,4.9,8.233,NA,13.133
+Khabibullo,ERGASHEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,15,5.1,8.033,NA,13.133
+Sebastian,GAWRONSKI,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,16,4.9,8.2,NA,13.1
+Omar,MOHAMED,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,17,5.3,7.566,NA,12.866
+Chih Kai,LEE,m,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,18,5.2,7.5,NA,12.7
+Filip,SASNAL,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,19,4.2,8.466,NA,12.666
+Ricards,PLATE,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,20,4.7,7.9,NA,12.6
+Petar,VEFIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,21,5,7.533,NA,12.533
+Fabian,DE LUNA,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,22,5,7.4,NA,12.4
+Ilyas,AZIZOV,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,23,5.1,7.2,NA,12.3
+Hillal,METIDJI,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,24,5.1,6.966,NA,12.066
+Tomas,KUZMICKAS,m,LTU,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,25,5.1,6.7,NA,11.8
+Nazar,CHEPURNYI,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,26,6.1,5.466,NA,11.566
+Robert,TVOROGAL,m,LTU,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,27,5.2,6.166,NA,11.366
+Jose,NOGUEIRA,m,POR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,28,4,7.066,NA,11.066
+Luka,VAN DEN KEYBUS,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,29,5.5,5.433,NA,10.933
+Utkirbek,JURAEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PB,30,5.2,5.433,NA,10.633
+Nariman,KURBANOV,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,1,6.2,8.5,NA,14.7
+Ian,SKIRKEY,m,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,2,6.5,8.2,NA,14.7
+Chih Kai,LEE,m,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,3,6.2,8.333,NA,14.533
+Harutyun,MERDINYAN,m,ARM,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,4,5.9,8.566,NA,14.466
+Loran,DE MUNCK,m,NED,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,5,6.5,7.833,NA,14.333
+Gagik,KHACHIKYAN,m,ARM,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,6,5.8,8.5,NA,14.3
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,7,6,8.3,NA,14.3
+Filip,UDE,m,CRO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,8,5.6,8.633,NA,14.233
+Abdelrahman,ABDELHALEEM,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,9,5.6,8.5,NA,14.1
+Yu Jan,SHIAO,m,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,10,5.8,8.266,NA,14.066
+Mario,MACCHIATI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,11,5.7,8.3,NA,14
+Dmitrijs,MICKEVICS,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,12,5.4,8.533,NA,13.933
+Maxime,GENTGES,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,13,6.2,7.7,NA,13.9
+Khabibullo,ERGASHEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,14,5.5,8.333,NA,13.833
+Ivan,TIKHONOV,m,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,15,5.4,8,NA,13.4
+Al Harith,RAKAN,m,QAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,16,5,8.366,NA,13.366
+Diyas,TOISHYBEK,m,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,17,6,7.066,NA,13.066
+Utkirbek,JURAEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,18,4.6,8.433,NA,13.033
+Ricardo,RUDY,m,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,19,5.4,7.566,NA,12.966
+Mert Efe,KILICER,m,TUR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,20,5,7.9,NA,12.9
+Marko,SAMBOLEC,m,CRO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,21,5.6,7.233,NA,12.833
+Radomir,SLIZ,m,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,22,5,7.766,NA,12.766
+Hasan,BULUT,m,TUR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,23,5.3,7.433,NA,12.733
+Mohamed,AFIFY,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,24,5.3,7.4,NA,12.7
+Kevin George,BUCKLEY,m,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,25,5,7.666,NA,12.666
+Casimir,SCHMIDT,m,NED,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,26,5.9,6.6,NA,12.5
+Petar,VEFIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,27,4.2,8.166,NA,12.366
+Nicolo,MOZZATO,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,28,6,6.333,NA,12.333
+Nicola,CUYLE,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,29,5.8,6.333,NA,12.133
+Gytis,CHASAZYROVAS,m,LTU,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,30,5,7.066,NA,12.066
+Sebastian,GAWRONSKI,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,31,4,8,NA,12
+Jose,NOGUEIRA,m,POR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,32,3.8,7.966,NA,11.766
+Houssem Eddine,HAMADOUCHE,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,33,4.2,7.433,NA,11.633
+Antonios,TANTALIDIS,m,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,34,4.5,7,NA,11.5
+Isaac,NUNEZ,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,35,4.8,6.666,NA,11.466
+Ngoc Xuan Thien,DANG,m,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,36,5.6,5.5,NA,11.1
+Nikita,SIMONOV,m,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,1,6.2,8.666,NA,14.866
+Salvatore,MARESCA,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,2,6.2,8.5,NA,14.7
+Artur,AVETISYAN,m,ARM,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,3,5.9,8.733,NA,14.633
+Glen,CUYLE,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,4,6,8.533,NA,14.533
+Sokratis,PILAKOURIS,m,CYP,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,5,5.9,8.533,NA,14.433
+Ali,ZAHRAN,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,6,6.1,8.333,NA,14.433
+Artur,DAVTYAN,m,ARM,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,7,5.3,8.966,NA,14.266
+Konstantinos,KONSTANTINIDIS,m,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,8,5.7,8.333,NA,14.033
+Casimir,SCHMIDT,m,NED,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,9,5.5,8.5,NA,14
+Van Khanh Phong,NGUYEN,m,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,10,6,7.966,NA,13.966
+Donnell,WHITTENBURG,m,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,11,5.8,8.133,NA,13.933
+Eleftherios,PETROUNIAS,m,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,12,6.2,7.666,NA,13.866
+Guan Yi,LIN,m,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,13,5.8,8.033,NA,13.833
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,14,5.3,8.366,NA,13.666
+Nicola,CUYLE,m,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,15,5.5,8.066,NA,13.566
+Fabian,DE LUNA,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,16,5.2,8.266,NA,13.466
+Dario,SISSAKIS,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,17,4.8,8.633,NA,13.433
+Luka,BOJANC,m,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,18,5.4,8,NA,13.4
+Carlo,HOERR,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,19,5,8.166,NA,13.166
+Zaid,KHATER,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,20,5.2,7.966,NA,13.166
+Abdulaziz,MIRVALIEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,21,5,8.066,NA,13.066
+Khabibullo,ERGASHEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,22,4.6,8.266,NA,12.866
+Ares,FEDERICI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,23,5.1,7.7,NA,12.8
+Ricards,PLATE,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,24,4,8.566,NA,12.566
+Javier,ROJO,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,25,4.2,8,NA,12.2
+Filip,SASNAL,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,26,4.2,7.3,NA,11.5
+Anze,HRIBAR,m,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",RG,27,4.2,7.233,NA,11.433
+Giorgia,VILLA,w,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,1,5.3,8.3,NA,13.6
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,2,5.8,7.433,NA,13.233
+Erika,PINXTEN,w,BEL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,3,5.4,7.633,NA,13.033
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,4,5.2,7.733,NA,12.933
+Zala,TRTNIK,w,SLO,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,5,5,7.233,NA,12.233
+Marie,ROENBECK,w,NOR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,6,4.9,7.2,NA,12.1
+Marta,PIHAN KULESZA,w,POL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,7,4.4,7.2,NA,11.6
+Jana,ABDELSALAM,w,EGY,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",BB,8,4.8,6.566,NA,11.366
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,1,5.9,7.8,NA,13.7
+Alice,D AMATO,w,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,2,5.4,8.1,NA,13.5
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,3,4.8,7.833,NA,12.633
+Aida,BAUYRZHANOVA,w,KAZ,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,4,4.7,7.833,NA,12.533
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,5,5.1,7.266,NA,12.366
+Charlize,MOERZ,w,AUT,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,6,5.1,7.233,NA,12.333
+Nazanin,TEYMUROVA,w,AZE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,7,4.7,7.566,NA,12.266
+Lucie,TRNKOVA,w,CZE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",FX,8,4.5,7.466,NA,11.966
+Alice,D AMATO,w,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,1,6.2,8.433,NA,14.633
+Giorgia,VILLA,w,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,2,5.8,8.4,NA,14.2
+Erika,PINXTEN,w,BEL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,3,5.2,8.033,NA,13.233
+Yelyzaveta,HUBAREVA,w,UKR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,4,5.4,7.733,NA,13.133
+Ava,STEWART,w,CAN,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,5,5.6,7.333,NA,12.933
+Jessica,DOWLING,w,CAN,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,6,5.4,7.333,NA,12.733
+Zala,TRTNIK,w,SLO,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,7,4.5,7.933,NA,12.433
+Dildora,ARIPOVA,w,UZB,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",UB,8,4.9,7.2,NA,12.1
+Asia,D AMATO,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,1,5.5,7.933,NA,13.433
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,2,5.2,7.833,NA,13.033
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,3,5.3,7.533,NA,12.833
+Erika,PINXTEN,w,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,4,5.2,7.466,NA,12.666
+Giorgia,VILLA,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,5,5.2,7.366,NA,12.566
+Marta,PIHAN KULESZA,w,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,6,5,7.4,NA,12.4
+Marie,ROENBECK,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,7,5,7.266,NA,12.266
+Zala,TRTNIK,w,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,8,4.9,7.333,NA,12.233
+Jana,ABDELSALAM,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,9,4.7,7.466,NA,12.166
+Aida,BAUYRZHANOVA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,10,4.8,7.266,NA,12.066
+Nazanin,TEYMUROVA,w,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,11,5.2,6.933,0.1,12.033
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,12,4.8,6.9,NA,11.7
+Sabina,HALOVA,w,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,13,4,7.566,NA,11.566
+Lucija,HRIBAR,w,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,14,4.7,6.866,NA,11.566
+Yelyzaveta,HUBAREVA,w,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,15,5.1,6.3,NA,11.4
+Camille,RASMUSSEN,w,DEN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,16,4.5,6.866,NA,11.366
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,17,5,6.133,NA,11.133
+Vasiliki,MILLOUSI,w,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,18,4.8,6.4,0.1,11.1
+Ameera,HARIADI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,19,4.3,6.733,NA,11.033
+Margaux,DANDOIS,w,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,20,4.6,6.433,NA,11.033
+Pin Ju,LAI,w,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,21,4.9,5.966,NA,10.866
+Jessica,DOWLING,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,22,4.5,6.433,0.1,10.833
+Charlize,MOERZ,w,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,23,4.6,6.233,NA,10.833
+Anna,LASHCHEVSKA,w,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,24,5.6,5.266,0.1,10.766
+Nada,AWAD,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,25,4.4,6.033,NA,10.433
+Samira,GAHRAMANOVA,w,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,26,4.5,5.833,NA,10.333
+Louise,LOPEZ,w,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,27,4.5,5.8,NA,10.3
+Lucie,TRNKOVA,w,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,28,4.6,5.6,NA,10.2
+Ava,STEWART,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,29,5.2,4.966,NA,10.166
+Dildora,ARIPOVA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,30,4.3,5.833,NA,10.133
+Doan Quynh Nam,TRAN,w,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,31,4.8,5.266,0.1,9.966
+Zarith Imaan,KHALID,w,MAS,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,32,4.3,5.633,NA,9.933
+Nhu Phuong,PHAM,w,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,33,4.2,5.433,NA,9.633
+Ayazhan,SHAMSHITDINOVA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,34,4.4,5.2,NA,9.6
+Sihem,HAMIDI,w,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,35,3.7,5.833,NA,9.533
+Valerija,RATOBILSKA,w,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,36,4.8,4.666,0.1,9.366
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,1,6.1,7.966,NA,14.066
+Alice,D AMATO,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,2,5.4,8.166,NA,13.566
+Aida,BAUYRZHANOVA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,3,4.7,8.033,NA,12.733
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,4,4.8,7.7,NA,12.5
+Charlize,MOERZ,w,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,5,5.2,7.2,NA,12.4
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,6,5.1,7.2,NA,12.3
+Nazanin,TEYMUROVA,w,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,7,4.7,7.533,NA,12.233
+Lucie,TRNKOVA,w,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,8,4.6,7.6,NA,12.2
+Jessica,DOWLING,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,9,4.9,7.533,0.3,12.133
+Doan Quynh Nam,TRAN,w,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,10,4.7,7.4,NA,12.1
+Ava,STEWART,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,11,4.9,7.2,NA,12.1
+Margaux,DANDOIS,w,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,12,5,7.066,NA,12.066
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,13,4.4,7.6,NA,12
+Marie,ROENBECK,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,14,4.8,7.3,0.1,12
+Asia,D AMATO,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,15,4.9,7.233,0.3,11.833
+Lana,HERRERA,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,16,4.6,7.233,NA,11.833
+Pin Ju,LAI,w,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,17,4.5,7.266,0.1,11.666
+Jasmin,SALAMA,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,18,4.4,7.233,NA,11.633
+Ameera,HARIADI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,19,4.3,7.166,NA,11.466
+Samira,GAHRAMANOVA,w,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,20,4.5,7.033,0.1,11.433
+Louise,LOPEZ,w,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,21,4.2,7.2,NA,11.4
+Oksana,CHUSOVITINA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,22,4,7.3,NA,11.3
+Valerija,RATOBILSKA,w,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,23,4.4,6.866,NA,11.266
+Anna,LASHCHEVSKA,w,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,24,4.9,6.366,NA,11.266
+Alice,FRANCOY,w,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,25,4.5,6.9,0.3,11.1
+Dildora,ARIPOVA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,26,4.4,6.666,NA,11.066
+Zala,TRTNIK,w,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,27,4.6,6.466,NA,11.066
+Malek,REZAGUI,w,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,28,4.3,6.833,0.1,11.033
+Viivi,NIEMINEN,w,FIN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,29,4,7.3,0.3,11
+Patricie,MAKOVICKOVA,w,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,30,4.7,6.3,0.1,10.9
+Vasiliki,KYRLIDOU,w,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,31,4.1,6.333,NA,10.433
+Darya,YASSINSKAYA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,32,4.4,6.3,0.6,10.1
+Nada,AWAD,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,33,4.2,6.3,0.6,9.9
+Katrina,JUREVICA,w,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,NA,NA,NA,NA,NA
+Alice,D AMATO,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,1,6.2,8.266,NA,14.466
+Giorgia,VILLA,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,2,5.8,8.233,NA,14.033
+Yelyzaveta,HUBAREVA,w,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,3,5.4,7.833,NA,13.233
+Ava,STEWART,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,4,5.6,7.433,NA,13.033
+Erika,PINXTEN,w,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,5,5.2,7.733,NA,12.933
+Jessica,DOWLING,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,6,5.4,7.366,NA,12.766
+Zala,TRTNIK,w,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,7,4.5,8.1,NA,12.6
+Dildora,ARIPOVA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,8,5,7.5,NA,12.5
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,9,4.5,7.833,NA,12.333
+Zarith Imaan,KHALID,w,MAS,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,10,4.9,7.433,NA,12.333
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,11,4.3,7.9,NA,12.2
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,12,4.8,7.366,NA,12.166
+Jasmin,MADER,w,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,13,4.5,7.6,NA,12.1
+Lucija,HRIBAR,w,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,14,4.9,7.133,NA,12.033
+Lana,HERRERA,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,15,4.9,7,NA,11.9
+Julie,ERICHSEN,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,16,5,6.766,NA,11.766
+Ameera,HARIADI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,17,4.1,7.6,NA,11.7
+Anna,LASHCHEVSKA,w,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,18,5.3,6.4,NA,11.7
+Vasiliki,MILLOUSI,w,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,19,4,7.466,NA,11.466
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,20,5.1,6.3,NA,11.4
+Li Wen,YEOH,w,MAS,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,21,4.9,6.766,0.3,11.366
+Oksana,CHUSOVITINA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,22,3.9,7.433,NA,11.333
+Pin Ju,LAI,w,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,23,4.1,7.2,NA,11.3
+Alice,FRANCOY,w,BEL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,24,4.6,6.566,NA,11.166
+Charlize,MOERZ,w,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,25,4.1,7.033,NA,11.133
+Aida,BAUYRZHANOVA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,26,4.2,6.833,NA,11.033
+Sabina,HALOVA,w,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,27,4.2,6.733,NA,10.933
+Nada,AWAD,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,28,4.5,6.3,NA,10.8
+Jana,ABDELSALAM,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,29,4.5,6.266,NA,10.766
+Viivi,NIEMINEN,w,FIN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,30,2.8,7.6,NA,10.4
+Rihab Sidra,SEDHANE,w,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,31,3.4,7,NA,10.4
+Ayazhan,SHAMSHITDINOVA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,32,3.5,6.566,NA,10.066
+Nazanin,TEYMUROVA,w,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",UB,33,3.5,6.433,NA,9.933
+Tomas,KUZMICKAS,m,LTU,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,37,4.2,7.366,NA,NA
+Ahmed,ABDELRAHMAN,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,38,5.2,6.333,NA,0.4
+Anze,HRIBAR,m,SLO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,39,5.4,5.266,NA,0.1
+Gytis,CHASAZYROVAS,m,LTU,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",FX,40,5.5,5.533,NA,0.6
+Javier,ROJO,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,37,3.8,7.266,NA,11.066
+Ricards,PLATE,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,38,4.7,6.2,NA,10.9
+Filip,SASNAL,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,39,4.3,6.5,NA,10.8
+Hillal,METIDJI,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,40,4.8,5.666,NA,10.466
+Carlo,HOERR,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",PH,41,4.5,5.066,NA,9.566
+Lana,HERRERA,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,37,4,4.7,NA,8.7
+Vasiliki,KYRLIDOU,w,GRE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,38,4.7,3.433,0.1,8.033
+Viivi,NIEMINEN,w,FIN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,39,4,4.033,0.1,7.933
+Katrina,JUREVICA,w,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",BB,NA,NA,NA,NA,NA
+Artur,DAVTYAN,m,ARM,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,1,5.6,9.466,NA,15.066
+Artur,DAVTYAN,m,ARM,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,1,5.6,9.666,NA,15.266
+Nazar,CHEPURNYI,m,UKR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,2,5.6,9.166,NA,14.766
+Nazar,CHEPURNYI,m,UKR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,2,5.6,9.233,NA,14.833
+Ondrej,KALNY,m,CZE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,3,5.2,9.166,0.1,14.266
+Ondrej,KALNY,m,CZE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,3,5.2,9.2,NA,14.4
+Dominick,CUNNINGHAM,m,IRL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,4,5.2,9.3,NA,14.5
+Dominick,CUNNINGHAM,m,IRL,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,4,4.8,9,NA,13.8
+Kameron,NELSON,m,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,5,5.2,9.3,NA,14.5
+Kameron,NELSON,m,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,5,5.2,8.733,0.3,13.633
+Wei Sheng,TSENG,m,TPE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,6,5.6,8.7,0.1,14.2
+Wei Sheng,TSENG,m,TPE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,6,5.6,7.9,0.1,13.4
+Aurel,BENOVIC,m,CRO,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,7,5.2,7.933,NA,13.133
+Aurel,BENOVIC,m,CRO,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,7,5.2,9.033,NA,14.233
+Omar,MOHAMED,m,EGY,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,8,0,0,NA,0
+Omar,MOHAMED,m,EGY,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,8,4.8,9.166,NA,13.966
+Artur,DAVTYAN,m,ARM,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,1,5.6,9.366,NA,14.966
+Artur,DAVTYAN,m,ARM,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,1,5.6,9.666,NA,15.266
+Nazar,CHEPURNYI,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,2,5.6,9.166,NA,14.766
+Nazar,CHEPURNYI,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,2,5.6,9.266,NA,14.866
+Ondrej,KALNY,m,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,3,5.2,9.2,0.1,14.3
+Ondrej,KALNY,m,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,3,5.2,9.4,NA,14.6
+Omar,MOHAMED,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,4,5.2,9.033,NA,14.233
+Omar,MOHAMED,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,4,5.2,9.233,NA,14.433
+Wei Sheng,TSENG,m,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,5,5.2,9,NA,14.2
+Wei Sheng,TSENG,m,TPE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,5,5.6,8.933,0.1,14.433
+Kameron,NELSON,m,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,6,5.2,9.233,0.1,14.333
+Kameron,NELSON,m,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,6,5.2,9.066,NA,14.266
+Dominick,CUNNINGHAM,m,IRL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,7,5.2,9.3,NA,14.5
+Dominick,CUNNINGHAM,m,IRL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,7,4.8,9.1,NA,13.9
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,8,5.2,9.4,NA,14.6
+Illia,KOVTUN,m,UKR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,8,5.2,8.066,NA,13.266
+Aurel,BENOVIC,m,CRO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,9,5.2,9.4,NA,14.6
+Aurel,BENOVIC,m,CRO,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,9,5.2,8.033,0.1,13.133
+Abdulaziz,MIRVALIEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,10,5.2,9.2,0.1,14.3
+Abdulaziz,MIRVALIEV,m,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,10,5.2,8.166,NA,13.366
+Dario,SISSAKIS,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,11,5.2,9.233,NA,14.433
+Dario,SISSAKIS,m,GER,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,11,5.2,7.866,NA,13.066
+Fabian,DE LUNA,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,12,5.2,8.766,NA,13.966
+Fabian,DE LUNA,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,12,5.2,8.233,0.3,13.133
+Neofytos,KYRIAKOU,m,CYP,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,13,5.2,9.266,NA,14.466
+Neofytos,KYRIAKOU,m,CYP,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,13,4.8,8.1,0.3,12.6
+Ares,FEDERICI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,14,5.2,8.8,0.1,13.9
+Ares,FEDERICI,m,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,14,4,8.966,0.1,12.866
+Filip,SASNAL,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,15,5.2,7.866,NA,13.066
+Filip,SASNAL,m,POL,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,15,4.8,8.9,0.1,13.6
+Dusan,DORDEVIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,16,5.2,7.866,0.1,12.966
+Dusan,DORDEVIC,m,SRB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,16,5.2,8.5,0.1,13.6
+Ahmed,ABDELRAHMAN,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,17,5.6,7.833,NA,13.433
+Ahmed,ABDELRAHMAN,m,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,17,5.2,7.9,NA,13.1
+Hai Khang,TRINH,m,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,18,5.6,8,NA,13.6
+Hai Khang,TRINH,m,VIE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,18,5,8.066,0.3,12.766
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,1,5.2,8.833,NA,14.033
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,1,5,8.933,NA,13.933
+Asia,D AMATO,w,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,2,5,9.1,NA,14.1
+Asia,D AMATO,w,ITA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,2,4.2,8.9,NA,13.1
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,3,5.4,8.366,NA,13.766
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,3,5,8.433,NA,13.433
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,4,4.2,8.866,NA,13.066
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,4,4,8.9,NA,12.9
+Camille,RASMUSSEN,w,DEN,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,5,5,8.866,NA,13.866
+Camille,RASMUSSEN,w,DEN,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,5,4.4,7.466,NA,11.866
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,6,4.2,8.866,NA,13.066
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,6,3.4,8.733,NA,12.133
+Patricie,MAKOVICKOVA,w,CZE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,7,4,8.5,NA,12.5
+Patricie,MAKOVICKOVA,w,CZE,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,7,4,8.733,NA,11.733
+Oksana,CHUSOVITINA,w,UZB,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_1,8,3.6,8.3,NA,11.9
+Oksana,CHUSOVITINA,w,UZB,27–30 Apr 2023,World Cup,final,"Cairo, Egypt",VT_2,8,3.4,8.7,NA,12.1
+Asia,D AMATO,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,1,5,9.133,NA,14.133
+Asia,D AMATO,w,ITA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,1,4.8,9.1,NA,13.9
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,2,5.2,8.866,NA,14.066
+Joscelyn,ROBERSON,w,USA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,2,5,8.966,NA,13.966
+Camille,RASMUSSEN,w,DEN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,3,5,8.766,0.1,13.666
+Camille,RASMUSSEN,w,DEN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,3,4.4,8.7,NA,13.1
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,4,5.4,8.233,0.3,13.333
+Hillary,HERON,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,4,4.2,8.733,NA,12.933
+Oksana,CHUSOVITINA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,5,4,8.833,NA,12.833
+Oksana,CHUSOVITINA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,5,4.4,8.9,NA,13.3
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,6,4.2,8.8,NA,13
+Rifda,IRFANALUTHFI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,6,4,8.633,NA,12.633
+Patricie,MAKOVICKOVA,w,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,7,4,8.633,NA,12.633
+Patricie,MAKOVICKOVA,w,CZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,7,4,8.6,NA,12.6
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,8,4.2,8.8,NA,13
+Maria,TRONRUD,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,8,3.4,8.766,NA,12.166
+Nazanin,TEYMUROVA,w,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,9,4,8.666,NA,12.666
+Nazanin,TEYMUROVA,w,AZE,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,9,3.8,8.7,NA,12.5
+Charlize,MOERZ,w,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,10,4.4,8.366,NA,12.766
+Charlize,MOERZ,w,AUT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,10,3.8,8.566,NA,12.366
+Darya,YASSINSKAYA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,11,4,8.733,NA,12.733
+Darya,YASSINSKAYA,w,KAZ,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,11,3.8,8.6,NA,12.4
+Lana,HERRERA,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,12,4.2,8.633,NA,12.833
+Lana,HERRERA,w,PAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,12,3.8,8.466,NA,12.266
+Julie,ERICHSEN,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,13,4.2,8.766,NA,12.966
+Julie,ERICHSEN,w,NOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,13,3.4,8.7,NA,12.1
+Viivi,NIEMINEN,w,FIN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,14,4.4,8.133,0.3,12.233
+Viivi,NIEMINEN,w,FIN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,14,3.8,8.8,NA,12.6
+Ameera,HARIADI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,15,4.2,8.7,NA,12.9
+Ameera,HARIADI,w,INA,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,15,3.2,8.466,NA,11.666
+Ava,STEWART,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,16,4.6,8.7,NA,13.3
+Ava,STEWART,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,16,4.2,8.8,2,11
+Sihem,HAMIDI,w,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,17,3.8,8.533,NA,12.333
+Sihem,HAMIDI,w,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,17,3.4,8.466,NA,11.866
+Dildora,ARIPOVA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,18,4.2,7.633,0.1,11.733
+Dildora,ARIPOVA,w,UZB,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,18,3.8,8.633,NA,12.433
+Hayden,SKINNER,m,GBR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,19,5.2,8.033,0.1,13.133
+Hayden,SKINNER,m,GBR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,19,5.2,7.933,NA,13.133
+Houssem Eddine,HAMADOUCHE,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,20,4.8,8.133,NA,12.933
+Houssem Eddine,HAMADOUCHE,m,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,20,4,8.766,0.1,12.666
+Ricards,PLATE,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,21,4,9.033,0.1,13.033
+Ricards,PLATE,m,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,21,4,8.633,0.3,12.333
+Javier,ROJO,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,22,5.2,8.533,0.3,13.733
+Javier,ROJO,m,MEX,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,22,2.8,8.766,NA,11.566
+Nancy,TAMAN,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,19,4.2,8.666,NA,12.866
+Nancy,TAMAN,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,19,3.6,7.666,NA,11.266
+Farida,DABOUR,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,20,3.6,8.5,NA,12.1
+Farida,DABOUR,w,EGY,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,20,3.4,8.533,NA,11.933
+Jessica,DOWLING,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,21,4.2,8.5,0.1,12.6
+Jessica,DOWLING,w,CAN,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,21,3.4,7.7,0.1,11
+Valerija,RATOBILSKA,w,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,22,3.6,8.6,0.1,12.2
+Valerija,RATOBILSKA,w,LAT,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,22,3.6,7.6,NA,11.2
+Ruba,ALDAOUD,w,JOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,23,3.2,8.6,NA,11.8
+Ruba,ALDAOUD,w,JOR,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,23,1.6,8.566,NA,10.166
+Malek,REZAGUI,w,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,24,3.6,8.733,NA,12.333
+Malek,REZAGUI,w,ALG,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_2,24,0,0,NA,0
+Zarith Imaan,KHALID,w,MAS,27–30 Apr 2023,World Cup,qual,"Cairo, Egypt",VT_1,NA,0,0,NA,0
