@@ -109,9 +109,9 @@ all <- c(p1, p2) |>
   mutate(Apparatus = str_remove(Apparatus, "\\.pdf$")) |> 
   mutate(Date = "27–30 Apr 2023", Competition = "World Cup", Location = "Cairo, Egypt") |> 
   mutate(Country = noc) |> 
-  relocate(FirstName, LastName, Country, Date, Competition, Round, Location, 
+  relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score )|> 
-  select(!bib:noc)
+  select(!City:noc)
 
 
 
@@ -181,7 +181,7 @@ vt_all <- c(vt1, vt2) |>
 cairo_all <- bind_rows(all, vt_all)
 
 
-write_csv(cairo_all, "/Users/minzefang/gym2024data/cleandata/cairo_data.csv")
+write_csv(cairo_all, "cleandata/cairo.csv")
 
 
 
