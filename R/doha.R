@@ -92,7 +92,7 @@ doha_tb <- list_rbind(doha_ls, names_to = "title") |>
     delim = "_",
     names = c("City", "Gender", "Round", "Apparatus")
   ) |> 
-  mutate(Penalty = Penalty * -1) |> 
+  mutate(Penalty = Penalty * -1) |> # delete the negative sign in Penalty column
   mutate(FirstName = map_chr(str_extract_all(Name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Apparatus = str_replace(Apparatus, "\\.pdf.*$", "")) |> # remove ".pdf" and anything after it
