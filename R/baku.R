@@ -35,7 +35,7 @@ extract_tables_with_area <- function(file_path, last_page_area, other_page_area)
 }
 
 
-# 提取表格
+# extract tables
 baku_all <- map(all_paths, extract_tables_with_area, last_page_area, other_page_area) |> 
   unlist(recursive = F, use.names = TRUE) |> 
   map(as_tibble, .name_repair = "minimal") |> 
