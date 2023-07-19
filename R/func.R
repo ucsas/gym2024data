@@ -273,7 +273,8 @@ extract_baku <- function(pdf_path){
     }
     for (k in 1:length(all_gymnasts)) {
       gymnast <- page[which(page$y == all_gymnasts[k]),] %>% arrange(x)
-      name <- paste(gymnast$text[1:which(gymnast$text %in% noc)-1], collapse = " ") # combine every text before noc as name
+      noc_index <- which(gymnast$text %in% noc)[length(which(gymnast$text %in% noc))]
+      name <- paste(gymnast$text[1:(noc_index-1)], collapse = " ") # combine every text before noc as name
       VT1_d <- NA
       VT1_e <- NA
       VT1_tot <- NA
@@ -288,34 +289,31 @@ extract_baku <- function(pdf_path){
       if ("Vault" %in% page$text) {
         gymnast_vt2 <- page[which(page$y == all_gymnasts[k]+20),] %>% arrange(x)
         rank <- page[which(page$y == all_gymnasts[k]+1),]$text[1]
-        if (any(gymnast$text %in% qr)) {
-          scores <- gymnast$text[(which(gymnast$text %in% noc)+2) : (which(gymnast$text %in% qr)-2)] # from E to VaultScore
-          VT1_d <- scores[2]
-          VT1_e <- scores[1]
-          VT1_tot <- scores[length(scores)]
-          VT2_d <- gymnast_vt2$text[3]
-          VT2_e <- gymnast_vt2$text[2]
-          VT2_tot <- gymnast_vt2$text[length(gymnast_vt2$text)]
-        } else{
-          scores <- gymnast$text[-c(1:(which(gymnast$text %in% noc)+1))] # from E to the end
-          VT1_d <- scores[2]
-          VT1_e <- scores[1]
-          VT1_tot <- scores[length(scores)]
-          VT2_d <- gymnast_vt2$text[3]
-          VT2_e <- gymnast_vt2$text[2]
-          VT2_tot <- gymnast_vt2$text[length(gymnast_vt2$text)]
-        }
         
+        if (any(gymnast$text %in% qr)) {
+          scores <- gymnast$text[(noc_index+2) : (which(gymnast$text %in% qr)-2)] # from E to VaultScore
+          VT1_d <- scores[2]
+          VT1_e <- scores[1]
+          VT1_tot <- scores[length(scores)]
+        } else{
+          scores <- gymnast$text[-c(1:(noc_index+1))] # from E to the end
+          VT1_d <- scores[2]
+          VT1_e <- scores[1]
+          VT1_tot <- scores[length(scores)]
+        }
+        VT2_d <- gymnast_vt2$text[3]
+        VT2_e <- gymnast_vt2$text[2]
+        VT2_tot <- gymnast_vt2$text[length(gymnast_vt2$text)]
       }
       else {
         rank <- page[which(page$y == all_gymnasts[k]+1),]$text[1]
         if (any(gymnast$text %in% qr)) {
-          scores <- gymnast$text[(which(gymnast$text %in% noc)+1) : (which(gymnast$text %in% qr)-1)]
+          scores <- gymnast$text[(noc_index+1) : (which(gymnast$text %in% qr)-1)]
           d <- scores[2]
           e <- scores[1]
           tot <- scores[length(scores)]
         } else{
-          scores <- gymnast$text[-c(1:(which(gymnast$text %in% noc)+1))]
+          scores <- gymnast$text[-c(1:(noc_index+1))]
           d <- scores[2]
           e <- scores[1]
           tot <- scores[length(scores)]
@@ -335,3 +333,84 @@ vt_table
 
 
 
+# special about Cairo:
+# 1. one line in same y location (normal)
+# 2. d score comes before e score (normal)
+# 3. penalty is positive (normal)
+# 4. y diff between vt1 and vt2 is 18
+# 5. no column for vault1/2
+
+# define the function for cairo
+
+extract_cairo <- function(pdf_path){
+  table_list <- pdf_data(pdf_path)
+  comps <- list()
+  
+  # for loop on each tibble in the list read from one pdf file
+  for (j in 1:length(table_list)) {
+    page <- table_list[[j]]
+    y_vals <- sort(unique(page$y))
+    all_gymnasts <- unique(page[which(page$text %in% noc),]$y)
+    if (length(all_gymnasts) == 0) {
+      break
+    }
+    for (k in 1:length(all_gymnasts)) {
+      gymnast <- page[which(page$y == all_gymnasts[k]),] %>% arrange(x)
+      noc_index <- which(gymnast$text %in% noc)[length(which(gymnast$text %in% noc))]
+      name <- paste(gymnast$text[3:(noc_index-1)], collapse = " ") # here different than baku: 1 to 3
+      VT1_d <- NA
+      VT1_e <- NA
+      VT1_tot <- NA
+      VT2_d <- NA
+      VT2_e <- NA
+      VT2_tot <- NA
+      d <- NA
+      e <- NA
+      tot <- NA
+      rank <- gymnast$text[1] # use gymnast directly instead of page subsetting, since no need to add 1 on y location as in baku
+      
+      if ("Vault" %in% page$text) {
+        gymnast_vt2 <- page[which(page$y == all_gymnasts[k]+18),] %>% arrange(x)
+        
+        if (any(gymnast$text %in% qr)) {
+          scores <- gymnast$text[(noc_index+1) : (which(gymnast$text %in% qr)-2)] # in baku +2 instead of +1
+          VT1_d <- scores[1] # all the order for d/e are inverse to baku
+          VT1_e <- scores[2]
+          VT1_tot <- scores[length(scores)]
+        } else{
+          scores <- gymnast$text[-c(1:noc_index)] # in baku +1
+          VT1_d <- scores[1]
+          VT1_e <- scores[2]
+          VT1_tot <- scores[length(scores)]
+        }
+        VT2_d <- gymnast_vt2$text[1]
+        VT2_e <- gymnast_vt2$text[2]
+        VT2_tot <- gymnast_vt2$text[length(gymnast_vt2$text)]
+      }
+      
+      else {
+        if (any(gymnast$text %in% qr)) {
+          scores <- gymnast$text[(noc_index+1) : (which(gymnast$text %in% qr)-1)]
+          d <- scores[1]
+          e <- scores[2]
+          tot <- scores[length(scores)]
+        } else{
+          scores <- gymnast$text[-c(1:(noc_index))]
+          d <- scores[1]
+          e <- scores[2]
+          tot <- scores[length(scores)]
+        }
+      }
+      title <- basename(pdf_path)
+      comps[[length(comps)+1]] <- data.frame(name, rank, title, d, e, tot, VT1_d, VT1_e, VT1_tot, VT2_d, VT2_e, VT2_tot)
+    }
+  }
+  bind_rows(comps)
+}
+
+# example
+cairo_m_qual_FX <- extract_cairo("cairo/cairo_m_qual_FX.pdf")
+cairo_m_qual_FX
+
+cairo_m_qual_VT <- extract_cairo("cairo/cairo_m_qual_VT.pdf")
+cairo_m_qual_VT
