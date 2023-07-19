@@ -245,13 +245,15 @@ noc <- unlist(uppercase_parts)
 qr <- c("Q", "R", "R1", "R2", "R3")
 
 
+
+
+## 1 define the function for Baku
+
 # special about Baku:
 # 1. Rank and Bib are 1 y lower than the main row
 # 2. e score comes before d score
 # 3. penalty is negative
 # 4. y diff between vt1 and vt2 is 20
-
-
 
 
 # define a function onto a single pdf file, outputs a single data frame
@@ -332,6 +334,9 @@ vt_table <- extract_baku("baku/baku_m_qual_VT.pdf")
 vt_table
 
 
+
+
+## 2 define the function for Cairo
 
 # special about Cairo:
 # 1. one line in same y location (normal)
@@ -414,3 +419,103 @@ cairo_m_qual_FX
 
 cairo_m_qual_VT <- extract_cairo("cairo/cairo_m_qual_VT.pdf")
 cairo_m_qual_VT
+
+
+
+
+
+## 3 define the function for Cottbus
+
+
+
+# special about Cottbus:
+# 1. one line in same y location (normal)
+# 2. d score comes before e score (normal)
+# 3. penalty is positive (normal)
+# 4. y diff between name line, vt1 and vt2 is 15 each
+# 5. column for vault1/2 are stacked with noc
+# 6. no Q/P column (good news)
+# 7. commas instead of dots
+# 8. one athlete has data that are cross pages(special difficalty!)
+
+
+extract_cottbus <- function(pdf_path){
+  table_list <- pdf_data(pdf_path)
+  comps <- list()
+  
+  # for loop on each tibble in the list read from one pdf file
+  for (j in 1:length(table_list)) {
+    page <- table_list[[j]]
+    all_gymnasts <- unique(page[which(page$text %in% noc),]$y)
+    
+    if (length(all_gymnasts) == 0) {
+      break
+    }
+    for (k in 1:length(all_gymnasts)) {
+      gymnast <- page[which(page$y == all_gymnasts[k]),] %>% arrange(x)
+      noc_index <- which(gymnast$text %in% noc)[length(which(gymnast$text %in% noc))]
+      name <- paste(gymnast$text[3:(noc_index-1)], collapse = " ") # here different than baku: 1 to 3
+      VT1_d <- NA
+      VT1_e <- NA
+      VT1_tot <- NA
+      VT2_d <- NA
+      VT2_e <- NA
+      VT2_tot <- NA
+      d <- NA
+      e <- NA
+      tot <- NA
+      rank <- gymnast$text[1] # use gymnast directly instead of page subsetting, since no need to add 1 on y location as in baku
+      
+      if ("Vault" %in% page$text) { # this part differs dramatically from other competition data
+        if(rank == 13){
+          page_n <- table_list[[j+1]] # define next page
+          all_gymnasts_n <- unique(page_n[which(page_n$text %in% noc),]$y) # define the index of y for next page
+          min_y_1 <- min(page$y[page$y > all_gymnasts[k]])
+          gymnast_vt1 <- page[which(page$y == min_y_1), ] %>% arrange(x)
+          max_y_2 <- max(page_n$y[page_n$y < all_gymnasts_n[1]])
+          gymnast_vt2 <-  page_n[which(page_n$y == max_y_2), ] %>% arrange(x)
+        } else if (rank == 26) {
+          page_n <- table_list[[j+1]] # define next page
+          all_gymnasts_n <- unique(page_n[which(page_n$text %in% noc),]$y) # define the index of y for next page
+          max_y_2 <- max(page_n$y[page_n$y < all_gymnasts_n[1]])
+          gymnast_vt2 <-  page_n[which(page_n$y == max_y_2), ] %>% arrange(x)
+          max_y_1 <- max(page_n$y[page_n$y < max_y_2])
+          gymnast_vt1 <- page_n[which(page_n$y == max_y_1), ] %>% arrange(x)
+        } else {
+          min_y_1 <- min(page$y[page$y > all_gymnasts[k]])
+          gymnast_vt1 <- page[which(page$y == min_y_1), ] %>% arrange(x)
+          min_y_2 <- min(page$y[page$y > min_y_1])
+          gymnast_vt2 <- page[which(page$y == min_y_2), ] %>% arrange(x)
+        }
+        scores1 <- gymnast_vt1$text[-c(1:2)]
+        VT1_d <- scores1[1]
+        VT1_e <- scores1[2]
+        VT1_tot <- scores1[length(scores1)]
+        scores2 <- gymnast_vt2$text[-c(1:2)]
+        VT2_d <- scores2[1]
+        VT2_e <- scores2[2]
+        VT2_tot <- scores2[length(scores2)]
+      }
+      
+      else {
+        scores <- gymnast$text[-c(1:(noc_index))]
+        d <- scores[1]
+        e <- scores[2]
+        tot <- scores[length(scores)]
+      }
+      title <- basename(pdf_path)
+      comps[[length(comps)+1]] <- data.frame(name, rank, title, d, e, tot, VT1_d, VT1_e, VT1_tot, VT2_d, VT2_e, VT2_tot)
+    }
+  }
+  bind_rows(comps)
+}
+
+
+
+# example
+cottbus_m_qual_FX <- extract_cottbus("cottbus/cottbus_m_qual_FX.pdf")
+cottbus_m_qual_FX
+
+cottbus_m_qual_VT <- extract_cottbus("cottbus/cottbus_m_qual_VT.pdf")
+cottbus_m_qual_VT
+
