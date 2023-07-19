@@ -247,9 +247,9 @@ qr <- c("Q", "R", "R1", "R2", "R3")
 
 
 
-## 1 define the function for Baku
+## 1 define the function for Baku and Doha
 
-# special about Baku:
+# special about Baku/Doha:
 # 1. Rank and Bib are 1 y lower than the main row
 # 2. e score comes before d score
 # 3. penalty is negative
@@ -261,7 +261,7 @@ qr <- c("Q", "R", "R1", "R2", "R3")
 # when doing so, remember to separate_wider_delim at the end to get gender, round and city info from title
 
 
-extract_baku <- function(pdf_path){
+extract_baku_doha <- function(pdf_path){
   table_list <- pdf_data(pdf_path)
   comps <- list()
   
@@ -301,11 +301,11 @@ extract_baku <- function(pdf_path){
           scores <- gymnast$text[-c(1:(noc_index+1))] # from E to the end
           VT1_d <- scores[2]
           VT1_e <- scores[1]
-          VT1_tot <- scores[length(scores)]
+          VT1_tot <- scores[length(scores)-1] # -1 to avoid the last value in the row: total of 2 vt scores
         }
         VT2_d <- gymnast_vt2$text[3]
         VT2_e <- gymnast_vt2$text[2]
-        VT2_tot <- gymnast_vt2$text[length(gymnast_vt2$text)]
+        VT2_tot <- gymnast_vt2$text[length(gymnast_vt2$text)] # no -1 because there are no total of 2 in second line
       }
       else {
         rank <- page[which(page$y == all_gymnasts[k]+1),]$text[1]
@@ -315,7 +315,7 @@ extract_baku <- function(pdf_path){
           e <- scores[1]
           tot <- scores[length(scores)]
         } else{
-          scores <- gymnast$text[-c(1:(noc_index+1))]
+          scores <- gymnast$text[-c(1:(noc_index))]
           d <- scores[2]
           e <- scores[1]
           tot <- scores[length(scores)]
@@ -329,11 +329,17 @@ extract_baku <- function(pdf_path){
 }
 
 
-# example
-vt_table <- extract_baku("baku/baku_m_qual_VT.pdf")
-vt_table
+# example for baku
+baku_m_qual_FX <- extract_baku("baku/baku_m_qual_FX.pdf")
+baku_m_qual_FX
+baku_m_qual_VT <- extract_baku("baku/baku_m_qual_VT.pdf")
+baku_m_qual_VT
 
-
+# example for doha
+doha_m_qual_FX <- extract_baku("doha/doha_m_qual_FX.pdf")
+doha_m_qual_FX
+doha_m_qual_VT <- extract_baku("doha/doha_m_qual_VT.pdf")
+doha_m_qual_VT
 
 
 ## 2 define the function for Cairo
