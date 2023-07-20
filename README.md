@@ -33,11 +33,18 @@ Some other challenges with the data in general:
 
 ## Data Source
 
+The International Gymnastics Federation Archive
+https://www.gymnastics.sport/site/events/searchresults.php
+
 2023 European Artistic Gymnastics Championship\
 https://gymnasticsresults.com
 
 2023 Pan Am Artistic Gymnastics Championships\
 https://usagym.org/results/2023/
+
+2020 Summer Olympics\
+https://en.wikipedia.org/wiki/Gymnastics_at_the_2020_Summer_Olympics
+https://web.archive.org/web/20210811113649/https://olympics.com/tokyo-2020/olympic-games/resOG2020-/pdf/OG2020-/GAR/OG2020-_GAR_B99_GAR-------------------------------.pdf
 
 ## Acronym Convention for Naming
 BB = balanced beam\
