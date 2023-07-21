@@ -1,0 +1,48 @@
+FirstName,LastName,Gender,Country,Date,Competition,Round,Location,Apparatus,Rank,D_Score,E_Score,Penalty,Score
+Mikhail,KOUDINOV,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,5.2,8.233,0.1,13.333
+Mikhail,KOUDINOV,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,4,8.2,-0,12.2
+Mikhail,KOUDINOV,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,4.5,8.4,0,12.9
+Mikhail,KOUDINOV,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",VT,NA,4.8,9.033,-0,13.833
+Mikhail,KOUDINOV,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,5.8,8.9,-0,14.7
+Mikhail,KOUDINOV,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",HB,NA,5.1,8.7,-0,13.8
+Clay,MASONSTEPHENS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,5.7,8.266,0.1,13.866
+Clay,MASONSTEPHENS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,4.3,7.466,-0,11.766
+Clay,MASONSTEPHENS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,4,8.833,0,12.833
+Clay,MASONSTEPHENS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",VT,NA,4.8,9.4,0,14.2
+Clay,MASONSTEPHENS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,5.1,7.533,0,12.633
+Clay,MASONSTEPHENS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",HB,NA,4.5,8.2,0,12.7
+James,HARDY,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,5.5,8.2,0,13.7
+James,HARDY,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,3.6,8.666,-0,12.266
+James,HARDY,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,5,8.266,0,13.266
+James,HARDY,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",VT,NA,5.2,9.333,0,14.533
+James,HARDY,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,5,8.3,0,13.3
+James,HARDY,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",HB,NA,4.5,5.966,0,10.466
+Ethan,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,5.1,7.933,0.3,12.733
+Ethan,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,5.2,8.333,0,13.533
+Ethan,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,3.8,9,0,12.8
+Ethan,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",VT,NA,4.8,8.033,-0,12.833
+Ethan,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,5.3,7.566,0,12.866
+Ethan,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",HB,NA,4.4,8.033,0,12.433
+Samual,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,5,8.366,0,13.366
+Samual,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,3.2,7.133,3,7.333
+Samual,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,4.7,8.633,-0,13.333
+Samual,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",VT,NA,5.2,7.966,0.3,12.866
+Samual,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,4.5,8.833,0,13.333
+Samual,DICK,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",HB,NA,3.4,9,0,12.4
+Heath,THORPE,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,5.7,8.233,0,13.933
+Heath,THORPE,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,3.2,8.166,0,11.366
+Heath,THORPE,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,4.3,8.466,-0,12.766
+Heath,THORPE,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",VT,NA,4.8,8.866,0,13.666
+Heath,THORPE,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",HB,NA,5,8.633,0,13.633
+William,FUALLEN,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,5,8.533,0,13.533
+William,FUALLEN,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,3.8,8.333,0,12.133
+William,FUALLEN,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",VT,NA,4.8,8.933,0.1,13.633
+William,FUALLEN,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,3.7,7.5,0,11.2
+David,TANNER,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",FX,NA,4.4,5.233,0,9.633
+David,TANNER,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PH,NA,3.7,7.533,0,11.233
+David,TANNER,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,4.3,8.833,0,13.133
+David,TANNER,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,5,8.566,0,13.566
+Mitchell,MORGANS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,5.6,8.033,0,13.633
+Mitchell,MORGANS,m,Australia,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",HB,NA,5.3,7.3,0,12.6
+Daniel,STODDART,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",SR,NA,4.2,8.733,0,12.933
+Daniel,STODDART,m,New Zealand,05-06 May 2023,Oceania Continental Championships 2023,aa,"Carrara, Australia",PB,NA,4.1,8.6,0,12.7
