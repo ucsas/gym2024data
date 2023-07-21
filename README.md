@@ -33,7 +33,7 @@ Some other challenges with the data in general:
 
 ## Data Source
 
-The International Gymnastics Federation Archive
+The International Gymnastics Federation Archive\
 https://www.gymnastics.sport/site/events/searchresults.php
 
 2023 European Artistic Gymnastics Championship\
