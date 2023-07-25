@@ -31,7 +31,7 @@ get_bottom <- function(page, y_vals, y_noc) {
 
 ## define gym_table() function
 
-gym_table <- function(file_path){
+gym_table <- function(file_path, output = "matrix"){
   page_data <- pdf_data(file_path)
   pdf_tables <- list()
   
@@ -42,15 +42,13 @@ gym_table <- function(file_path){
     y_vals <- sort(unique(page$y))
     y_noc <- unique(page[which(page$text %in% noc),]$y)
     if (length(y_noc) == 0) {
+      warning("No valid input in this page")
       break
     }
-    noc_first_y <- y_noc[1]
-    noc_last_y <- y_noc[length(y_noc)]
-    
     chunk <- page %>% # every text between first noc and last noc
-      filter(y >= noc_first_y & y<= noc_last_y)
+      filter(y >= y_noc[1] & y<= y_noc[length(y_noc)])
     
-    top <- noc_first_y-2 # -2 is to make it compatible for aa results
+    top <- y_noc[1] - 2 # -2 is to make it compatible for aa results
     left <- chunk %>% 
       arrange(x) %>% 
       pull(x) %>% 
@@ -58,7 +56,7 @@ gym_table <- function(file_path){
     right <- chunk %>%  
       arrange(x_right) %>% 
       pull(x_right) %>% 
-      last()+1
+      last() + 1
     
     bottom <- get_bottom(page = page, y_vals = y_vals, y_noc = y_noc)
     
@@ -67,23 +65,47 @@ gym_table <- function(file_path){
     pdf_tables <- c(pdf_tables, page_table)
   }
   
-  # pdf_tables <- lapply(pdf_tables, as.data.frame)
-  return(pdf_tables)
+  if (output == "matrix") {
+    return(pdf_tables)
+  } else if (output == "data.frame") {
+    pdf_tables <- lapply(pdf_tables, as.data.frame)
+    return(pdf_tables)
+  } else {
+    warning("Invalid value for 'output' argument. Using default: 'matrix'")
+    return(mdf_tables)
+  }
 }
 
 
 # example
+
+# individual event data VT
 paths <- "pdfs/int_events/19_qual.pdf"
 gym_table(file_path = paths)
 
-path2 <- "pdfs/int_aa/19_aa_qual.pdf"
+# individual event data Non-VT
+path2 <- "pdfs_2023/cairo/cairo_m_qual_PH.pdf"
 gym_table(file_path = path2)
+gym_table(file_path = path2, output = "data.frame")
 
-path3 <- "pdfs_2023/baku/baku_w_qual_vt.pdf"
+
+# all-around data
+path3 <- "pdfs/int_aa/19_aa_qual.pdf"
 gym_table(file_path = path3)
-
-path4 <- "pdfs_2023/cairo/cairo_m_qual_PH.pdf"
-gym_table(file_path = path4)
 
 path5 <- "pdfs_2023/liverpool/m_aa_final.pdf"
 gym_table(file_path = path5)
+
+# individual event data with first two columns lower than other columns
+path4 <- "pdfs_2023/baku/baku_w_qual_vt.pdf"
+gym_table(file_path = path4)
+gym_table(file_path = path4, output = "data.frame")
+
+# team data
+path6 <- "pdfs/int_team/19.pdf"
+gym_table(file_path = path6)
+
+
+
+
+
