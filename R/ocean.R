@@ -109,12 +109,6 @@ ocean_m_tb <- rbind(ocean_m_tb, p6, p7, p8, p9, p10)
 
 
 
-# 1.名字分开
-# 2.分数改为数值型，算penalty
-# 3.加入gender, date, competition, round, location, rank
-# 3.变量改名，排序, delete redundant columns
-
-
 ocean_m <- ocean_m_tb %>% 
   mutate(name = gsub("THORPEHeath", "THORPE Heath", name)) %>% 
   mutate(FirstName = map_chr(str_extract_all(name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) %>% 
