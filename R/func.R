@@ -4,12 +4,10 @@ library(tidyverse)
 
 # define a function to extract gym data from pdf files
 
-
-noc_string <- readLines("R/noc_key.txt")
-
-# extract country abbreviation
-uppercase_parts <- regmatches(noc_string, gregexpr("\\b[A-Z]+\\b", noc_string))
-noc <- unlist(uppercase_parts)
+# define a pattern for all NOC abbreviations
+noc <- readLines("R/noc_key.txt") %>% 
+  regmatches(. , gregexpr("\\b[A-Z]+\\b", .)) %>% 
+  unlist()
 
 # define a pattern for qualification grade
 qr <- c("Q", "R", "R1", "R2", "R3")

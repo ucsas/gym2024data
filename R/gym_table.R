@@ -3,41 +3,28 @@ library(tabulizer)
 library(tidyverse)
 
 
-
-
-# extract country abbreviation
-
-noc_string <- readLines("R/noc_key.txt")
-uppercase_parts <- regmatches(noc_string, gregexpr("\\b[A-Z]+\\b", noc_string))
-noc <- unlist(uppercase_parts)
-
-
-# 对于event/aa数据：（中文注释在最终定稿之前会删掉）
-# 利用国家名称定位，第一个国家名到最后一个国家名之间的全部内容，
-# 取x最小值和最大值（作为左右），y的最小值（作为top）。（默认国家缩写为表格第一行）
-# 选择最后一个国家名，取y坐标，在y坐标的unique值中排序+1，
-# 选择该序数的y值，作为y最大值（作为坐标bottom）
-
-# 无法正常使用的情况：
-# 1.如cottbus的VT数据那样，一个人的数据有三行，跨页的
-
-# 可以正常使用的情况：
-# Baku, Doha那种前两列低于后面各列
-
+## extract country abbreviation
+noc <- readLines("R/noc_key.txt") %>% 
+  regmatches(. , gregexpr("\\b[A-Z]+\\b", .)) %>% 
+  unlist()
 
 
 ## define get_bottom() function
 # serves as a building block of later gym_table() function
-# inputs: page, a dataframe; y_vals, a numeric vector; noc_last_y & remainder, integers.
 # remainder means how many unique y coordinates there is between last Noc line and last line of table
 
 get_bottom <- function(page, y_vals, y_noc) {
-  remainder <- match(y_noc[2], y_vals) - match(y_noc[1], y_vals) - 1
+  unit_chunk <- page %>% # every text between first noc and second noc
+    filter(y >= y_noc[1] & y <= y_noc[2])
+  y_diff <- diff(unique(unit_chunk$y))
+  
+  remainder <- which.max(y_diff) - 1 # get the position that has the largest y difference than its prior raw, which is the first raw of a unit chunk
+                                     # since we want the last row of a unit chunk, we minus 1
   bottom <- page %>% 
-    filter(y == y_vals[match(y_noc[length(y_noc)], y_vals) + remainder]) %>% 
+    filter(y == y_vals[match(y_noc[length(y_noc)], y_vals) + remainder]) %>% # the last noc row + remaining row numbers
     slice(1) %>% 
     select(y_end) %>% 
-    pull()
+    pull()+1
   return(bottom)
 }
 
@@ -89,8 +76,14 @@ gym_table <- function(file_path){
 paths <- "pdfs/int_events/19_qual.pdf"
 gym_table(file_path = paths)
 
-path2 <- "pdfs/int_aa/19_aa.pdf"
+path2 <- "pdfs/int_aa/19_aa_qual.pdf"
 gym_table(file_path = path2)
 
 path3 <- "pdfs_2023/baku/baku_w_qual_vt.pdf"
 gym_table(file_path = path3)
+
+path4 <- "pdfs_2023/cairo/cairo_m_qual_PH.pdf"
+gym_table(file_path = path4)
+
+path5 <- "pdfs_2023/liverpool/m_aa_final.pdf"
+gym_table(file_path = path5)
