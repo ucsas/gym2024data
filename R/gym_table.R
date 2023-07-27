@@ -31,7 +31,7 @@ get_bottom <- function(page, y_vals, y_noc) {
 
 ## define gym_table() function
 
-gym_table <- function(file_path, output = "matrix"){
+gym_table <- function(file_path, output = "data.frame"){
   page_data <- pdf_data(file_path)
   pdf_tables <- list()
   
@@ -40,7 +40,10 @@ gym_table <- function(file_path, output = "matrix"){
       arrange(y,x) %>% 
       mutate(x_right = x + width, y_end = y + height)
     y_vals <- sort(unique(page$y))
-    y_noc <- unique(page[which(page$text %in% noc),]$y)
+    y_noc <- page %>%  
+      filter(text %in% noc) %>%
+      filter(abs(x - median(x)) <= 5) %>%  # in case other text coincide with NOC abbr.
+      pull(y)
     if (length(y_noc) == 0) {
       warning("No valid input in this page")
       break
@@ -77,34 +80,33 @@ gym_table <- function(file_path, output = "matrix"){
 }
 
 
-# example
-
-# individual event data VT
-paths <- "pdfs/int_events/19_qual.pdf"
-gym_table(file_path = paths)
-
-# individual event data Non-VT
-path2 <- "pdfs_2023/cairo/cairo_m_qual_PH.pdf"
-gym_table(file_path = path2)
-gym_table(file_path = path2, output = "data.frame")
-
-
-# all-around data
-path3 <- "pdfs/int_aa/19_aa_qual.pdf"
-gym_table(file_path = path3)
-
-path5 <- "pdfs_2023/liverpool/m_aa_final.pdf"
-gym_table(file_path = path5)
-
-# individual event data with first two columns lower than other columns
-path4 <- "pdfs_2023/baku/baku_w_qual_vt.pdf"
-gym_table(file_path = path4)
-gym_table(file_path = path4, output = "data.frame")
-
-# team data
-path6 <- "pdfs/int_team/19.pdf"
-gym_table(file_path = path6)
-
+# # example
+# 
+# # individual event data VT
+# paths <- "pdfs/int_events/19_qual.pdf"
+# gym_table(file_path = paths)
+# 
+# # individual event data Non-VT
+# path2 <- "pdfs_2023/cairo/cairo_m_qual_PH.pdf"
+# gym_table(file_path = path2)
+# gym_table(file_path = path2, output = "data.frame")
+# extract_tables(path2, pages = 2)
+# 
+# 
+# # all-around data
+# path5 <- "pdfs_2023/liverpool/m_aa_final.pdf"
+# gym_table(file_path = path5)
+# 
+# # individual event data with first two columns lower than other columns
+# path4 <- "pdfs_2023/baku/baku_w_qual_vt.pdf"
+# gym_table(file_path = path4)
+# gym_table(file_path = path4, output = "data.frame")
+# extract_tables(path4)
+# 
+# # team data
+# path6 <- "pdfs/int_team/19.pdf"
+# gym_table(file_path = path6)
+# extract_tables(path6, output = "data.frame")
 
 
 
