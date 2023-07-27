@@ -4,7 +4,7 @@ library(tidyverse)
 
 # setwd("/Users/minzefang/gym2024data")
 
-## Baku World Cup
+## Tokyo 2020 Olympics
 
 # set areas of pdf for table extraction
 qual_other_page_area <- list(c(225, 97, 774, 497)) 
@@ -87,8 +87,8 @@ qual_ls <- unlist(qual_ls_raw, recursive = F, use.names = TRUE) |>
   map(~ as_tibble(.x)) |> 
   map(~ {
     if (ncol(.x) == 7) {
-      add_column(.x, Pen = "", .after = 6)         # generate column Vault for non-vault tibbles to make two types of tibble compatible to combine
-    } else {                                         # .after=4 as we want column Vault to be after column NOC.code
+      add_column(.x, Pen = "", .after = 6)          # generate column Penalty for tibbles which has not
+    } else {                                         
       .x                       
     }
   }) |> 
