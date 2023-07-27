@@ -1,0 +1,628 @@
+FirstName,LastName,Gender,Country,Date,Competition,Round,Location,Apparatus,Rank,D_Score,E_Score,Penalty,Score
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,1,8.250,5.6,NA,13.85
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,2,8.350,5.1,NA,13.45
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,3,8.100,5.1,NA,13.2
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,4,8.200,4.9,NA,13.1
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,5,8.000,5.1,NA,13.1
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,6,7.700,5.4,NA,13.1
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,6,7.700,5.4,NA,13.1
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,8,8.350,5,0.3,13.05
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,9,8.600,4.4,NA,13
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,10,7.750,5.1,NA,12.85
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,11,7.650,5.2,NA,12.85
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,12,8.300,4.5,NA,12.8
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,13,7.900,5.2,0.4,12.7
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,14,8.200,4.3,NA,12.5
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,15,8.150,3.8,NA,11.95
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,16,6.550,4.5,NA,11.05
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,NA,0.000,NA,NA,NA
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,1,8.150,5.6,NA,13.75
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,2,8.000,5.2,NA,13.2
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,3,8.050,5,NA,13.05
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,4,7.950,4.9,NA,12.85
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,5,8.000,4.8,NA,12.8
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,6,7.900,4.8,NA,12.7
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,7,7.550,5,NA,12.55
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,8,7.450,4.9,NA,12.35
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,9,7.550,4.7,NA,12.25
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,10,7.950,4.2,NA,12.15
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,11,7.150,4.2,NA,11.35
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,12,8.300,2.9,NA,11.2
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,13,6.400,4.5,NA,10.9
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,14,7.150,2.9,NA,10.05
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,15,6.350,3.7,NA,10.05
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,16,6.300,3.1,NA,9.4
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,NA,0.000,NA,NA,NA
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,1,8.350,5.8,NA,14.15
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,2,8.400,5.7,0.3,13.8
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,3,8.300,5.4,NA,13.7
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,4,8.350,5.2,NA,13.55
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,5,8.000,5.5,NA,13.5
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,6,8.150,5.2,NA,13.35
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,7,8.050,5.3,NA,13.35
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,8,8.400,4.6,NA,13
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,9,8.400,4.5,NA,12.9
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,10,7.700,5.2,NA,12.9
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,11,8.250,4.5,NA,12.75
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,12,8.200,4.8,0.3,12.7
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,13,7.400,5.1,NA,12.5
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,14,8.200,3.9,0.3,11.8
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,15,8.500,3,NA,11.5
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,16,8.100,3.4,NA,11.5
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PB,NA,0.000,NA,NA,NA
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,1,8.400,5.1,NA,13.5
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,2,8.350,4.9,NA,13.25
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,3,7.500,5.3,NA,12.8
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,4,7.800,4.8,NA,12.6
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,5,7.800,4.5,NA,12.3
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,6,7.450,4.8,NA,12.25
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,7,7.700,4.5,NA,12.2
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,8,7.000,5,NA,12
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,9,7.700,4.1,NA,11.8
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,10,7.800,3.7,NA,11.5
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,11,7.400,4.1,NA,11.5
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,12,6.800,4,NA,10.8
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,13,7.400,3.3,NA,10.7
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,14,6.850,3.8,NA,10.65
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,15,6.250,4.1,NA,10.35
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,16,6.250,2.6,3,5.85
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",PH,NA,0.000,NA,NA,NA
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,1,7.800,4.8,NA,12.6
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,2,7.500,5.1,NA,12.6
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,3,7.700,4.8,NA,12.5
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,4,7.900,4.4,NA,12.3
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,5,7.950,4.3,NA,12.25
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,6,7.750,4.5,NA,12.25
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,6,7.750,4.5,NA,12.25
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,8,7.600,4.3,NA,11.9
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,9,6.550,5.3,NA,11.85
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,10,7.800,4,NA,11.8
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,11,7.550,4.2,NA,11.75
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,12,7.300,4.3,NA,11.6
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,13,7.700,3.7,NA,11.4
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,14,6.850,4.5,NA,11.35
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,15,7.700,3.2,NA,10.9
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,16,7.700,2.9,NA,10.6
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",SR,NA,0.000,NA,NA,NA
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,1,9.200,5.2,NA,14.4
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,2,9.250,4.8,NA,14.05
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,3,9.250,4.8,0.1,13.95
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,4,9.150,4.8,NA,13.95
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,5,9.100,4.8,0.1,13.8
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,6,9.000,4.8,0.1,13.7
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,7,8.800,5.2,0.3,13.7
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,8,9.000,4.8,0.3,13.5
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,9,8.800,4.8,0.1,13.5
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,10,8.700,4.8,NA,13.5
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,11,8.750,4.8,0.1,13.45
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,12,8.150,5.2,NA,13.35
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,13,9.150,4,NA,13.15
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,14,9.000,4,NA,13
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,15,9.200,3.2,0.1,12.3
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,16,7.700,4.8,0.3,12.2
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,NA,0.000,NA,NA,NA
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,2,8.600,5.1,NA,13.7
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,3,8.050,5.6,NA,13.65
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,4,8.000,5.7,0.3,13.4
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,5,8.350,5.2,0.3,13.25
+Fabian,DE LUNA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,6,8.000,4.9,0.1,12.8
+Rodrigo,GOMEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,7,7.100,5.4,NA,12.5
+Yohendry,VILLAVERDE,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,8,5.500,3.3,4,4.8
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,1,8.200,5.6,NA,13.8
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,2,8.100,5,NA,13.1
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,3,7.950,4.9,NA,12.85
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,4,7.550,4.9,NA,12.45
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,5,7.250,4.9,NA,12.15
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,6,7.200,4.7,NA,11.9
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,7,7.650,4.2,NA,11.85
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",HB,8,6.600,4.5,NA,11.1
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,1,8.450,5.5,NA,13.95
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,2,8.100,5.7,NA,13.8
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,3,8.400,4.6,NA,13
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,4,7.950,4.8,NA,12.75
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,5,7.750,4.8,NA,12.55
+Jeordy,RAMIREZ,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,6,7.450,5.1,NA,12.55
+Sergio,VARGAS,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,7,7.050,4.8,NA,11.85
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PB,8,6.400,5.4,NA,11.8
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,1,7.950,5.1,NA,13.05
+Jose,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,2,7.700,5.2,NA,12.9
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,3,7.850,4.8,NA,12.65
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,4,7.550,4.6,NA,12.15
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,5,7.600,4.4,NA,12
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,6,6.850,4.5,NA,11.35
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,7,6.450,4.5,NA,10.95
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",PH,8,6.250,4.6,NA,10.85
+Kristopher,BOHORQUEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,1,8.300,5.6,NA,13.9
+Alejandro,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,2,8.200,5.6,NA,13.8
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,3,8.000,5.3,NA,13.3
+Fabian,DE LUNA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,4,7.500,5.7,NA,13.2
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,5,8.450,4.4,NA,12.85
+Jabiel,POLANCO,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,6,8.250,4.5,NA,12.75
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,7,7.900,4.8,NA,12.7
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",SR,8,7.200,4.2,NA,11.4
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,1,8.750,5.6,NA,14.35
+,VILLAVERDE,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,2,8.900,5.2,NA,14.1
+Fabian,DE LUNA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,3,8.350,5.2,NA,13.55
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,4,9.150,5.2,0.1,14.25
+Jorge,VEGA,m,CCS,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,5,7.950,5.2,NA,13.15
+Jabiel,POLANCO,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,6,7.900,5.2,NA,13.1
+,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,7,7.900,5.2,NA,13.1
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,8,8.850,4.8,NA,13.65
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,1,8.250,5.6,NA,13.85
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,2,8.050,5.8,NA,13.85
+Jorge,VEGA,m,CCS,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,3,8.300,5.5,NA,13.8
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,4,8.450,5.2,0.1,13.55
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,5,8.400,5.1,NA,13.5
+Yohendry,VILLAVERDE,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,6,8.100,5.8,0.5,13.4
+Rodrigo,GOMEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,7,7.800,5.6,NA,13.4
+Fabian,DE LUNA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,8,8.000,4.9,NA,12.9
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,9,7.650,5.2,NA,12.85
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,10,7.900,4.9,NA,12.8
+Yefferson,ANTON,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,11,7.700,5.1,NA,12.8
+Pablo,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,12,7.250,5.5,NA,12.75
+Jhossua,CORRALES,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,13,8.200,4.5,NA,12.7
+Miguel,AQUINO III,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,14,8.000,4.7,NA,12.7
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,15,8.200,4.5,0.1,12.6
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,16,7.550,5.1,0.1,12.55
+Jeordy,RAMIREZ,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,17,7.800,4.7,NA,12.5
+Sebastian,SUE,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,18,7.700,4.7,NA,12.4
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,19,8.000,4.3,NA,12.3
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,20,7.200,5,NA,12.2
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,21,7.550,4.7,0.1,12.15
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,22,7.300,5.2,0.5,12
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,23,7.200,4.5,NA,11.7
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,24,7.850,3.8,NA,11.65
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,25,6.800,5.1,0.3,11.6
+Jose,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,26,6.900,4.4,NA,11.3
+Victor,BETANCOURT,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,27,7.100,4.2,0.1,11.2
+Sergio,VARGAS,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,28,6.650,4.5,NA,11.15
+Alejandro,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,29,6.100,4.9,0.3,10.7
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,30,6.150,4.6,0.3,10.45
+Kevin,ESPINOSA,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,31,6.550,3.8,NA,10.35
+Wilfry,CONTRERAS,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,32,5.850,4.1,0.1,9.85
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,33,5.150,5.1,0.6,9.65
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,1,7.600,5.6,NA,13.2
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,2,8.200,4.7,NA,12.9
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,3,7.900,4.9,NA,12.8
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,4,7.850,4.8,NA,12.65
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,5,7.650,4.9,NA,12.55
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,6,7.500,5,NA,12.5
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,6,7.500,5,NA,12.5
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,8,8.000,4.2,NA,12.2
+Sergio,VARGAS,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,9,7.350,4.8,NA,12.15
+Rodrigo,GOMEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,10,8.150,3.9,NA,12.05
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,11,7.850,4.2,NA,12.05
+Wilfry,CONTRERAS,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,12,7.750,4.3,NA,12.05
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,13,7.350,4.7,NA,12.05
+Miguel,AQUINO III,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,14,8.000,3.9,NA,11.9
+Josue,JUAREZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,15,7.650,4.2,NA,11.85
+Jose,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,16,7.200,4.6,NA,11.8
+Victor,BETANCOURT,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,17,7.300,4.4,NA,11.7
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,18,7.150,4.4,NA,11.55
+Jose,ESCANDON,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,19,7.000,4.5,NA,11.5
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,20,6.900,4.6,NA,11.5
+Jeordy,RAMIREZ,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,21,7.150,4.5,0.3,11.35
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,22,6.850,4.5,NA,11.35
+Alejandro,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,23,7.650,3.5,NA,11.15
+Jhossua,CORRALES,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,24,7.600,3.5,NA,11.1
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,25,8.100,2.9,NA,11
+Yefferson,ANTON,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,26,6.600,4.2,NA,10.8
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,27,6.200,4.3,NA,10.5
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,28,7.550,2.9,NA,10.45
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,29,7.250,3.1,NA,10.35
+Alberto,PEREZ,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,30,7.050,3.1,NA,10.15
+Kevin,ESPINOSA,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,NA,0.000,NA,NA,NA
+Sebastian,SUE,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",HB,NA,0.000,NA,NA,NA
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,1,8.250,5.7,NA,13.95
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,2,8.300,5.5,NA,13.8
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,3,8.350,5.4,NA,13.75
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,4,8.300,5.2,NA,13.5
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,5,8.250,5.2,NA,13.45
+Josue,JUAREZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,6,7.850,5.6,NA,13.45
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,7,8.600,4.6,NA,13.2
+Jeordy,RAMIREZ,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,8,8.100,5.1,NA,13.2
+Sergio,VARGAS,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,9,8.350,4.8,NA,13.15
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,10,8.500,4.5,NA,13
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,11,7.600,5.4,NA,13
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,12,8.150,4.8,NA,12.95
+Jose,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,13,7.650,5.3,NA,12.95
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,14,8.200,4.5,NA,12.7
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,15,7.600,5.1,NA,12.7
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,16,8.750,3.9,NA,12.65
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,17,6.950,5.6,NA,12.55
+Wilfry,CONTRERAS,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,18,8.200,4.3,NA,12.5
+Alejandro,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,19,6.950,5.5,NA,12.45
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,20,7.050,5.3,NA,12.35
+Jose,ESCANDON,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,21,6.600,5.7,NA,12.3
+Yefferson,ANTON,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,22,7.800,4.4,NA,12.2
+Victor,BETANCOURT,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,23,7.150,5,NA,12.15
+Miguel,AQUINO III,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,24,8.200,3.8,NA,12
+Rodrigo,GOMEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,25,7.600,4.2,NA,11.8
+Alberto,PEREZ,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,26,8.100,3.5,NA,11.6
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,27,8.450,3,NA,11.45
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,28,7.900,3.4,NA,11.3
+Jhossua,CORRALES,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,29,7.300,3.5,NA,10.8
+Sebastian,SUE,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,30,5.950,4.6,NA,10.55
+Kevin,ESPINOSA,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,31,6.750,3.6,NA,10.35
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,32,4.650,4.7,NA,9.35
+Pablo,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PB,NA,0.000,0,NA,NA
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,1,8.000,5.1,NA,13.1
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,2,8.300,4.7,NA,13
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,3,8.100,4.9,NA,13
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,4,8.050,4.8,NA,12.85
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,5,8.150,4.5,NA,12.65
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,6,7.850,4.8,NA,12.65
+Rodrigo,GOMEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,7,7.700,4.8,NA,12.5
+Jose,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,8,7.200,5.2,NA,12.4
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,9,7.750,4.6,NA,12.35
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,10,6.550,5.7,NA,12.25
+Yohendry,VILLAVERDE,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,11,7.250,4.7,NA,11.95
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,12,6.600,5.3,NA,11.9
+Victor,BETANCOURT,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,13,7.400,4.4,NA,11.8
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,14,7.600,4.1,NA,11.7
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,15,7.500,4,NA,11.5
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,16,7.400,4.1,NA,11.5
+Alejandro,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,17,7.750,3.7,NA,11.45
+Josue,JUAREZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,18,7.250,4.2,NA,11.45
+Sergio,VARGAS,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,19,6.450,4.8,NA,11.25
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,20,6.750,4,NA,10.75
+Sebastian,SUE,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,21,7.800,2.9,NA,10.7
+Yefferson,ANTON,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,22,6.850,3.8,NA,10.65
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,23,5.850,4.7,NA,10.55
+Jeordy,RAMIREZ,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,24,7.350,3,NA,10.35
+Nelson,GUILBE,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,25,5.400,4.6,NA,10
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,26,5.350,4.4,NA,9.75
+Wilfry,CONTRERAS,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,27,6.100,3.6,0.3,9.4
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,28,6.100,3.3,NA,9.4
+Alberto,PEREZ,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,29,5.100,3.3,NA,8.4
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,30,6.950,2.6,3,6.55
+Miguel,AQUINO III,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,NA,0.000,NA,NA,NA
+Kevin,ESPINOSA,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",PH,NA,0.000,NA,NA,NA
+Alejandro,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,1,7.800,5.6,NA,13.4
+Fabian,DE LUNA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,2,7.450,5.7,NA,13.15
+Kristopher,BOHORQUEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,3,7.500,5.6,NA,13.1
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,4,7.500,5.3,NA,12.8
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,5,7.950,4.8,NA,12.75
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,6,8.050,4.3,NA,12.35
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,6,8.050,4.3,NA,12.35
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,8,8.000,4.3,NA,12.3
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,9,7.800,4.5,NA,12.3
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,10,7.500,4.8,NA,12.3
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,11,7.850,4.4,NA,12.25
+Jabiel,POLANCO,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,12,7.550,4.7,NA,12.25
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,13,7.900,4.3,NA,12.2
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,14,7.000,5.2,NA,12.2
+Jose,ESCANDON,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,15,7.150,5,NA,12.15
+Victor,BETANCOURT,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,16,8.050,4,NA,12.05
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,17,7.200,4.8,NA,12
+Pablo,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,18,7.400,4.4,NA,11.8
+Jose,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,19,7.450,4.3,NA,11.75
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,20,7.700,4,NA,11.7
+Rodrigo,GOMEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,21,7.000,4.7,NA,11.7
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,22,7.350,4.3,NA,11.65
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,23,7.550,3.7,NA,11.25
+Jeordy,RAMIREZ,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,24,7.850,3.6,0.3,11.15
+Yefferson,ANTON,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,25,7.000,4.1,NA,11.1
+Jhossua,CORRALES,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,26,7.550,3.5,NA,11.05
+Miguel,AQUINO III,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,27,7.050,3.8,NA,10.85
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,28,6.450,4.3,NA,10.75
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,29,7.500,3.1,NA,10.6
+Alberto,PEREZ,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,30,7.250,3.3,NA,10.55
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,31,7.450,2.9,NA,10.35
+Kevin,ESPINOSA,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,NA,0.000,NA,NA,NA
+Sebastian,SUE,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",SR,NA,0.000,NA,NA,NA
+Yohendry,VILLAVERDE,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,2,9.150,5.2,0.1,14.25
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,3,9.000,5.2,NA,14.2
+Fabian,DE LUNA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,4,8.850,5.2,0.1,13.95
+Jabiel,POLANCO,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,5,8.700,5.2,NA,13.9
+Wilfry,CONTRERAS,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,6,8.650,5.2,NA,13.85
+Diorges,ESCOBAR,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,7,9.000,4.8,NA,13.8
+Rodrigo,GOMEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,7,9.000,4.8,NA,13.8
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,7,9.000,4.8,NA,13.8
+Dilan,JIMENEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,10,8.900,5.2,0.3,13.8
+Pablo,POZO,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,11,9.050,4.8,0.1,13.75
+Adickxon,TREJO,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,12,8.900,4.8,NA,13.7
+Isaac,NUNEZ,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,13,8.950,4.8,0.1,13.65
+Jhossua,CORRALES,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,14,8.850,4.8,NA,13.65
+Pablo,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,15,8.750,4.8,NA,13.55
+Maximiliano,GALICIA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,16,8.700,4.8,0.1,13.4
+Alejandro,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,17,8.150,5.2,NA,13.35
+Andres,PEREZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,18,8.450,4.8,NA,13.25
+Pablo,VELASQUEZ,m,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,19,8.400,4.8,NA,13.2
+Elel,WAHRMANN BAKER,m,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,20,9.000,4,NA,13
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,21,8.450,4.8,0.3,12.95
+Francisco,ACUNA,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,22,8.900,4,NA,12.9
+Andres,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,23,8.400,4.8,0.3,12.9
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,24,7.750,5.2,0.1,12.85
+Miguel,AQUINO III,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,25,7.650,5.2,0.1,12.75
+Richard,ATENCIO,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,26,8.600,4,NA,12.6
+Sergio,VARGAS,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,27,8.050,4.8,0.3,12.55
+Victor,BETANCOURT,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,28,9.200,3.2,NA,12.4
+Andres,VILLEGAS,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,29,8.850,3.2,NA,12.05
+Jose,MARTINEZ,m,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,30,7.850,4.4,0.3,11.95
+Yefferson,ANTON,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,31,7.900,4,NA,11.9
+Kevin,ESPINOSA,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,NA,0.000,NA,NA,NA
+Sebastian,SUE,m,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,NA,0.000,NA,NA,NA
+,VILLAVERDE,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,1,9.300,5.2,NA,14.5
+Audrys,NIN,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,2,8.800,5.2,NA,14
+Jorge,VEGA,m,CCS,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,3,8.400,5.2,NA,13.6
+Jabiel,POLANCO,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,4,8.750,5.2,0.3,13.65
+Edward,ROLIN,m,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,5,8.750,4.8,0.1,13.45
+Fabian,DE LUNA,m,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,6,8.150,5.2,0.1,13.25
+,DE LA CRUZ,m,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,7,7.850,5.2,0.1,12.95
+Wilfry,CONTRERAS,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,8,7.700,4.8,0.1,12.4
+Jose,LOPEZ,m,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,9,7.900,5.2,0.3,12.8
+Leandro,PENA,m,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,10,7.700,5.2,0.3,12.6
+Jhossua,CORRALES,m,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,11,,0,NA,0
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,1,7.700,5.3,NA,13
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,2,7.850,4.5,NA,12.35
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,3,7.450,4.8,NA,12.25
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,4,7.450,4.5,NA,11.95
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,5,7.350,4.4,NA,11.75
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,6,7.050,4.8,0.1,11.75
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,7,7.050,4.6,NA,11.65
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,8,6.900,4.5,NA,11.4
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,9,6.850,4.5,NA,11.35
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,10,6.450,4.8,NA,11.25
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,11,6.650,4.5,NA,11.15
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,12,6.450,4.6,NA,11.05
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,13,6.000,5,NA,11
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,14,6.500,4.4,NA,10.9
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,15,6.300,4.7,0.1,10.9
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,16,6.600,4.2,NA,10.8
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,17,6.450,4.2,NA,10.65
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,18,6.100,4.4,NA,10.5
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,19,5.750,4.5,NA,10.25
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,NA,0.000,NA,NA,NA
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,NA,0.000,NA,NA,NA
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,1,7.950,5,NA,12.95
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,2,7.750,5.2,0.1,12.85
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,3,7.350,5.3,NA,12.65
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,4,7.700,4.7,NA,12.4
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,5,8.000,4.3,NA,12.3
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,6,8.050,4.2,NA,12.25
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,7,7.600,4.5,NA,12.1
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,8,7.350,4.6,NA,11.95
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,9,7.700,4.4,0.3,11.8
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,10,7.600,3.8,NA,11.4
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,11,6.900,4.6,0.2,11.3
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,12,6.850,4.3,NA,11.15
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,13,7.000,4.1,NA,11.1
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,14,6.850,4.2,0.1,10.95
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,15,6.800,4.1,NA,10.9
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,16,6.700,4.2,NA,10.9
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,17,6.950,4.5,0.6,10.85
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,18,6.650,4.4,0.3,10.75
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,19,5.950,3.9,NA,9.85
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,20,8.300,1.4,6.5,3.2
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,NA,0.000,NA,NA,NA
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,1,7.750,5.1,NA,12.85
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,2,7.150,5.5,NA,12.65
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,3,7.250,5.3,NA,12.55
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,4,7.550,4.8,NA,12.35
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,5,7.800,4.5,NA,12.3
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,6,7.250,4.8,NA,12.05
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,7,7.850,4.1,NA,11.95
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,8,7.300,4.6,NA,11.9
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,9,7.400,4.4,NA,11.8
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,10,7.000,4.7,NA,11.7
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,11,7.250,4.4,NA,11.65
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,12,7.250,4.2,NA,11.45
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,13,6.900,4.4,NA,11.3
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,14,7.500,3.5,NA,11
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,15,6.000,5,NA,11
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,16,6.350,3.9,NA,10.25
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,17,5.550,4,NA,9.55
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,18,5.250,2.3,NA,7.55
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,NA,0.000,NA,NA,NA
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,NA,0.000,NA,NA,NA
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",UB,NA,0.000,NA,NA,NA
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,1,8.450,5,NA,13.45
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,2,8.150,5.4,0.1,13.45
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,3,8.750,4.6,NA,13.35
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,4,8.700,4.2,NA,12.9
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,4,8.700,4.2,NA,12.9
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,6,8.650,4.2,NA,12.85
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,7,8.550,4.2,NA,12.75
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,7,8.550,4.2,NA,12.75
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,9,8.500,4.2,NA,12.7
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,10,8.350,4.2,NA,12.55
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,11,8.250,4.6,0.3,12.55
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,12,8.550,4.2,0.3,12.45
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,13,8.550,3.6,NA,12.15
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,14,8.450,3.6,NA,12.05
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,15,8.300,3.6,NA,11.9
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,16,7.650,4.2,NA,11.85
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,17,7.850,4.2,0.3,11.75
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,18,8.200,3.6,0.1,11.7
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,19,7.700,3.4,NA,11.1
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,NA,0.000,NA,NA,NA
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,NA,0.000,NA,NA,NA
+Paulina,CAMPOS,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,1,7.750,5,0.1,12.65
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,2,7.500,4.5,NA,12
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,3,6.950,4.7,0.1,11.55
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,4,7.000,4.4,NA,11.4
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,5,6.850,4.4,NA,11.25
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,6,7.100,4.1,NA,11.2
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,7,5.350,5,NA,10.35
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,8,4.650,3.8,NA,8.45
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,1,8.250,5.3,NA,13.55
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,2,8.200,5.2,NA,13.4
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,3,7.850,5,NA,12.85
+Lana,HERRERA RODRIGUEZ,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,4,8.050,4.6,NA,12.65
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,5,7.700,4.7,NA,12.4
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,6,7.600,4.7,0.1,12.2
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,7,7.100,4.9,NA,12
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",FX,8,7.500,4.5,0.3,11.7
+Paulina,CAMPOS,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,1,7.900,5.5,NA,13.4
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,2,7.550,5.5,NA,13.05
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,3,7.650,5.1,NA,12.75
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,4,7.500,4.7,NA,12.2
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,5,6.300,5.8,NA,12.1
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,6,7.650,4.4,NA,12.05
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,7,7.400,4.6,NA,12
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",UB,8,5.350,4.4,NA,9.75
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,1,8.850,4.4,NA,13.25
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,2,8.750,5,NA,13.75
+Ahtziri,SANDOVAL,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,3,8.450,4,NA,12.45
+Karla,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,4,8.700,4.6,NA,13.3
+,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,5,7.450,4.6,0.3,11.75
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,6,8.450,3.8,NA,12.25
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,7,8.650,3.4,NA,12.05
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,8,8.500,3.4,NA,11.9
+Paulina,CAMPOS,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,1,7.400,5,0.1,12.3
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,2,7.150,5.1,0.1,12.15
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,3,7.600,4.4,NA,12
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,4,7.500,4.5,NA,12
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,5,6.800,5.2,NA,12
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,6,7.450,4.4,NA,11.85
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,7,7.150,4.5,NA,11.65
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,8,6.450,5.3,0.1,11.65
+Valeria,ARRAIZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,9,7.350,4.2,NA,11.55
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,10,7.050,4.5,NA,11.55
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,11,6.950,4.6,NA,11.55
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,12,6.650,4.8,NA,11.45
+Natalia,DELGADO,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,13,6.900,4.5,NA,11.4
+Anelena,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,14,7.150,4,NA,11.15
+Cassandra,LOUSTALOT,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,15,6.050,5.1,NA,11.15
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,16,6.700,4.5,0.1,11.1
+Karen,CUBILLOS,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,17,7.050,4,NA,11.05
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,18,6.550,4.5,NA,11.05
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,19,6.250,4.7,NA,10.95
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,20,6.400,4.5,NA,10.9
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,21,6.100,4.5,NA,10.6
+Angelica,MESA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,22,6.800,3.7,NA,10.5
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,23,6.000,4.5,NA,10.5
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,24,5.750,4.8,0.1,10.45
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,25,5.800,4.6,NA,10.4
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,26,5.750,4.5,NA,10.25
+Lana,HERRERA RODRIGUEZ,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,27,5.500,4.6,NA,10.1
+Lucia,PAULINO LOPEZ,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,28,5.800,4.3,0.1,10
+Angelissa,PONCE,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,29,5.650,4.3,NA,9.95
+Getsemary,MARTINEZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,30,5.700,4,NA,9.7
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,31,5.600,4,NA,9.6
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,32,4.950,4.2,NA,9.15
+Carmina,CHAVEZ,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,33,4.650,4.2,NA,8.85
+Jamilia,DUFFUS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,34,3.550,3.9,NA,7.45
+Sabrina,CARDERO,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,35,3.300,4.1,NA,7.4
+Sydney,BARROS,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,NA,0.000,NA,NA,NA
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,1,8.050,5.3,NA,13.35
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,2,8.150,5.2,0.1,13.25
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,3,8.050,5,NA,13.05
+Cassandra,LOUSTALOT,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,4,8.000,5,0.1,12.9
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,5,8.050,4.6,NA,12.65
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,6,7.550,4.9,NA,12.45
+Lana,HERRERA RODRIGUEZ,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,7,7.700,4.6,NA,12.3
+Ahtziri,SANDOVAL,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,8,7.750,4.5,NA,12.25
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,9,8.100,4.1,NA,12.2
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,10,7.450,4.6,NA,12.05
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,11,7.800,4.5,0.3,12
+Valeria,ARRAIZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,12,7.700,4.3,NA,12
+Sydney,BARROS,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,13,6.750,5.2,NA,11.95
+Angelissa,PONCE,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,14,7.600,4.6,0.3,11.9
+Angelica,MESA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,15,7.400,4.4,NA,11.8
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,16,7.300,4.5,0.1,11.7
+Carmina,CHAVEZ,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,17,7.750,3.9,NA,11.65
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,18,7.200,4.4,NA,11.6
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,19,7.450,4.1,NA,11.55
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,20,7.650,3.8,NA,11.45
+Valentina,BROSTELLA,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,21,7.350,4.2,0.1,11.45
+Anelena,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,22,7.150,4.2,NA,11.35
+Getsemary,MARTINEZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,23,7.300,4,NA,11.3
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,24,7.050,4.2,NA,11.25
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,25,6.950,4.2,NA,11.15
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,26,6.900,4.2,NA,11.1
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,27,6.800,4.3,0.3,10.8
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,28,6.850,4.5,0.6,10.75
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,29,6.850,4.2,0.3,10.75
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,30,6.650,4.4,0.3,10.75
+Maria,VILLEGAS,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,31,7.000,4.2,0.6,10.6
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,32,5.850,4.4,NA,10.25
+Natalia,DELGADO,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,33,5.650,4.5,NA,10.15
+Sabrina,CARDERO,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,34,5.750,4.2,0.1,9.85
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,35,6.250,3.4,0.1,9.55
+Jamilia,DUFFUS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,36,4.550,3.5,NA,8.05
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,1,7.750,5.8,NA,13.55
+Paulina,CAMPOS,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,2,7.750,5.5,NA,13.25
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,3,7.800,5.3,NA,13.1
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,4,8.150,4.7,NA,12.85
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,5,7.650,5.1,NA,12.75
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,6,7.900,4.6,NA,12.5
+Ahtziri,SANDOVAL,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,7,7.200,5.3,NA,12.5
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,8,8.050,4.3,NA,12.35
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,9,7.950,4.4,NA,12.35
+Lana,HERRERA RODRIGUEZ,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,10,7.700,4.5,NA,12.2
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,11,7.000,5.5,0.3,12.2
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,12,7.350,4.8,NA,12.15
+Anelena,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,13,7.650,4.4,NA,12.05
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,14,7.200,4.8,NA,12
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,15,7.650,4.3,NA,11.95
+Karen,CUBILLOS,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,16,7.450,4.3,NA,11.75
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,17,7.350,4.1,NA,11.45
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,18,7.050,4.3,NA,11.35
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,19,6.950,4.4,NA,11.35
+Angelica,MESA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,20,6.850,4.4,NA,11.25
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,21,7.600,3.5,NA,11.1
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,22,6.800,4.1,NA,10.9
+Getsemary,MARTINEZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,23,8.200,2.4,NA,10.6
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,24,6.400,3.9,NA,10.3
+Carmina,CHAVEZ,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,25,8.650,1.3,NA,9.95
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,26,7.700,2.1,NA,9.8
+Valentina,BROSTELLA,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,27,6.900,2.9,NA,9.8
+Valeria,ARRAIZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,28,5.700,4.1,NA,9.8
+Natalia,DELGADO,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,29,6.850,2.9,NA,9.75
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,30,5.450,4,0.3,9.15
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,31,5.200,3.6,NA,8.8
+Sabrina,CARDERO,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,32,5.150,3.5,NA,8.65
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,33,4.950,2.1,NA,7.05
+Jamilia,DUFFUS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,34,3.750,3.3,NA,7.05
+Sydney,BARROS,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,NA,0.000,NA,NA,NA
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,1,8.950,5.4,NA,14.35
+Hillary,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,2,8.950,5,NA,13.95
+Ahtziri,SANDOVAL,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,3,8.700,5.2,NA,13.9
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,4,9.050,4.6,NA,13.65
+Karla Andrea,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,5,8.650,4.6,NA,13.25
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,5,8.650,4.6,NA,13.25
+Annalise,NEWMAN ACHEE,w,TTO,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,7,8.900,4.2,NA,13.1
+Karelys,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,8,8.650,4.2,NA,12.85
+Lana,HERRERA RODRIGUEZ,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,8,8.650,4.2,NA,12.85
+Tyesha,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,8,8.650,4.2,NA,12.85
+Franciny,MORALES,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,8,8.650,4.2,NA,12.85
+Ginna,ESCOBAR,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,12,8.600,4.2,NA,12.8
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,12,8.600,4.2,NA,12.8
+Deborah,SALMINA,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,12,8.600,4.2,NA,12.8
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,12,8.600,4.2,NA,12.8
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,16,8.550,4.2,NA,12.75
+Rachel,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,17,8.500,4.2,NA,12.7
+Cassandra,LOUSTALOT,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,18,8.650,4,NA,12.65
+Stella,DIAZ,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,19,8.350,4.2,NA,12.55
+Anelena,RODRIGUEZ,w,CRC,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,20,8.100,4.4,NA,12.5
+Milca,LEON,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,21,8.800,3.6,NA,12.4
+Valeria,ARRAIZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,22,8.750,3.6,NA,12.35
+Sabrina,CARDERO,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,23,8.100,4.2,NA,12.3
+Paola,RUANO,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,24,8.600,3.6,NA,12.2
+Jamilia,DUFFUS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,25,8.300,4.2,0.3,12.2
+Maria,VILLEGAS,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,26,8.500,3.6,NA,12.1
+Carmina,CHAVEZ,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,27,8.500,3.4,NA,11.9
+China,MATTIS,w,JAM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,28,8.300,3.6,NA,11.9
+Lauren,DUCAS,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,29,8.400,3.4,NA,11.8
+Angelissa,PONCE,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,30,8.350,3.4,NA,11.75
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,31,8.400,3.4,0.1,11.7
+Getsemary,MARTINEZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,32,7.800,3.8,NA,11.6
+Angelica,MESA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,33,7.400,4.2,NA,11.6
+Lucia,PAULINO LOPEZ,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,34,8.000,3.2,NA,11.2
+Natalia,DELGADO,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,35,8.300,3.2,1,10.5
+Sydney,BARROS,w,PUR,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,NA,0.000,NA,NA,NA
+Alexa,MORENO,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,1,8.850,4.4,NA,13.25
+Ahtziri,SANDOVAL,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,2,8.800,4.6,NA,13.4
+Yamilet,PENA,w,DOM,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,3,8.850,5,NA,13.85
+Natalia,ESCALERA,w,MEX,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,4,8.800,4.4,NA,13.2
+,HERON SOTO,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,5,8.550,4.2,0.1,12.65
+Yiseth,VALENZUELA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,6,8.450,3.8,NA,12.25
+Isuamy,PERERA,w,CUB,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,7,8.450,3.8,NA,12.25
+Alexa,GRANDE,w,ESA,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,8,8.600,3.4,NA,12
+Amika,EVERY,w,ARU,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,9,8.700,4.2,NA,12.9
+Valeria,ARRAIZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,10,8.600,3.6,NA,12.2
+Karla,NAVAS BOYD,w,PAN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,11,7.250,4,NA,11.25
+Angelica,MESA,w,COL,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,12,8.450,3.4,NA,11.85
+,MARTINEZ,w,VEN,24-28 Jun 2023,Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,13,8.450,3.4,NA,11.85
