@@ -152,7 +152,7 @@ align_tables <- function(raw_table_list, col_names) {
 # Function 6: transform_table()
 # what it does: take the output of the function align_tables() as input,
 # row_bind all tables in the list, add new columns, remove redundant columns, generate the final table outputs as the format we need
-transform_table <- function(table_list) {
+transform_table <- function(table_list, Date, Competition, Location) {
   competition_tb <- list_rbind(table_list, names_to = "title") %>% 
     separate_wider_delim(
       title,
@@ -163,18 +163,20 @@ transform_table <- function(table_list) {
     mutate(FirstName = map_chr(str_extract_all(Name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
     mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
     mutate(Apparatus = str_replace(Apparatus, "\\.pdf.*$", "")) %>% 
-    mutate(Date = "24-28 Jun 2023", Competition = "Central American and Caribbean Games", 
-           Location = "San Salvador, El Salvador", Country = NOC) %>% 
+    mutate(Date = Date, Competition = Competition, 
+           Location = Location, Country = NOC) %>% 
     mutate(Apparatus = ifelse(vault == "2", "VT2", Apparatus)) %>% 
     mutate(Apparatus = ifelse(Apparatus == "VT", "VT1", Apparatus)) %>% 
     relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
              Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
     select(!Bib:vault) %>% 
+    mutate(D_Score = ifelse(str_detect(D_Score, "! "), gsub("! ", "", D_Score, fixed = TRUE), D_Score)) %>%  # remove "! " D columns in some tibbles and change to numerics
     mutate(
       Rank = as.numeric(Rank),
-      E_Score = as.numeric(E_Score)
+      E_Score = as.numeric(E_Score),
+      D_Score = as.numeric(D_Score)
     ) %>% 
-    mutate(Score = ifelse(Score == "DNS", "", Score),
+    mutate(Score = ifelse(Score %in% c("DNS", "DN"), "", Score),
            Score = as.numeric(Score))
   
   return(competition_tb)
