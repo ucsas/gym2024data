@@ -19,7 +19,7 @@ final_paths <- list.files(folder_path, pattern = "final", full.names = TRUE) |>
 qual_paths <- setdiff(all_paths, final_paths) |>
   set_names(basename)
 
-col_names <- c("Rank", "bib", "name", "noc", "D_Score", "E_Score", "Penalty", "Score")
+col_names <- c("Rank", "bib", "name", "noc", "D_Score", "E_Score", "Penalty", "Score") # ATTENTION: olympics format is D first, E latter.
 col_names_vt <- c("Rank", "bib", "name", "noc", "vault", "D_Score", "E_Score", "Penalty", "Score")
 
 
