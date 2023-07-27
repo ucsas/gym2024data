@@ -96,7 +96,7 @@ remove_column_if_q <- function(df) {
 # what it does: taking the path of a folder containing the required PDF files as input,
 # and batch using the gym_table() function on all PDF files in the folder.
 
-get_gym_tables <- function(forder_path) {
+get_gym_tables <- function(folder_path) {
   all_paths <- list.files(folder_path, full.names = T) %>% 
     set_names(basename)
   raw_table_list <- map(all_paths, gym_table)
