@@ -101,12 +101,12 @@ eu_tb <- list_rbind(eu_ls, names_to = "title") |>
   separate_wider_delim(
     title,
     delim = "_",
-    names = c("Gender", "Round", "Apparatus")
+    names = c("Gender", "Apparatus", "Round") # Round and Apparatus are switched in position because naming convention for europe event are different
   ) |> 
   mutate(Penalty = Penalty * -1) |> # delete the negative sign in Penalty column
   mutate(FirstName = map_chr(str_extract_all(Name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
-  mutate(Apparatus = str_replace(Apparatus, "\\.pdf.*$", "")) |> 
+  mutate(Round = str_replace(Round, "\\.pdf.*$", "")) |> 
   mutate(Date = "11-16 Apr 2023", Competition = "10th EUROPEAN ARTISTIC GYMNASTICS CHAMPIONSHIPS", Location = "Antalya, Turkey") |> 
   mutate(Country = NOC, D_Score = D, E_Score = E) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
