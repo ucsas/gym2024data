@@ -45,8 +45,8 @@ final_ls <- final_paths |>
   map(convert_matrix_to_tibble) |> 
   map(~ {
     if (ncol(.x) == 7) {
-      add_column(.x, Pen = "", .after = 6)         # generate column Vault for non-vault tibbles to make two types of tibble compatible to combine
-    } else {                                         # .after=4 as we want column Vault to be after column NOC.code
+      add_column(.x, Pen = "", .after = 6)         # generate column Penalty for tibbles which has not
+    } else {                                       
       .x                       
     }
   }) |> 
