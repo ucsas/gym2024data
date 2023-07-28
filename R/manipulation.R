@@ -67,6 +67,15 @@ write_csv(vn_tb, "cleandata/data_new/varna.csv")
 ## 2023 Tel Aviv Challenge Cup
 url1 <- "https://thegymter.net/2023/06/05/2023-tel-aviv-challenge-cup-mens-results/"
 url2 <- "https://thegymter.net/2023/06/05/2023-tel-aviv-challenge-cup-results/"
+# 提取国家缩写和全程名称
+country_abbr = c("AUS", "AUT", "AZE", "BEL", "CRO", "ESP", "FIN", "FRA", "GBR", 
+                 "GER", "HKG", "HUN", "ISR", "RSA", "SLO", "SVK", "TUR")
+full_name <- c("Australia", "Austria", "Azerbaijan", "Belgium", "Croatia", 
+               "Spain", "Finland", "France", "Great Britain", "Germany",
+               "Hong Kong", "Hungary", "Israel", "South Africa", 
+               "Slovenia", "Slovakia", "Türkiye")
+result_df <- data.frame(Country_Abbr = country_abbr, Full_Name = full_name)
+
 tel_m <- get_web_tb(url1, gender = "m")
 tel_w <- get_web_tb(url2, gender = "w")
 tel_tb_ls <- c(tel_m, tel_w) %>% 

@@ -304,8 +304,11 @@ update_vt <- function(table_list) {
 }
 
 transform_web_tb <- function(table_list, Date, Competition, Location) {
-  tel_tb <- list_rbind(tel_tb_ls) %>% 
-    mutate(Penalty = ND, D_Score = D, E_Score = E, Country = Nation, Score = Total,
+  tel_tb <- list_rbind(tel_tb_ls)
+  merged_tb <- merge(tel_tb, result_df, by.x = "Nation", by.y = "Full_Name", all.x = TRUE)
+  
+  tel_tb <- merged_tb %>% 
+    mutate(Penalty = ND, D_Score = D, E_Score = E, Country = Country_Abbr, Score = Total,
            Date = Date, Competition = Competition, Location = Location,
            Penalty = ifelse(Penalty < 0, -Penalty, Penalty)) %>% 
     mutate(LastName = ifelse(Nation == "Hong Kong", 
@@ -316,7 +319,7 @@ transform_web_tb <- function(table_list, Date, Competition, Location) {
                               str_replace(Athlete, LastName, ""))) %>% 
     relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
              Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
-    select(!Athlete:Average)
+    select(!Athlete:Country_Abbr)
   
   return(tel_tb)
 }
