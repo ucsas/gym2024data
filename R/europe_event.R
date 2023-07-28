@@ -107,14 +107,14 @@ eu_tb <- list_rbind(eu_ls, names_to = "title") |>
   mutate(FirstName = map_chr(str_extract_all(Name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Round = str_replace(Round, "\\.pdf.*$", "")) |> 
-  mutate(Date = "11-16 Apr 2023", Competition = "10th EUROPEAN ARTISTIC GYMNASTICS CHAMPIONSHIPS", Location = "Antalya, Turkey") |> 
+  mutate(Date = "11-16 Apr 2023", Competition = "10th Senior European Championships", Location = "Antalya, Turkey") |> 
   mutate(Country = NOC, D_Score = D, E_Score = E) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score ) |> 
   mutate(Apparatus = ifelse(Apparatus == "VT", paste0("VT", Vault), Apparatus)) |> 
   select(!Bib:D)
 
-write_csv(eu_tb, "cleandata/europe_event.csv")
+write_csv(eu_tb, "cleandata/data_new/europe_event.csv")
 
 
 
