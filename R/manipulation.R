@@ -37,10 +37,10 @@ eu_tb <- transform_table(table_list = eu_ls,
 write_csv(eu_tb, "cleandata/data_new/european_2022.csv")
 
 
+
 ## 2023 Varna World Challenge Cup
 vn_path <- "pdfs_2023/varna"
 vn_ls_raw <- get_gym_tables(vn_path)
-
 vn_ls <- unlist(vn_ls_raw, recursive = F, use.names = TRUE)
 vn_ls[["m_qual_SR.pdf"]] <- vn_ls[["m_qual_SR.pdf"]] %>% 
   separate(col = V8, into = c("V8", "V9"), sep = " ", fill = "right")
@@ -61,3 +61,33 @@ vn_tb <- transform_table(table_list = vn_ls_n,
                          Competition = "2023 Varna World Challenge Cup Results", 
                          Location = "Varna, Bulgaria")
 write_csv(vn_tb, "cleandata/data_new/varna.csv")
+
+
+
+## 2023 Tel Aviv Challenge Cup
+url1 <- "https://thegymter.net/2023/06/05/2023-tel-aviv-challenge-cup-mens-results/"
+url2 <- "https://thegymter.net/2023/06/05/2023-tel-aviv-challenge-cup-results/"
+tel_m <- get_web_tb(url1, gender = "m")
+tel_w <- get_web_tb(url2, gender = "w")
+tel_tb_ls <- c(tel_m, tel_w) %>% 
+  update_vt()
+tel_tb <- transform_web_tb(table_list = tel_tb_ls, 
+                           Date = "1-4 Jun 2023",
+                           Competition = "2023 Tel Aviv Challenge Cup",
+                           Location = "Tel Aviv, Israel")
+write_csv(tel_tb, "cleandata/data_new/telaviv.csv")
+
+
+## 2023 Osijek Challenge Cup
+url_m <- "https://thegymter.net/2023/06/13/2023-osijek-challenge-cup-mens-results/"
+url_w <- "https://thegymter.net/2023/06/12/2023-osijek-challenge-cup-results/"
+
+osi_m <- get_web_tb(url_m, gender = "m")
+osi_w <- get_web_tb(url_w, gender = "w")
+osi_tb_ls <- c(tel_m, tel_w) %>% 
+  update_vt()
+osi_tb <- transform_web_tb(table_list = osi_tb_ls, 
+                           Date = "8-11 Jun 2023",
+                           Competition = "2023 Osijek Challenge Cup",
+                           Location = "Osijek, Croatia.")
+write_csv(osi_tb, "cleandata/data_new/osijek.csv")

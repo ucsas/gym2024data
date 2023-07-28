@@ -1,6 +1,7 @@
 library(pdftools)
 library(tabulizer)
 library(tidyverse)
+library(rvest)
 
 ## define functions
 
@@ -254,6 +255,71 @@ split_column_vn <- function(df) {
 }
 
 
+### Functions for Web Scraping: Tel Aviv & Osijek World Challenge Cup
+
+get_web_tb <- function(url, gender) {
+  if (gender == "m") {
+    round <- c(rep("final",6), rep("qual",6))
+    appar <- rep(c("FX", "PH", "SR", "VT", "PB", "HB"),2)
+  } else if (gender == "w") {
+    round <- c(rep("final",4), rep("qual",4))
+    appar <- rep(c("VT", "UB", "BB", "FX"),2)
+  } else {
+    stop("Invalid gender. Please use 'm' or 'w'.")
+  }
+  
+  webpage <- read_html(url)
+  
+  tables_list <- html_table(webpage, fill = TRUE, header = T)
+  
+  # 对每个数据框添加新列Round
+  tables_list <- lapply(1:length(tables_list), function(i) {
+    tables_list[[i]]$Round <- round[i]
+    return(tables_list[[i]])
+  })
+  
+  # 对每个数据框添加新列Apparatus
+  tables <- lapply(1:length(tables_list), function(i) {
+    tables_list[[i]]$Apparatus <- appar[i]
+    return(tables_list[[i]])
+  }) %>% 
+    lapply(function(df) {
+      df$Gender <- gender
+      return(df)
+    })
+  
+  return(tables)
+}
+
+
+update_vt <- function(table_list) {
+  table_list <- lapply(table_list, function(df) {
+    if ("VT" %in% df$Apparatus) {
+      vt_rows <- which(df$Apparatus == "VT")
+      df$Apparatus[vt_rows] <- ifelse(vt_rows %% 2 == 1, "VT1", "VT2")
+    }
+    return(df)
+  })
+  return(table_list)
+}
+
+transform_web_tb <- function(table_list, Date, Competition, Location) {
+  tel_tb <- list_rbind(tel_tb_ls) %>% 
+    mutate(Penalty = ND, D_Score = D, E_Score = E, Country = Nation, Score = Total,
+           Date = Date, Competition = Competition, Location = Location,
+           Penalty = ifelse(Penalty < 0, -Penalty, Penalty)) %>% 
+    mutate(LastName = ifelse(Nation == "Hong Kong", 
+                             str_split_fixed(Athlete, " ", 2)[,1],
+                             word(Athlete, -1)),
+           FirstName = ifelse(Nation == "Hong Kong",
+                              str_split_fixed(Athlete, " ", 2)[,2],
+                              str_replace(Athlete, LastName, ""))) %>% 
+    relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
+             Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
+    select(!Athlete:Average)
+  
+  return(tel_tb)
+}
 
 
 
