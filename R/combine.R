@@ -4,11 +4,12 @@ library(readr)
 library(purrr)
 
 # Define path to the directory
+path_from_dir <- "cleandata/data_new"
 path_to_dir <- "cleandata"
 
+
 # Get list of all csv files in the directory, except 'data_new.csv'
-all_files <- list.files(path = path_to_dir, pattern = "*.csv", full.names = TRUE)
-all_files <- all_files[!grepl("data_new.csv", all_files)]
+all_files <- list.files(path = path_from_dir, pattern = "*.csv", full.names = TRUE)
 
 # Read and combine all csv files, and print the name of each file as it is processed
 combined_df <- map_df(all_files, function(file) {
@@ -17,7 +18,12 @@ combined_df <- map_df(all_files, function(file) {
 })
 
 # Arrange by 'LastName' and then 'Apparatus'
-combined_df <- combined_df %>% arrange(LastName, Apparatus)
+combined_df <- combined_df %>%
+  relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, Location, 
+           Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
+  arrange(LastName, FirstName, Competition, Apparatus) %>%
+  group_by(LastName) %>%
+  fill(FirstName, .direction = "downup")
 
 # Write to a new csv file
-write_csv(combined_df, file.path(path_to_dir, "data_new.csv"))
+write_csv(combined_df, file.path(path_to_dir, "data_2022_2023.csv"), na = "")
