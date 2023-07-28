@@ -1,11 +1,14 @@
 # Before continue next step: please run all codes in "R/function.R",
-# and make sure you've successfully loaded functions: get_gym_tables(), align_tables(), and transform_table()
-# the prerequisite functions for defining above three are: get_bottom(), gym_table(), and remove_column_if_q()
+# and make sure you've successfully loaded functions: get_gym_tables(), 
+# align_tables(), and transform_table()
+# the prerequisite functions for defining above three are: get_bottom(), 
+# gym_table(), and remove_column_if_q()
 
 
 ## Central American and Caribbean Games San Salvador 2023
 ca_path <- "/Users/minzefang/gym2024data/pdfs_2023/central_am"
-col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", "Penalty", "Score")
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
+                  "Penalty", "Score")
 
 ca_ls_raw <- get_gym_tables(folder_path = ca_path)
 ca_ls <- align_tables(raw_table_list = ca_ls_raw, col_names = col_names_vt)
@@ -43,7 +46,8 @@ vn_ls[["m_qual_SR.pdf"]] <- vn_ls[["m_qual_SR.pdf"]] %>%
   separate(col = V8, into = c("V8", "V9"), sep = " ", fill = "right")
 vn_ls <- map(vn_ls, remove_column_if_q)
 vn_ls[["w_qual_VT.pdf"]] <- vn_ls[["w_qual_VT.pdf"]][, -5]
-vn_ls[["m_final_VT.pdf"]] <- vn_ls[["m_final_VT.pdf"]][, -ncol(vn_ls[["m_final_VT.pdf"]])]
+vn_ls[["m_final_VT.pdf"]] <- 
+  vn_ls[["m_final_VT.pdf"]][, -ncol(vn_ls[["m_final_VT.pdf"]])]
 vn_ls[["m_final_FX.pdf"]] <- vn_ls[["m_final_FX.pdf"]] %>% 
   mutate_all(~str_replace_all(., ",", "."))
 
@@ -56,4 +60,4 @@ vn_tb <- transform_table(table_list = vn_ls_n,
                          Date = "25-28 May 2023", 
                          Competition = "2023 Varna World Challenge Cup Results", 
                          Location = "Varna, Bulgaria")
-write_csv(eu_tb, "cleandata/data_new/varna.csv")
+write_csv(vn_tb, "cleandata/data_new/varna.csv")

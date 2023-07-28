@@ -11,7 +11,8 @@ path_to_dir <- "cleandata"
 # Get list of all csv files in the directory, except 'data_new.csv'
 all_files <- list.files(path = path_from_dir, pattern = "*.csv", full.names = TRUE)
 
-# Read and combine all csv files, and print the name of each file as it is processed
+# Read and combine all csv files, 
+# and print the name of each file as it is processed
 combined_df <- map_df(all_files, function(file) {
   print(paste("Processing file:", file))
   read_csv(file, show_col_types = T)
