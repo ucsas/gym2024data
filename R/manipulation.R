@@ -4,8 +4,6 @@
 
 
 ## Central American and Caribbean Games San Salvador 2023
-
-
 ca_path <- "/Users/minzefang/gym2024data/pdfs_2023/central_am"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", "Penalty", "Score")
 
@@ -19,7 +17,6 @@ write_csv(ca_tb, "cleandata/central_america.csv")
 
 
 ## 2022 Senior European Championships MUNICH (GER)
-
 eu22_path <- "/Users/minzefang/gym2024data/pdfs_2023/europe_22"
 eu_ls_raw <- get_gym_tables(eu22_path)
 # map(eu_ls_raw, ~ map(., ncol))
@@ -35,5 +32,3 @@ eu_tb <- transform_table(table_list = eu_ls,
     TRUE ~ Date
   ))
 write_csv(eu_tb, "cleandata/european_2022.csv")
-
-str(eu_tb)
