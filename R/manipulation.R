@@ -13,7 +13,7 @@ ca_tb <- transform_table(table_list = ca_ls,
                          Date = "24-28 Jun 2023", 
                          Competition = "Central American and Caribbean Games", 
                          Location = "San Salvador, El Salvador")
-write_csv(ca_tb, "cleandata/central_america.csv")
+write_csv(ca_tb, "cleandata/data_new/central_america.csv")
 
 
 ## 2022 Senior European Championships MUNICH (GER)
@@ -31,4 +31,29 @@ eu_tb <- transform_table(table_list = eu_ls,
     Gender == "w" ~ "11-14 Aug 2022",
     TRUE ~ Date
   ))
-write_csv(eu_tb, "cleandata/european_2022.csv")
+write_csv(eu_tb, "cleandata/data_new/european_2022.csv")
+
+
+## 2023 Varna World Challenge Cup
+vn_path <- "pdfs_2023/varna"
+vn_ls_raw <- get_gym_tables(vn_path)
+
+vn_ls <- unlist(vn_ls_raw, recursive = F, use.names = TRUE)
+vn_ls[["m_qual_SR.pdf"]] <- vn_ls[["m_qual_SR.pdf"]] %>% 
+  separate(col = V8, into = c("V8", "V9"), sep = " ", fill = "right")
+vn_ls <- map(vn_ls, remove_column_if_q)
+vn_ls[["w_qual_VT.pdf"]] <- vn_ls[["w_qual_VT.pdf"]][, -5]
+vn_ls[["m_final_VT.pdf"]] <- vn_ls[["m_final_VT.pdf"]][, -ncol(vn_ls[["m_final_VT.pdf"]])]
+vn_ls[["m_final_FX.pdf"]] <- vn_ls[["m_final_FX.pdf"]] %>% 
+  mutate_all(~str_replace_all(., ",", "."))
+
+vt_names <- grepl("VT", names(vn_ls))
+vn_ls[!vt_names] <- map(vn_ls[!vt_names], split_column_vn)
+vn_ls[vt_names] <- map(vn_ls[vt_names], process_df)
+
+vn_ls_n <- align_tables_vn(raw_table_list = vn_ls, col_names = col_names_vt)
+vn_tb <- transform_table(table_list = vn_ls_n, 
+                         Date = "25-28 May 2023", 
+                         Competition = "2023 Varna World Challenge Cup Results", 
+                         Location = "Varna, Bulgaria")
+write_csv(eu_tb, "cleandata/data_new/varna.csv")
