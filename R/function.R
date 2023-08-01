@@ -304,11 +304,13 @@ update_vt <- function(table_list) {
 }
 
 transform_web_tb <- function(table_list, Date, Competition, Location) {
-  tel_tb <- list_rbind(tel_tb_ls)
-  merged_tb <- merge(tel_tb, result_df, by.x = "Nation", by.y = "Full_Name", all.x = TRUE)
+  tel_tb <- list_rbind(table_list)
+  merged_tb <- merge(tel_tb, result_df, by.x = "Nation", by.y = "Full_Name", 
+                     all.x = TRUE)
   
   tel_tb <- merged_tb %>% 
-    mutate(Penalty = ND, D_Score = D, E_Score = E, Country = Country_Abbr, Score = Total,
+    mutate(Penalty = ND, D_Score = D, E_Score = E, Country = Country_Abbr, 
+           Score = Total,
            Date = Date, Competition = Competition, Location = Location,
            Penalty = ifelse(Penalty < 0, -Penalty, Penalty)) %>% 
     mutate(LastName = ifelse(Nation == "Hong Kong", 
@@ -325,4 +327,104 @@ transform_web_tb <- function(table_list, Date, Competition, Location) {
 }
 
 
+### Functions for Cottbus and EnBW DTB Pokal
+### characteristics: For VT, each player has 3 line; info for each gymnast can
+### be divided into two pages.
+
+extract_data_cot <- function(folder_path, area) {
+  all_paths <- list.files(folder_path, full.names = T)
+  vt_paths <- list.files(folder_path, pattern = "VT", full.names = TRUE) |> 
+    set_names(basename)
+  non_vt_paths <-setdiff(all_paths, vt_paths) |>  # paths for all non-VT files
+    set_names(basename)
+  
+  # First, for Vault data
+  vt_ls <- map(vt_paths, ~ extract_tables(file = .x, guess = F, area = area, 
+                                          output = "data.frame")) 
+  vt_tb <- lapply(vt_ls, function(sublist) {
+    bind_rows(sublist)
+  }) |> 
+    list_rbind(names_to = "title")
+  vt_1 <- vt_tb |> 
+    filter(row_number() %% 3 == 1) |> 
+    select(1:5) |> # select from column title to NAT
+    mutate(id = row_number(), .before = 1)
+  vt_2 <- vt_tb |> 
+    filter(row_number() %% 3 == 2) |> 
+    select(6:9) |>  # select from column D to Total
+    rename(D_VT1 = D, E_VT1 = E, Pen_VT1 = Pen, Total_VT1 = Total) |> 
+    mutate(id = row_number(), .before = 1) # using row numbers as numeric surrogate key
+  vt_3 <- vt_tb |> 
+    filter(row_number() %% 3 == 0) %>%
+    select(6:9) |> 
+    rename(D_VT2 = D, E_VT2 = E, Pen_VT2 = Pen, Total_VT2 = Total) |> 
+    mutate(id = row_number(), .before = 1)
+  vt_all <- vt_1 |> 
+    left_join(vt_2, join_by(id)) |> 
+    left_join(vt_3, join_by(id)) |> 
+    pivot_longer(
+      cols = D_VT1:Total_VT2,
+      names_to = c(".value", "Apparatus"), 
+      names_sep = "_"
+    ) |> 
+    separate_wider_delim(
+      title,
+      delim = "_",
+      names = c("Gender", "Round", "appar")
+    ) |>
+    select(!c(id, appar))
+
+  # Second, for non-Vault data
+  non_vt_ls <- map(non_vt_paths, ~ extract_tables(file = .x, guess = F, 
+                                                  area = area, 
+                                                  output = "data.frame")) 
+  non_vt_tb <- lapply(non_vt_ls, function(sublist) {
+    bind_rows(sublist)
+  }) |> 
+    list_rbind(names_to = "title") |> 
+    separate_wider_delim(
+      title,
+      delim = "_",
+      names = c("Gender", "Round", "Apparatus")
+    ) |>
+    # remove ".pdf" and anything after it
+    mutate(Apparatus = str_replace(Apparatus, "\\.pdf.*$", "")) |> 
+    relocate(Gender, Round, Rank, BIB, NAME, NAT,
+             Apparatus, D, E, Pen, Total )
+  
+  cottbus_all <- bind_rows(non_vt_tb, vt_all)
+  return(cottbus_all)
+}
+
+
+process_data_cot <- function(data_frame, type, Date, Competition, Location) {
+  processed_data <- data_frame |> 
+    mutate(D = as.numeric(str_replace_all(D, ",", ".")),
+           E = as.numeric(str_replace_all(E, ",", ".")),
+           Pen = as.numeric(str_replace_all(Pen, ",", ".")),
+           Total = as.numeric(str_replace_all(Total, ",", ".")))
+  
+  if (type == "Cottbus") {
+    processed_data <- processed_data |> 
+      mutate(FirstName = map_chr(str_extract_all(NAME, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
+      mutate(LastName = map_chr(str_extract_all(NAME, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " ")))
+  } else if (type == "dtb") {
+    processed_data <- processed_data |> 
+      mutate(
+        split_name = str_split_fixed(NAME, ",", n = 2),
+        LastName = split_name[, 1],
+        FirstName = split_name[, 2]
+      ) %>% 
+      select(-split_name)
+  }
+  
+  processed_data <- processed_data |> 
+    mutate(Date = Date, Competition = Competition, Location = Location) |> 
+    mutate(Country = NAT, D_Score = D, E_Score = E, Penalty = Pen, Score = Total) |> 
+    relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
+             Apparatus, Rank, D_Score, E_Score, Penalty, Score ) |> 
+    select(!BIB:Total)
+  
+  return(processed_data)
+}
 

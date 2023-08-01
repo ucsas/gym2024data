@@ -93,10 +93,39 @@ url_w <- "https://thegymter.net/2023/06/12/2023-osijek-challenge-cup-results/"
 
 osi_m <- get_web_tb(url_m, gender = "m")
 osi_w <- get_web_tb(url_w, gender = "w")
-osi_tb_ls <- c(tel_m, tel_w) %>% 
-  update_vt()
+osi_tb_ls <- c(osi_m, osi_w) %>% 
+  update_vt() %>% 
+  map( ~mutate_at(.x, vars(Rank, D, E, Total), as.numeric)) %>% 
+  map( ~if ("Average" %in% colnames(.x)) {
+    select(.x, -Average)
+  } else {
+    .x
+  })
+
 osi_tb <- transform_web_tb(table_list = osi_tb_ls, 
                            Date = "8-11 Jun 2023",
                            Competition = "2023 Osijek Challenge Cup",
                            Location = "Osijek, Croatia.")
 write_csv(osi_tb, "cleandata/data_new/osijek.csv")
+
+
+# 2023 Cottbus Apparatus World Cup
+area <- list(c(147, 53, 739, 568))
+folder_path <- "pdfs_2023/cottbus"
+cottbus_tb_raw <- extract_data_cot(folder_path, area)
+cottbus_tb <- process_data_cot(cottbus_tb_raw, "Cottbus",
+                                   Date = "23-26 Feb 2023", 
+                                   Competition = "FIG Apparatus World Cup 2023", 
+                                   Location = "Cottbus, Germany")
+write_csv(cottbus_tb, "cleandata/data_new/cottbus.csv")  
+
+# EnBW DTB Pokal Team Challenge 2023
+folder_path <- "pdfs_2023/dtb_pokal"
+dtb_tb_raw <- extract_data_cot(folder_path, area)
+dtb_tb <- process_data_cot(dtb_raw_name, type = "dtb",
+                                   Date = "17-19 Mar 2023",
+                                   Competition = "EnBW DTB Pokal Team Challenge 2023", 
+                                   Location = "Stuttgart, Germany")
+write_csv(dtb_tb, "cleandata/data_new/dtb_pokal.csv")
+
+

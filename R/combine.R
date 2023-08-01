@@ -18,7 +18,7 @@ combined_df <- map_df(all_files, function(file) {
   read_csv(file, show_col_types = T)
 })
 
-# Arrange by 'LastName' and then 'Apparatus'
+# Arrange by 'LastName', 'FirstName', 'Competition' and then 'Apparatus'
 combined_df <- combined_df %>%
   relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
