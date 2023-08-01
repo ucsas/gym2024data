@@ -4,8 +4,8 @@ library(readr)
 library(purrr)
 
 # Define path to the directory
-path_from_dir <- "cleandata/data_new"
-path_to_dir <- "cleandata"
+path_from_dir <- "../cleandata/data_new"
+path_to_dir <- "../cleandata"
 
 
 # Get list of all csv files in the directory, except 'data_new.csv'

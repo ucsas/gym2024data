@@ -1,12 +1,8 @@
-# Before continue next step: please run all codes in "R/function.R",
-# and make sure you've successfully loaded functions: get_gym_tables(), 
-# align_tables(), and transform_table()
-# the prerequisite functions for defining above three are: get_bottom(), 
-# gym_table(), and remove_column_if_q()
+source("function.R")
 
 
 ## Central American and Caribbean Games San Salvador 2023
-ca_path <- "/Users/minzefang/gym2024data/pdfs_2023/central_am"
+ca_path <- "../pdfs_2023/central_am"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
                   "Penalty", "Score")
 
@@ -16,11 +12,11 @@ ca_tb <- transform_table(table_list = ca_ls,
                          Date = "24-28 Jun 2023", 
                          Competition = "Central American and Caribbean Games", 
                          Location = "San Salvador, El Salvador")
-write_csv(ca_tb, "cleandata/data_new/central_america.csv")
+write_csv(ca_tb, "../cleandata/data_new/central_america.csv")
 
 
 ## 2022 Senior European Championships MUNICH (GER)
-eu22_path <- "/Users/minzefang/gym2024data/pdfs_2023/europe_22"
+eu22_path <- "../pdfs_2023/europe_22"
 eu_ls_raw <- get_gym_tables(eu22_path)
 # map(eu_ls_raw, ~ map(., ncol))
 eu_ls <- align_tables(eu_ls_raw, col_names_vt)
@@ -34,12 +30,12 @@ eu_tb <- transform_table(table_list = eu_ls,
     Gender == "w" ~ "11-14 Aug 2022",
     TRUE ~ Date
   ))
-write_csv(eu_tb, "cleandata/data_new/european_2022.csv")
+write_csv(eu_tb, "../cleandata/data_new/european_2022.csv")
 
 
 
 ## 2023 Varna World Challenge Cup
-vn_path <- "pdfs_2023/varna"
+vn_path <- "../pdfs_2023/varna"
 vn_ls_raw <- get_gym_tables(vn_path)
 vn_ls <- unlist(vn_ls_raw, recursive = F, use.names = TRUE)
 vn_ls[["m_qual_SR.pdf"]] <- vn_ls[["m_qual_SR.pdf"]] %>% 
@@ -60,7 +56,7 @@ vn_tb <- transform_table(table_list = vn_ls_n,
                          Date = "25-28 May 2023", 
                          Competition = "2023 Varna World Challenge Cup Results", 
                          Location = "Varna, Bulgaria")
-write_csv(vn_tb, "cleandata/data_new/varna.csv")
+write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
 
 
@@ -84,7 +80,7 @@ tel_tb <- transform_web_tb(table_list = tel_tb_ls,
                            Date = "1-4 Jun 2023",
                            Competition = "2023 Tel Aviv Challenge Cup",
                            Location = "Tel Aviv, Israel")
-write_csv(tel_tb, "cleandata/data_new/telaviv.csv")
+write_csv(tel_tb, "../cleandata/data_new/telaviv.csv")
 
 
 ## 2023 Osijek Challenge Cup
@@ -111,21 +107,21 @@ write_csv(osi_tb, "cleandata/data_new/osijek.csv")
 
 # 2023 Cottbus Apparatus World Cup
 area <- list(c(147, 53, 739, 568))
-folder_path <- "pdfs_2023/cottbus"
+folder_path <- "../pdfs_2023/cottbus"
 cottbus_tb_raw <- extract_data_cot(folder_path, area)
 cottbus_tb <- process_data_cot(cottbus_tb_raw, "Cottbus",
                                    Date = "23-26 Feb 2023", 
                                    Competition = "FIG Apparatus World Cup 2023", 
                                    Location = "Cottbus, Germany")
-write_csv(cottbus_tb, "cleandata/data_new/cottbus.csv")  
+write_csv(cottbus_tb, "../cleandata/data_new/cottbus.csv")  
 
 # EnBW DTB Pokal Team Challenge 2023
-folder_path <- "pdfs_2023/dtb_pokal"
+folder_path <- "../pdfs_2023/dtb_pokal"
 dtb_tb_raw <- extract_data_cot(folder_path, area)
 dtb_tb <- process_data_cot(dtb_raw_name, type = "dtb",
                                    Date = "17-19 Mar 2023",
                                    Competition = "EnBW DTB Pokal Team Challenge 2023", 
                                    Location = "Stuttgart, Germany")
-write_csv(dtb_tb, "cleandata/data_new/dtb_pokal.csv")
+write_csv(dtb_tb, "../cleandata/data_new/dtb_pokal.csv")
 
 

@@ -6,7 +6,7 @@ library(rvest)
 ## define functions
 
 # extract country abbreviation
-noc <- readLines("R/noc_key.txt") %>% 
+noc <- readLines("noc_key.txt") %>% 
   regmatches(. , gregexpr("\\b[A-Z]+\\b", .)) %>% 
   unlist()
 
