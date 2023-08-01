@@ -326,6 +326,16 @@ transform_web_tb <- function(table_list, Date, Competition, Location) {
   return(tel_tb)
 }
 
+convert_dns_or_dash_to_empty_string <- function(df) {
+  df <- df %>% mutate(
+    Rank = ifelse(Rank %in% c("DNS", "–"), "", Rank),
+    D = ifelse(D %in% c("DNS", "–"), "", D),
+    E = ifelse(E %in% c("DNS", "–"), "", E),
+    Total = ifelse(Total %in% c("DNS", "–"), "", Total)
+  )
+  return(df)
+}
+
 
 ### Functions for Cottbus and EnBW DTB Pokal
 ### characteristics: For VT, each player has 3 line; info for each gymnast can

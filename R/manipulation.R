@@ -79,7 +79,8 @@ tel_tb_ls <- c(tel_m, tel_w) %>%
 tel_tb <- transform_web_tb(table_list = tel_tb_ls, 
                            Date = "1-4 Jun 2023",
                            Competition = "2023 Tel Aviv Challenge Cup",
-                           Location = "Tel Aviv, Israel")
+                           Location = "Tel Aviv, Israel") %>% 
+  select(-Nation)
 write_csv(tel_tb, "../cleandata/data_new/telaviv.csv")
 
 
@@ -91,6 +92,7 @@ osi_m <- get_web_tb(url_m, gender = "m")
 osi_w <- get_web_tb(url_w, gender = "w")
 osi_tb_ls <- c(osi_m, osi_w) %>% 
   update_vt() %>% 
+  map(convert_dns_or_dash_to_empty_string) %>% 
   map( ~mutate_at(.x, vars(Rank, D, E, Total), as.numeric)) %>% 
   map( ~if ("Average" %in% colnames(.x)) {
     select(.x, -Average)
@@ -101,8 +103,9 @@ osi_tb_ls <- c(osi_m, osi_w) %>%
 osi_tb <- transform_web_tb(table_list = osi_tb_ls, 
                            Date = "8-11 Jun 2023",
                            Competition = "2023 Osijek Challenge Cup",
-                           Location = "Osijek, Croatia.")
-write_csv(osi_tb, "cleandata/data_new/osijek.csv")
+                           Location = "Osijek, Croatia.") %>% 
+  select(-Nation)
+write_csv(osi_tb, "../cleandata/data_new/osijek.csv")
 
 
 # 2023 Cottbus Apparatus World Cup
@@ -118,6 +121,14 @@ write_csv(cottbus_tb, "../cleandata/data_new/cottbus.csv")
 # EnBW DTB Pokal Team Challenge 2023
 folder_path <- "../pdfs_2023/dtb_pokal"
 dtb_tb_raw <- extract_data_cot(folder_path, area)
+# used a different split name algorithm since names here contains German letters
+dtb_raw_name <- dtb_tb_raw %>% 
+  mutate(
+    split_name = str_split_fixed(NAME, ", ", n = 2),
+    LastName = split_name[, 1],
+    FirstName = split_name[, 2]
+  ) %>% 
+  select(-split_name)
 dtb_tb <- process_data_cot(dtb_raw_name, type = "dtb",
                                    Date = "17-19 Mar 2023",
                                    Competition = "EnBW DTB Pokal Team Challenge 2023", 
