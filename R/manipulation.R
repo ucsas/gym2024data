@@ -151,7 +151,7 @@ lvp_ls_qr <- unlist(lvp_ls_raw, recursive = F, use.names = TRUE) %>%
   })
 lvp_ls <- align_tables(raw_table_list = lvp_ls_qr, col_names = col_names_vt)
 lvp_tb <- transform_table(table_list = lvp_ls, 
-                         Date = "29 Oct 2023 - 6 Nov 2023", 
+                         Date = "29 Oct 2022 - 6 Nov 2022", 
                          Competition = "51st FIG Artistic Gymnastics World Championships", 
                          Location = "Liverpool, England")
 write_csv(lvp_tb, "../cleandata/data_new/liverpool.csv")
