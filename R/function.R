@@ -15,13 +15,11 @@ noc <- readLines("noc_key.txt") %>%
 # remainder means how many unique y coordinates there is between last Noc line 
 # and last line of table
 get_bottom <- function(page, y_vals, y_noc) {
-  unit_chunk <- page %>% # every text between first noc and second noc
-    # used 2nd & 3rd row is for varna data 1st row has abnormal font size
-    filter(y >= y_noc[2] & y <= y_noc[3]) 
-  y_diff <- diff(unique(unit_chunk$y)) 
-  
+  last_unit_chunk <- page %>%  # every text after the last noc line
+    filter(y >= y_noc[length(y_noc)]) 
+  y_diff <- diff(unique(last_unit_chunk$y)) 
   # get the position that has the largest y difference than its prior raw, 
-  # which is the first raw of a unit chunk
+  # which is the first raw after the last row of a table
   remainder <- which.max(y_diff) - 1 
   # since we want the last row of a unit chunk, we minus 1
   bottom <- page %>% 
@@ -120,7 +118,7 @@ get_gym_tables <- function(folder_path) {
 # adds missing columns, and ensures that all data frames in the list are ready 
 # for row_binding.
 align_tables <- function(raw_table_list, col_names) {  
-  ca_ls <- unlist(raw_table_list, recursive = F, use.names = TRUE) %>% 
+  ca_ls <- raw_table_list %>% 
     map(remove_column_if_q) %>%
     map(function(df) {
       if (ncol(df) > 8) { 

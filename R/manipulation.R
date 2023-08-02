@@ -6,7 +6,8 @@ ca_path <- "../pdfs_2023/central_am"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
                   "Penalty", "Score")
 
-ca_ls_raw <- get_gym_tables(folder_path = ca_path)
+ca_ls_raw <- get_gym_tables(folder_path = ca_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
 ca_ls <- align_tables(raw_table_list = ca_ls_raw, col_names = col_names_vt)
 ca_tb <- transform_table(table_list = ca_ls, 
                          Date = "24-28 Jun 2023", 
@@ -17,7 +18,8 @@ write_csv(ca_tb, "../cleandata/data_new/central_america.csv")
 
 ## 2022 Senior European Championships MUNICH (GER)
 eu22_path <- "../pdfs_2023/europe_22"
-eu_ls_raw <- get_gym_tables(eu22_path)
+eu_ls_raw <- get_gym_tables(eu22_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
 # map(eu_ls_raw, ~ map(., ncol))
 eu_ls <- align_tables(eu_ls_raw, col_names_vt)
 # map(eu_ls, ncol)
@@ -136,3 +138,20 @@ dtb_tb <- process_data_cot(dtb_raw_name, type = "dtb",
 write_csv(dtb_tb, "../cleandata/data_new/dtb_pokal.csv")
 
 
+## 51st FIG Artistic Gymnastics World Championships
+lvp_path <- "../pdfs_2023/liverpool" 
+lvp_ls_raw <- get_gym_tables(folder_path = lvp_path)
+lvp_ls_qr <- unlist(lvp_ls_raw, recursive = F, use.names = TRUE) %>% 
+  map(remove_qr_from_total) %>% 
+  imap(function(df, name) {
+    if (grepl("final", name)) {
+      df <- df[,-(ncol(df)-1:0)]
+    }
+    return(df)
+  })
+lvp_ls <- align_tables(raw_table_list = lvp_ls_qr, col_names = col_names_vt)
+lvp_tb <- transform_table(table_list = lvp_ls, 
+                         Date = "29 Oct 2023 - 6 Nov 2023", 
+                         Competition = "51st FIG Artistic Gymnastics World Championships", 
+                         Location = "Liverpool, England")
+write_csv(lvp_tb, "../cleandata/data_new/liverpool.csv")
