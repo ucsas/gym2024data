@@ -3,27 +3,30 @@ library(tabulizer)
 library(tidyverse)
 library(rvest)
 
-## define functions
 
-# extract country abbreviation
+### Functions for general type pdfs ############################################
+
+## extract country abbreviation
 noc <- readLines("noc_key.txt") %>% 
   regmatches(. , gregexpr("\\b[A-Z]+\\b", .)) %>% 
   unlist()
 
-# Function 1: get_bottom() function
-# what it does: serves as a building block of later gym_table() function
-# remainder means how many unique y coordinates there is between last Noc line 
-# and last line of table
+##' Function 1: get_bottom() function
+##' What it does: Serves as a building block of the later gym_table() function.
+##' @param page: Data frame containing extracted text from a PDF page.
+##' @param y_vals: Numeric vector representing y-coordinates of text elements.
+##' @param y_noc: Numeric vector representing y-coordinates of NOC lines.
+##' @return: An integer representing the bottom index of a unit chunk.
 get_bottom <- function(page, y_vals, y_noc) {
   last_unit_chunk <- page %>%  # every text after the last noc line
     filter(y >= y_noc[length(y_noc)]) 
   y_diff <- diff(unique(last_unit_chunk$y)) 
-  # get the position that has the largest y difference than its prior raw, 
-  # which is the first raw after the last row of a table
+  ## get the position that has the largest y difference than its prior raw, 
+  ## which is the first raw after the last row of a table
   remainder <- which.max(y_diff) - 1 
-  # since we want the last row of a unit chunk, we minus 1
+  ## since we want the last row of a unit chunk, we minus 1
   bottom <- page %>% 
-    # the last noc row + remaining row numbers
+    ## the last noc row + remaining row numbers
     filter(y == y_vals[match(y_noc[length(y_noc)], y_vals) + remainder]) %>% 
     slice(1) %>% 
     select(y_end) %>% 
@@ -33,7 +36,7 @@ get_bottom <- function(page, y_vals, y_noc) {
 
 
 
-# Function 2: gym_table() function
+## Function 2: gym_table() function
 
 gym_table <- function(file_path, output = "data.frame"){
   page_data <- pdf_data(file_path)
@@ -46,7 +49,7 @@ gym_table <- function(file_path, output = "data.frame"){
     y_vals <- sort(unique(page$y))
     y_noc <- page %>%  
       filter(text %in% noc) %>%
-      # in case other text coincide with NOC abbr.
+      ## in case other text coincide with NOC abbr.
       filter(abs(x - median(x)) <= 5) %>%  
       pull(y)
     if (length(y_noc) == 0) {
@@ -87,9 +90,9 @@ gym_table <- function(file_path, output = "data.frame"){
 
 
 
-# Function 3: remove_column_if_q()
-# What it does: if "Q" is in the last column of a data.frame, 
-# delete the last column.
+## Function 3: remove_column_if_q()
+## What it does: if "Q" is in the last column of a data.frame, 
+## delete the last column.
 remove_column_if_q <- function(df) {
   if (any(grepl("Q|R", df[[ncol(df)]]))) {
     df <- df[, -ncol(df)]
@@ -99,9 +102,9 @@ remove_column_if_q <- function(df) {
 
 
 
-# Function 4: get_gym_tables()
-# what it does: taking the path of a folder containing the required PDF files as
-# input, and batch using the gym_table() function on all PDF files in the folder.
+## Function 4: get_gym_tables()
+## what it does: taking the path of a folder containing the required PDF files as
+## input, and batch using the gym_table() function on all PDF files in the folder.
 
 get_gym_tables <- function(folder_path) {
   all_paths <- list.files(folder_path, full.names = T) %>% 
@@ -112,11 +115,11 @@ get_gym_tables <- function(folder_path) {
   
   
 
-# Function 5: align_tables()
-# what it does: taking the output of function get_gym_tables() and the column 
-# names of the original table as input, it removes redundant columns, 
-# adds missing columns, and ensures that all data frames in the list are ready 
-# for row_binding.
+## Function 5: align_tables()
+## what it does: taking the output of function get_gym_tables() and the column 
+## names of the original table as input, it removes redundant columns, 
+## adds missing columns, and ensures that all data frames in the list are ready 
+## for row_binding.
 align_tables <- function(raw_table_list, col_names) {  
   ca_ls <- raw_table_list %>% 
     map(remove_column_if_q) %>%
@@ -157,10 +160,10 @@ align_tables <- function(raw_table_list, col_names) {
 }
 
 
-# Function 6: transform_table()
-# what it does: take the output of the function align_tables() as input,
-# row_bind all tables in the list, add new columns, remove redundant columns, 
-# generate the final table outputs as the format we need
+## Function 6: transform_table()
+## what it does: take the output of the function align_tables() as input,
+## row_bind all tables in the list, add new columns, remove redundant columns, 
+## generate the final table outputs as the format we need
 transform_table <- function(table_list, Date, Competition, Location) {
   competition_tb <- list_rbind(table_list, names_to = "title") %>% 
     separate_wider_delim(
@@ -182,7 +185,7 @@ transform_table <- function(table_list, Date, Competition, Location) {
     relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
              Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
     select(!Bib:vault) %>% 
-    # remove "! " D columns in some tibbles and change to numerics
+    ## remove "! " D columns in some tibbles and change to numerics
     mutate(D_Score = ifelse(str_detect(D_Score, "! "), 
                             gsub("! ", "", D_Score, fixed = TRUE), D_Score)) %>%  
     mutate(
@@ -197,7 +200,8 @@ transform_table <- function(table_list, Date, Competition, Location) {
 }
 
 
-### Functions for Varna
+### Functions for Varna type pdfs ##############################################
+
 process_df <- function(df) {
   df <- df[, -c((ncol(df)-1), ncol(df))] # delete last two column
   df <- df %>% mutate(Vault = ifelse(row_number() %% 2 == 0, "2", "1")) 
@@ -253,7 +257,7 @@ split_column_vn <- function(df) {
 }
 
 
-### Functions for Web Scraping: Tel Aviv & Osijek World Challenge Cup
+### Functions for Web Scraping: Tel Aviv & Osijek World Challenge Cup ##########
 
 get_web_tb <- function(url, gender) {
   if (gender == "m") {
@@ -270,13 +274,13 @@ get_web_tb <- function(url, gender) {
   
   tables_list <- html_table(webpage, fill = TRUE, header = T)
   
-  # 对每个数据框添加新列Round
+  ## add new column Round for each df
   tables_list <- lapply(1:length(tables_list), function(i) {
     tables_list[[i]]$Round <- round[i]
     return(tables_list[[i]])
   })
   
-  # 对每个数据框添加新列Apparatus
+  ## add new column Apparatus for each df
   tables <- lapply(1:length(tables_list), function(i) {
     tables_list[[i]]$Apparatus <- appar[i]
     return(tables_list[[i]])
@@ -335,9 +339,10 @@ convert_dns_or_dash_to_empty_string <- function(df) {
 }
 
 
-### Functions for Cottbus and EnBW DTB Pokal
-### characteristics: For VT, each player has 3 line; info for each gymnast can
-### be divided into two pages.
+### Functions for Cottbus and EnBW DTB Pokal ###################################
+
+## characteristics: For VT, each player has 3 line; info for each gymnast can
+## be divided into two pages.
 
 extract_data_cot <- function(folder_path, area) {
   all_paths <- list.files(folder_path, full.names = T)
@@ -346,7 +351,7 @@ extract_data_cot <- function(folder_path, area) {
   non_vt_paths <-setdiff(all_paths, vt_paths) |>  # paths for all non-VT files
     set_names(basename)
   
-  # First, for Vault data
+  ## First, for Vault data
   vt_ls <- map(vt_paths, ~ extract_tables(file = .x, guess = F, area = area, 
                                           output = "data.frame")) 
   vt_tb <- lapply(vt_ls, function(sublist) {
@@ -382,7 +387,7 @@ extract_data_cot <- function(folder_path, area) {
     ) |>
     select(!c(id, appar))
 
-  # Second, for non-Vault data
+  ## Second, for non-Vault data
   non_vt_ls <- map(non_vt_paths, ~ extract_tables(file = .x, guess = F, 
                                                   area = area, 
                                                   output = "data.frame")) 
@@ -395,7 +400,7 @@ extract_data_cot <- function(folder_path, area) {
       delim = "_",
       names = c("Gender", "Round", "Apparatus")
     ) |>
-    # remove ".pdf" and anything after it
+    ## remove ".pdf" and anything after it
     mutate(Apparatus = str_replace(Apparatus, "\\.pdf.*$", "")) |> 
     relocate(Gender, Round, Rank, BIB, NAME, NAT,
              Apparatus, D, E, Pen, Total )
@@ -414,8 +419,10 @@ process_data_cot <- function(data_frame, type, Date, Competition, Location) {
   
   if (type == "Cottbus") {
     processed_data <- processed_data |> 
-      mutate(FirstName = map_chr(str_extract_all(NAME, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
-      mutate(LastName = map_chr(str_extract_all(NAME, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " ")))
+      mutate(FirstName = map_chr(str_extract_all(NAME, "\\b[A-Z][a-z]+\\b"), 
+                                 ~ paste(.x, collapse = " "))) |> 
+      mutate(LastName = map_chr(str_extract_all(NAME, "\\b[A-Z]+\\b"), 
+                                ~ paste(.x, collapse = " ")))
   } else if (type == "dtb") {
     processed_data <- processed_data |> 
       mutate(
