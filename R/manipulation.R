@@ -161,3 +161,18 @@ lvp_tb <- transform_table(table_list = lvp_ls,
                          Competition = "51st FIG Artistic Gymnastics World Championships", 
                          Location = "Liverpool, England")
 write_csv(lvp_tb, "../cleandata/data_new/liverpool.csv")
+
+
+### 2023 10th Senior European Championships ANTALYA (TUR) ######################
+
+eu23_path <- "../pdfs_2023/europe_23"
+eu_ls_raw <- get_gym_tables(eu23_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
+## map(eu_ls_raw, ~ map(., ncol))
+eu_ls <- align_tables(eu_ls_raw, col_names_vt)
+## map(eu_ls, ncol)
+eu_tb <- transform_table(table_list = eu_ls, 
+                         Date = "11-16 Apr 2023", 
+                         Competition = "2023 10th Senior European Championships", 
+                         Location = "Antalya, Turkey")
+write_csv(eu_tb, "../cleandata/data_new/european_2023.csv")
