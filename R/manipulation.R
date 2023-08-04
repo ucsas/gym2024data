@@ -160,7 +160,7 @@ lvp_tb <- transform_table(table_list = lvp_ls,
                          Date = "29 Oct 2022 - 6 Nov 2022", 
                          Competition = "51st FIG Artistic Gymnastics World Championships", 
                          Location = "Liverpool, England")
-write_csv(lvp_tb, "../cleandata/data_new/liverpool.csv")
+write_csv(lvp_tb, "../cleandata/data_new/liverpool_event.csv")
 
 
 ### 2023 10th Senior European Championships ANTALYA (TUR) ######################
