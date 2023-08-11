@@ -1,6 +1,6 @@
 # 51st FIG Artistic Gymnastics World Championships LIVERPOOL (GBR) All-Around
 
-path1 <- "/Users/minzefang/Downloads/liverpool_aa"
+path1 <- "../pdfs_2023/liverpool_aa"
 lv_aa_ls_raw <- get_gym_tables(path1)
 
 ###m_aa_final###################################################################
