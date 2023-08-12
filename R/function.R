@@ -84,7 +84,7 @@ gym_table <- function(file_path, output = "data.frame"){
     return(pdf_tables)
   } else {
     warning("Invalid value for 'output' argument. Using default: 'matrix'")
-    return(mdf_tables)
+    return(pdf_tables)
   }
 }
 
