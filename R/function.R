@@ -443,3 +443,76 @@ process_data_cot <- function(data_frame, type, Date, Competition, Location) {
   return(processed_data)
 }
 
+### Functions for British Championship type pdfs ###############################
+
+extract_tables_first_diff <- function(file_path, first_page_area, other_page_area) {
+  num_pages <- pdf_info(file_path)$pages
+  pages <- 1:num_pages
+  area <- rep(other_page_area, num_pages)
+  area[1] <- first_page_area
+  pdf_tables <- extract_tables(file_path, pages = pages, area = area, guess = FALSE, output = "matrix")
+  pdf_tables <- lapply(pdf_tables, as.data.frame)
+  return(pdf_tables)
+}
+
+get_gym_tables_first_diff <- function(folder_path, first_page_area, other_page_area) {
+  all_paths <- list.files(folder_path, full.names = T) %>% 
+    set_names(basename)
+  raw_table_list <- map(all_paths, extract_tables_first_diff, first_page_area, other_page_area)
+  return(raw_table_list)
+}
+
+process_data_frames_br <- function(br_ls_raw, col_names_vt_p1_br, col_names_vt_p2_br, col_names_nonvt_br) {
+  br_ls <- br_ls_raw %>% 
+    unlist(recursive = F, use.names = TRUE) %>% 
+    map( function(df) { # 这人名字太长显示成两行了
+      df %>%
+        mutate(V3 = ifelse(V3 == "PENGKEREGO", "PENGKEREGO RAVENSCROFT Leasha", V3))
+    }) %>% 
+    map( function(df) {
+      df %>%
+        mutate(V4 = ifelse(V4 == "Loughborough Students Gymnastics", "Loughborough Students Gymnastics Club", V4)) %>% 
+        mutate(V4 = ifelse(V4 == "City of Manchester Institute of", "Gymnastics", V4))
+    }) %>%
+    map(~ .x %>%
+          filter(V3 != "RAVENSCROFT Leasha")) %>% 
+    imap(function(df, name) { # For VT, delete all even rows
+      if (grepl("VT", name)) {
+        df <- df[-seq(2, nrow(df), by = 2), ]
+      }
+      return(df)
+    }) %>% 
+    map(function(df) { # For VT,删掉总罚分和两次总分
+      cols_to_remove <- intersect(c("V12", "V13"), names(df))
+      df %>%
+        select(-all_of(cols_to_remove))
+    }) %>% 
+    imap( function(df, name) { # For VT第一页，改名再把两次的宽表格改成长表格
+      if (grepl("VT", name) & !grepl("2", name)) {
+        names(df) <- col_names_vt_p1_br
+        df <- df %>% 
+          pivot_longer(
+            cols = !1:3, 
+            names_to = c(".value", "vt_round"), 
+            names_sep = "_", 
+            values_drop_na = TRUE
+          )
+      }
+      return(df)
+    }) %>% 
+    imap(function(df, name){ # For VT第二页，加一个VT1
+      if (grepl("VT", name) & grepl("2", name)){
+        names(df) <- col_names_vt_p2_br
+        df <- df %>% mutate(vt_round = "VT1", .after = 3)
+      }
+      return(df)
+    }) %>% 
+    imap(function(df, name){
+      if (!grepl("VT", name)){ # For non-VT，删掉club
+        df <- df %>% select(!V4)
+        names(df) <- col_names_nonvt_br
+      }
+      return(df)
+    })
+  return(br_ls)
+}
