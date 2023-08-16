@@ -57,8 +57,8 @@ univaa3 <- univ_aa_ls_raw[[2]][[1]] %>%
   mutate(V3 = ifelse(lead(V5) == "" & V5 != "", paste(V3, lead(V3)), V3)) %>% 
   filter(V5 != "")
 
-univaa3_odd <- univaa3[seq(1, nrow(univaa1), 2), ]
-univaa3_even <- univaa3[seq(2, nrow(univaa1), 2), ] %>% 
+univaa3_odd <- univaa3[seq(1, nrow(univaa3), 2), ]
+univaa3_even <- univaa3[seq(2, nrow(univaa3), 2), ] %>% 
   select(c(2,seq(6,12,2)))
 
 rank_cols <- c("V7","V9","V11","V13")
