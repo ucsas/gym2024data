@@ -1,4 +1,4 @@
-# 51st FIG Artistic Gymnastics World Championships LIVERPOOL (GBR) All-Around
+# 51st FIG Artistic Gymnastics World Championships LIVERPOOL (GBR) All-Around ##
 
 path1 <- "../pdfs_2023/liverpool_aa"
 lv_aa_ls_raw <- get_gym_tables(path1)
@@ -185,7 +185,7 @@ lvaa4_long <- lvaa4_wide %>%
   mutate(Gender = "w", Round = "AAqual")
   
 
-### Combin 4 tables ############################################################
+### Combine 4 tables ############################################################
 Date = "29 Oct 2022 - 6 Nov 2022"
 Competition = "51st FIG Artistic Gymnastics World Championships"
 Location = "Liverpool, England"
