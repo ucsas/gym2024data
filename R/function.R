@@ -90,9 +90,9 @@ gym_table <- function(file_path, output = "data.frame"){
 
 
 
-## Function 3: remove_column_if_q()
-## What it does: if "Q" is in the last column of a data.frame, 
-## delete the last column.
+## Function 3: remove_column_if_q(), remove_qr_from_total()
+
+## if "Q" is in the last column of a data.frame, delete the last column.
 remove_column_if_q <- function(df) {
   if (any(grepl("Q|R", df[[ncol(df)]]))) {
     df <- df[, -ncol(df)]
@@ -100,6 +100,14 @@ remove_column_if_q <- function(df) {
   return(df)
 }
 
+## if "Q" is in the last column of a data.frame, 删掉最后一列空格后面的部分
+remove_qr_from_total <- function(df) {
+  # 判断最后一列中是否有值包含 "Q" 或 "R"
+  if(any(grepl("Q|R", df[[ncol(df)]]))) {
+    df[[ncol(df)]] <- sub("\\s.*", "", df[[ncol(df)]]) 
+  }
+  return(df)
+}
 
 
 ## Function 4: get_gym_tables()

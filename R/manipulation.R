@@ -192,3 +192,34 @@ uni_tb <- transform_table(table_list = uni_ls,
                           Competition = "2023 FISH World University Games", 
                           Location = "Chengdu, China")
 write_csv(uni_tb, "../cleandata/data_new/univgames_23.csv")
+
+
+
+### BIRMINGHAM 2022 Commonwealth Games #########################################
+## 和利物浦的51st FIG Artistic Gymnastics World Championships格式相同
+
+comm_path <- "../pdfs_2023/22commgames"
+comm_ls_raw <- get_gym_tables(folder_path = comm_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
+
+hb_path <- "../pdfs_2023/22comm_m_qual_HB/m_qual_HB.pdf"
+hb_area <- list(c(223.3226, 99.9136, 680.9744, 494.8661))
+comm_m_qual_hb <- extract_tables(hb_path, area = hb_area, guess = FALSE, 
+                                 output = "matrix") %>% 
+  map(as.data.frame)
+comm_ls_raw$m_qual_hb <- comm_m_qual_hb[[1]]
+
+comm_ls_qr <- comm_ls_raw %>%
+  map(remove_qr_from_total) %>% 
+  imap(function(df, name) {
+    if (grepl("final", name)) {
+      df <- df[,-(ncol(df)-1:0)]
+    }
+    return(df)
+  })
+comm_ls <- align_tables(raw_table_list = comm_ls_qr, col_names = col_names_vt)
+comm_tb <- transform_table(table_list = comm_ls, 
+                           Date = "29 Jul-2 Aug, 2023", 
+                           Competition = "BIRMINGHAM 2022 Commonwealth Games", 
+                           Location = "Birmingham, England")
+write_csv(comm_tb, "../cleandata/data_new/commgames_22.csv")
