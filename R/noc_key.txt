@@ -229,12 +229,9 @@ Yemen	YEM
 Yugoslavia	YUG
 Zambia	ZAM
 Zimbabwe	ZIM
-
 AIA	 Anguilla
 ANT	 Antigua and Barbuda	
 AUS	 Australia	
-
-
 BAH	 Bahamas	
 BAN	 Bangladesh	
 BAR	 Barbados	
@@ -242,16 +239,13 @@ BER	 Bermuda
 BIZ	 Belize
 BOT	 Botswana	
 BRU	 Brunei	
-
 CAN	 Canada	
 CAY	 Cayman Islands	
 CMR	 Cameroon	
 COK	 Cook Islands	
 CYP	 Cyprus	
-
 DMA	 Dominica	
 ENG	 England	
-
 FLK	 Falkland Islands
 FIJ	 Fiji1	
 GAM	 The Gambia	
@@ -260,7 +254,6 @@ GHA	 Ghana
 GIB	 Gibraltar	
 GRN	 Grenada	
 GUY	 Guyana	
-
 IND	 India	
 IOM	 Isle of Man	
 IVB	 British Virgin Islands	
