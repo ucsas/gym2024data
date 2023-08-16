@@ -176,3 +176,19 @@ eu_tb <- transform_table(table_list = eu_ls,
                          Competition = "2023 10th Senior European Championships", 
                          Location = "Antalya, Turkey")
 write_csv(eu_tb, "../cleandata/data_new/european_2023.csv")
+
+
+
+### CHENGDU 2023 FISH World University Games ###################################
+uni_path <- "../pdfs_2023/23univgames"
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
+                  "Penalty", "Score")
+
+uni_ls_raw <- get_gym_tables(folder_path = uni_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
+uni_ls <- align_tables(raw_table_list = uni_ls_raw, col_names = col_names_vt)
+uni_tb <- transform_table(table_list = uni_ls, 
+                          Date = "1-5 Aug 2023", 
+                          Competition = "2023 FISH World University Games", 
+                          Location = "Chengdu, China")
+write_csv(uni_tb, "../cleandata/data_new/univgames_23.csv")
