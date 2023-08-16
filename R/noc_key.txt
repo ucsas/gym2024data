@@ -229,3 +229,82 @@ Yemen	YEM
 Yugoslavia	YUG
 Zambia	ZAM
 Zimbabwe	ZIM
+
+AIA	 Anguilla
+ANT	 Antigua and Barbuda	
+AUS	 Australia	
+
+
+BAH	 Bahamas	
+BAN	 Bangladesh	
+BAR	 Barbados	
+BER	 Bermuda	
+BIZ	 Belize
+BOT	 Botswana	
+BRU	 Brunei	
+
+CAN	 Canada	
+CAY	 Cayman Islands	
+CMR	 Cameroon	
+COK	 Cook Islands	
+CYP	 Cyprus	
+
+DMA	 Dominica	
+ENG	 England	
+
+FLK	 Falkland Islands
+FIJ	 Fiji1	
+GAM	 The Gambia	
+GGY	 Guernsey	
+GHA	 Ghana	
+GIB	 Gibraltar	
+GRN	 Grenada	
+GUY	 Guyana	
+
+IND	 India	
+IOM	 Isle of Man	
+IVB	 British Virgin Islands	
+JAM	 Jamaica	
+JEY	 Jersey	
+KEN	 Kenya	
+KIR	 Kiribati	
+LCA	 Saint Lucia	
+LES	 Lesotho	
+MAS	 Malaysia	
+MAW	 Malawi	
+MDV	 Maldives	
+MLT	 Malta	
+MOZ	 Mozambique	
+MRI	 Mauritius	
+MSR	 Montserrat
+NAM	 Namibia	
+NFK	 Norfolk Island	
+NGR	 Nigeria	
+NIR	 Northern Ireland	
+NIU	 Niue	
+NRU	 Nauru	
+NZL	 New Zealand	
+PAK	 Pakistan	
+PNG	 Papua New Guinea	
+RSA	 South Africa	
+RWA	 Rwanda	
+SAM	 Samoa	
+SCO	 Scotland	
+SEY	 Seychelles	
+SHN	 Saint Helena	
+SGP	 Singapore	
+SKN	 Saint Kitts and Nevis
+SLE	 Sierra Leone	
+SOL	 Solomon Islands	
+SRI	 Sri Lanka	
+SVG	 Saint Vincent and the Grenadines	
+SWZ	 Swaziland 	
+TAN	 Tanzania	
+TCA	 Turks and Caicos Islands	
+TGA	 Tonga	
+TTO	 Trinidad and Tobago	
+TUV	 Tuvalu	
+UGA	 Uganda	
+VAN	 Vanuatu	
+WAL	 Wales	
+ZAM	 Zambia	NRH (1954)
