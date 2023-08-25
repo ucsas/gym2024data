@@ -146,6 +146,8 @@ write_csv(dtb_tb, "../cleandata/data_new/dtb_pokal.csv")
 
 ### 51st FIG Artistic Gymnastics World Championships ###########################
 lvp_path <- "../pdfs_2023/liverpool" 
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
+                  "Penalty", "Score")
 lvp_ls_raw <- get_gym_tables(folder_path = lvp_path)
 lvp_ls_qr <- unlist(lvp_ls_raw, recursive = F, use.names = TRUE) %>% 
   map(remove_qr_from_total) %>% 
@@ -181,7 +183,7 @@ write_csv(eu_tb, "../cleandata/data_new/european_2023.csv")
 
 ### CHENGDU 2023 FISH World University Games ###################################
 uni_path <- "../pdfs_2023/23univgames"
-col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
                   "Penalty", "Score")
 
 uni_ls_raw <- get_gym_tables(folder_path = uni_path) %>% 
