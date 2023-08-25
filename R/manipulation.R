@@ -211,6 +211,8 @@ write_csv(uni_tb, "../cleandata/data_new/univgames_23.csv")
 ## 和利物浦的51st FIG Artistic Gymnastics World Championships格式相同
 
 comm_path <- "../pdfs_2023/22commgames"
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
+                  "Penalty", "Score")
 comm_ls_raw <- get_gym_tables(folder_path = comm_path) %>% 
   unlist(recursive = F, use.names = TRUE)
 
