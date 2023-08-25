@@ -41,6 +41,8 @@ write_csv(eu_tb, "../cleandata/data_new/european_2022.csv")
 ### 2023 Varna World Challenge Cup #############################################
 
 vn_path <- "../pdfs_2023/varna"
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
+                  "Penalty", "Score")
 vn_ls_raw <- get_gym_tables(vn_path)
 vn_ls <- unlist(vn_ls_raw, recursive = F, use.names = TRUE)
 vn_ls[["m_qual_SR.pdf"]] <- vn_ls[["m_qual_SR.pdf"]] %>% 
@@ -161,7 +163,8 @@ lvp_ls <- align_tables(raw_table_list = lvp_ls_qr, col_names = col_names_vt)
 lvp_tb <- transform_table(table_list = lvp_ls, 
                          Date = "29 Oct 2022 - 6 Nov 2022", 
                          Competition = "51st FIG Artistic Gymnastics World Championships", 
-                         Location = "Liverpool, England")
+                         Location = "Liverpool, England") %>% 
+  arrange(LastName, FirstName, Competition, Apparatus)
 write_csv(lvp_tb, "../cleandata/data_new/liverpool_event.csv")
 
 
