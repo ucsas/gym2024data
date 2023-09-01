@@ -1,4 +1,4 @@
-# 51st FIG Artistic Gymnastics World Championships LIVERPOOL (GBR) All-Around ##
+# 2022 51st FIG Artistic Gymnastics World Championships LIVERPOOL (GBR) All-Around ##
 
 path1 <- "../pdfs_2023/liverpool_aa"
 lv_aa_ls_raw <- get_gym_tables(path1)
@@ -138,17 +138,19 @@ lvaa2_long <- lvaa2_wide %>%
 wide_cols <- c("rank","Bib","Name","Country","VT","UB","BB","FX","total")
 rank_cols <- c("Rank_VT","Rank_UB","Rank_BB","Rank_FX")
 
-lvaa4_p1 <- lv_aa_ls_raw[[4]][[1]] %>% 
+lvaa4_ls <- lv_aa_ls_raw[[4]]
+
+lvaa4_p1 <- lvaa4_ls[[1]] %>% 
   mutate(V6 = paste(V6, V7, sep = " ")) %>% 
   mutate(V8 = paste(V8, V9, sep = " ")) %>%
   mutate(V10 = paste(V10, V11, sep = " ")) %>%
   mutate(V12 = paste(V12, V13, sep = " ")) %>% 
   select(!seq(5,13,2))
 
-lvaa4_p2 <- lv_aa_ls_raw[[4]][[2]] %>% 
+lvaa4_p2 <- lvaa4_ls[[2]] %>% 
   mutate(V6 = paste(V6, V7, sep = " ")) %>% 
   select(!seq(5,13,2))
-lvaa4_p3 <- lv_aa_ls_raw[[4]][[3]] %>% 
+lvaa4_p3 <- lvaa4_ls[[3]] %>% 
   select(!c(6,8,11))
 lvaa4_p4 <- lvaa4_ls[[4]] %>% 
   select(!seq(5,11,2))
@@ -187,7 +189,7 @@ lvaa4_long <- lvaa4_wide %>%
 
 ### Combine 4 tables ############################################################
 Date = "29 Oct 2022 - 6 Nov 2022"
-Competition = "51st FIG Artistic Gymnastics World Championships"
+Competition = "2022 51st FIG Artistic Gymnastics World Championships"
 Location = "Liverpool, England"
 
 lv_aa_tb <- bind_rows(lvaa1_long, lvaa2_long, lvaa3_long, lvaa4_long) %>% 

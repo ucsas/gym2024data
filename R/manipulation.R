@@ -1,7 +1,7 @@
 source("function.R")
 
 
-### Central American and Caribbean Games San Salvador 2023 #####################
+### 2023 Central American and Caribbean Games San Salvador 2023 ################
 
 ca_path <- "../pdfs_2023/central_am"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
@@ -12,7 +12,7 @@ ca_ls_raw <- get_gym_tables(folder_path = ca_path) %>%
 ca_ls <- align_tables(raw_table_list = ca_ls_raw, col_names = col_names_vt)
 ca_tb <- transform_table(table_list = ca_ls, 
                          Date = "24-28 Jun 2023", 
-                         Competition = "Central American and Caribbean Games", 
+                         Competition = "2023 Central American and Caribbean Games", 
                          Location = "San Salvador, El Salvador")
 write_csv(ca_tb, "../cleandata/data_new/central_america.csv")
 
@@ -153,7 +153,7 @@ dtb_tb <- process_data_cot(dtb_raw_name, type = "dtb",
 write_csv(dtb_tb, "../cleandata/data_new/dtb_pokal.csv")
 
 
-### 51st FIG Artistic Gymnastics World Championships ###########################
+### 2022 51st FIG Artistic Gymnastics World Championships ######################
 lvp_path <- "../pdfs_2023/liverpool" 
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
                   "Penalty", "Score")
@@ -169,7 +169,7 @@ lvp_ls_qr <- unlist(lvp_ls_raw, recursive = F, use.names = TRUE) %>%
 lvp_ls <- align_tables(raw_table_list = lvp_ls_qr, col_names = col_names_vt)
 lvp_tb <- transform_table(table_list = lvp_ls, 
                          Date = "29 Oct 2022 - 6 Nov 2022", 
-                         Competition = "51st FIG Artistic Gymnastics World Championships", 
+                         Competition = "2022 51st FIG Artistic Gymnastics World Championships", 
                          Location = "Liverpool, England") %>% 
   arrange(LastName, FirstName, Competition, Apparatus)
 write_csv(lvp_tb, "../cleandata/data_new/liverpool_event.csv")
