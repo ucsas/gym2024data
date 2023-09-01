@@ -39,7 +39,7 @@ br23_tb <- list_rbind(br_ls, names_to = "title") %>%
   mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), 
                             ~ paste(.x, collapse = " "))) %>% 
   mutate(Date = Date, Competition = Competition, 
-         Location = Location, Country = "BRN") %>% 
+         Location = Location, Country = "GBR") %>% 
   relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
            Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
   select(!Bib:vt_round)
@@ -187,7 +187,7 @@ br_tb_22 <- bind_rows(br_tb_22_nonvt, br_tb_22_vt) %>%
   mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), 
                             ~ paste(.x, collapse = " "))) %>% 
   mutate(Date = Date, Competition = Competition, 
-         Location = Location, Country = "BRN") %>% 
+         Location = Location, Country = "GBR") %>% 
   mutate(Rank = as.numeric(Rank)) %>% 
   relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
            Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
