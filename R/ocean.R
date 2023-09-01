@@ -123,7 +123,14 @@ ocean_m <- ocean_m_tb %>%
            Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
   select(!name:tot)
 
-write_csv(ocean_m, "cleandata/oceania.csv")
+ocean_m <- ocean_m %>%
+  mutate(Country = case_when(
+    Country == "Australia" ~ "AUS",
+    Country == "New Zealand" ~ "NZL",
+    TRUE ~ Country   # 将所有其他值保持不变
+  ))
+
+write_csv(ocean_m, "../cleandata/data_new/oceania.csv")
   
   
   
