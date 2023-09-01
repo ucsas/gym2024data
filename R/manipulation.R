@@ -238,7 +238,7 @@ comm_ls_qr <- comm_ls_raw %>%
   })
 comm_ls <- align_tables(raw_table_list = comm_ls_qr, col_names = col_names_vt)
 comm_tb <- transform_table(table_list = comm_ls, 
-                           Date = "29 Jul-2 Aug, 2023", 
+                           Date = "29 Jul-2 Aug 2022", 
                            Competition = "BIRMINGHAM 2022 Commonwealth Games", 
                            Location = "Birmingham, England")
 write_csv(comm_tb, "../cleandata/data_new/commgames_22.csv")
