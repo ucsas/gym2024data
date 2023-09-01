@@ -1,5 +1,8 @@
 # gym2024data
 
+For more information about UCSAS 2024 USOPC DATA CHALLENGE, please visit\
+https://statds.org/events/ucsas2024/challenge.html.
+
 The goal for ‘gym2024data’ is to scrap data of Artistic Gymnastics results from PDFs into CSVs.
 
 ## Instructions on Output
