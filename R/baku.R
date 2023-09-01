@@ -80,13 +80,13 @@ baku_all <- map(all_paths, extract_tables_with_area, last_page_area, other_page_
   mutate(FirstName = map_chr(str_extract_all(Name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Apparatus = str_replace(Apparatus, "\\.pdf.*$", "")) |> # remove ".pdf" and anything after it
-  mutate(Date = "9–12 Mar 2023", Competition = "World Cup", Location = "Baku, Azerbaijan") |> 
+  mutate(Date = "9-12 Mar 2023", Competition = "World Cup", Location = "Baku, Azerbaijan") |> 
   mutate(Country = NOC, D_Score = D, E_Score = E) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score ) |> 
   mutate(Apparatus = ifelse(Apparatus == "VT", paste0("VT_", Vault), Apparatus)) |> 
   select(!City:D)
 
-write_csv(baku_all, "cleandata/baku.csv")
+write_csv(baku_all, "../cleandata/data_new/baku.csv")
 
 
