@@ -1,7 +1,7 @@
 source("function.R")
 
 
-### 2023 Central American and Caribbean Games San Salvador 2023 ################
+### 2023 Central American and Caribbean Games San Salvador ################
 
 ca_path <- "../pdfs_2023/central_am"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
