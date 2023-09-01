@@ -24,7 +24,8 @@ combined_df <- combined_df %>%
            Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
   arrange(LastName, FirstName, Competition, Apparatus) %>%
   group_by(LastName) %>%
-  fill(FirstName, .direction = "downup")
+  fill(FirstName, .direction = "downup") %>% 
+  mutate(Apparatus = ifelse(Apparatus == "RG", "SR", Apparatus))
 
 ## Write to a new csv file
 write_csv(combined_df, file.path(path_to_dir, "data_2022_2023.csv"), na = "")
