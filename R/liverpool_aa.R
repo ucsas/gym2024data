@@ -207,7 +207,8 @@ lv_aa_tb <- bind_rows(lvaa1_long, lvaa2_long, lvaa3_long, lvaa4_long) %>%
   mutate(Date = Date, Competition = Competition, Location = Location) %>% # 加上赛事信息
   relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
            Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% # 列顺序relocate
-  select(!Bib:Pen)
+  select(!Bib:Pen) %>% 
+  filter(Round == "AAfinal")
 
 write_csv(lv_aa_tb, "../cleandata/data_new/liverpool_aa.csv")
 
