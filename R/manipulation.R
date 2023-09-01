@@ -20,6 +20,8 @@ write_csv(ca_tb, "../cleandata/data_new/central_america.csv")
 ### 2022 Senior European Championships MUNICH (GER) ############################
 
 eu22_path <- "../pdfs_2023/europe_22"
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
+                  "Penalty", "Score")
 eu_ls_raw <- get_gym_tables(eu22_path) %>% 
   unlist(recursive = F, use.names = TRUE)
 ## map(eu_ls_raw, ~ map(., ncol))
@@ -35,6 +37,24 @@ eu_tb <- transform_table(table_list = eu_ls,
     TRUE ~ Date
   ))
 write_csv(eu_tb, "../cleandata/data_new/european_2022.csv")
+
+
+
+### 2023 Senior European Championships ANTALYA (TUR) ###########################
+
+eu23_path <- "../pdfs_2023/europe_23"
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
+                  "Penalty", "Score")
+eu_ls_raw <- get_gym_tables(eu23_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
+## map(eu_ls_raw, ~ map(., ncol))
+eu_ls <- align_tables(eu_ls_raw, col_names_vt)
+## map(eu_ls, ncol)
+eu_tb <- transform_table(table_list = eu_ls, 
+                         Date = "11-16 Apr 2023", 
+                         Competition = "2023 Senior European Championships", 
+                         Location = "Antalya, Turkey")
+write_csv(eu_tb, "../cleandata/data_new/european_2023.csv")
 
 
 
@@ -173,21 +193,6 @@ lvp_tb <- transform_table(table_list = lvp_ls,
                          Location = "Liverpool, England") %>% 
   arrange(LastName, FirstName, Competition, Apparatus)
 write_csv(lvp_tb, "../cleandata/data_new/liverpool_event.csv")
-
-
-### 2023 10th Senior European Championships ANTALYA (TUR) ######################
-
-eu23_path <- "../pdfs_2023/europe_23"
-eu_ls_raw <- get_gym_tables(eu23_path) %>% 
-  unlist(recursive = F, use.names = TRUE)
-## map(eu_ls_raw, ~ map(., ncol))
-eu_ls <- align_tables(eu_ls_raw, col_names_vt)
-## map(eu_ls, ncol)
-eu_tb <- transform_table(table_list = eu_ls, 
-                         Date = "11-16 Apr 2023", 
-                         Competition = "2023 10th Senior European Championships", 
-                         Location = "Antalya, Turkey")
-write_csv(eu_tb, "../cleandata/data_new/european_2023.csv")
 
 
 
