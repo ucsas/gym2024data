@@ -163,7 +163,7 @@ rm(name)
 champ23_tb <- bind_rows(m_tb, w_tb) %>% 
   separate(name, into = c("FirstName", "LastName"), sep = " ") %>% 
   mutate(FirstName = sub("^\\*", "", FirstName)) %>% 
-  mutate(Date = "26 Aug 2023", Competition = "2023 U.S. Championships", 
+  mutate(Date = "26-27 Aug 2023", Competition = "2023 U.S. Championships", 
          Location = "San Jose, CA", Country = "USA", Rank = NA,
          Penalty = round(D_Score + E_Score - Score, 3)) %>% 
   mutate(Round = ifelse(Round == "Prelims", "qual", "final")) %>% 
