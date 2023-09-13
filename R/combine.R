@@ -1,7 +1,5 @@
 ## Load necessary libraries
-library(dplyr)
-library(readr)
-library(purrr)
+library(tidyverse)
 
 ## Define path to the directory
 path_from_dir <- "../cleandata/data_new"
