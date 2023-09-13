@@ -2,7 +2,7 @@ library(pdftools)
 library(tabulizer)
 library(tidyverse)
 
-# setwd("/Users/minzefang/gym2024data")
+setwd("/Users/minzefang/gym2024data/R")
 
 ## Tokyo 2020 Olympics
 
@@ -12,7 +12,7 @@ qual_last_page_area <- list(c(226, 80, 718, 487))
 final_area <- list(c(226, 49, 442.69, 460))
 
 
-folder_path <- "/Users/minzefang/gym2024data/pdfs_2023/olympics_event"
+folder_path <- "../pdf/olympics_event"
 all_paths <- list.files(folder_path, full.names = T)
 final_paths <- list.files(folder_path, pattern = "final", full.names = TRUE) |> 
   set_names(basename)
