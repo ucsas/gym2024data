@@ -59,6 +59,14 @@ PB = Parallel Bars\
 HB = Horizontal Bars
 FX = Floor Exercise\
 
+Note: For the Apparatus column, there might be "VT1", "VT2" or "VT".
+They all mean vault. The difference is that when doing apparatus games,
+some gymnasts will do the vault twice. In that case, the first result
+will be denoted as "VT1" and the second result as "VT2".
+In All-Around games, unlike apparatus qual/finals, there is usually only
+one vault that contributes towards an AA game,
+then the Apparatus value for this entry is just "VT" along.
+
 ## Data Source
 
 The International Gymnastics Federation Archive\
