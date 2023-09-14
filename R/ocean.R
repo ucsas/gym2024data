@@ -75,7 +75,7 @@ male_tb_incomplete <- function(vec, miss_index_vec) { # miss_index_vec is the co
 
 # import text from image
 
-ocean_text <- ocr("/Users/minzefang/gym2024data/pdfs_2023/oceania/m_AA.pdf")
+ocean_text <- ocr("/Users/minzefang/gym2024data/pdf/oceania/m_AA.pdf")
 
 # transform text into list
 
@@ -114,7 +114,7 @@ ocean_m <- ocean_m_tb %>%
   mutate(FirstName = map_chr(str_extract_all(name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) %>% 
   mutate(LastName = map_chr(str_extract_all(name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) %>% 
   mutate(Gender = "m", Date = "05-06 May 2023", Competition = "Oceania Continental Championships 2023", 
-         Round = "aa", Location = "Carrara, Australia", Rank = NA) %>%  # from this pdf, I cannot get Placement on specified Apparatus in a given round, so I set them NA
+         Round = "AAfinal", Location = "Carrara, Australia", Rank = NA) %>%  # from this pdf, I cannot get Placement on specified Apparatus in a given round, so I set them NA
   mutate(D_Score = as.numeric(D), E_Score = as.numeric(E), Score = as.numeric(tot)) %>% 
   mutate(Score = ifelse(Score > 100, Score - 100, Score)) %>% 
   mutate(Score = replace(Score, 23, 12.866)) %>% # Dick Ethan PB total score, read T as 1 and omitted decimal points when reading from image
