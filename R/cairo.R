@@ -12,7 +12,7 @@ area_2 <- list(c(73, 9, 810, 585)) # Page 2
 
 
 # get file paths for each PDF
-folder_path <- "/Users/minzefang/Downloads/gym2024_fork/pdfs_2023/cairo"
+folder_path <- "/Users/minzefang/gym2024data/pdf/cairo"
 all_paths <- list.files(folder_path, full.names = T)
 vt_paths <- list.files(folder_path, pattern = "VT", full.names = TRUE) |> 
   set_names(basename)
@@ -107,7 +107,7 @@ all <- c(p1, p2) |>
   mutate(FirstName = map_chr(str_extract_all(name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Apparatus = str_remove(Apparatus, "\\.pdf$")) |> 
-  mutate(Date = "27-30 Apr 2023", Competition = "World Cup", Location = "Cairo, Egypt") |> 
+  mutate(Date = "27-30 Apr 2023", Competition = "FIG Apparatus World Cup 2023", Location = "Cairo, Egypt") |> 
   mutate(Country = noc) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score )|> 
@@ -169,12 +169,12 @@ vt_all <- c(vt1, vt2) |>
   mutate(FirstName = map_chr(str_extract_all(name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Apparatus = str_remove(Apparatus, "\\.pdf$")) |> 
-  mutate(Date = "27-30 Apr 2023", Competition = "World Cup", Location = "Cairo, Egypt") |> 
+  mutate(Date = "27-30 Apr 2023", Competition = "FIG Apparatus World Cup 2023", Location = "Cairo, Egypt") |> 
   mutate(Country = noc) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score )|> 
   select(!City:Total) |> 
-  mutate(Apparatus = ifelse(row_number() %% 2 == 1, "VT_1", "VT_2")) |>     # VT_1: odd row; VT_2: even row
+  mutate(Apparatus = ifelse(row_number() %% 2 == 1, "VT1", "VT2")) |>     # VT_1: odd row; VT_2: even row
   mutate(Penalty = replace(Penalty, Penalty == 0, NA))
 
 
