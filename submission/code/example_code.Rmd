@@ -7,11 +7,10 @@ output: pdf_document
 
 ```{r}
 library(tidyverse)
-men_df <- read.csv("../cleandata/data_2022_2023.csv") %>% 
-  filter(Gender == "m")
+df <- read.csv("../../cleandata/data_2022_2023.csv")
 
-women_df <- read.csv("../cleandata/data_2022_2023.csv") %>% 
-  filter(Gender == "w")
+men_df <- subset(df, Gender == "m")
+women_df <- subset(df, Gender == "w")
 
 head(men_df)
 
