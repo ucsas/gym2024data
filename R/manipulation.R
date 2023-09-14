@@ -242,3 +242,25 @@ comm_tb <- transform_table(table_list = comm_ls,
                            Competition = "BIRMINGHAM 2022 Commonwealth Games", 
                            Location = "Birmingham, England")
 write_csv(comm_tb, "../cleandata/data_new/commgames_22.csv")
+
+
+### SAN JOSE 2023 U.S. Championships ###########################################
+m_path <- "../pdf/23uschamps_aa/m_23champs_sraa.pdf"
+w_path <- "../pdf/23uschamps_aa/w_23champs_sraa.pdf"
+Date = "26-27 Aug 2023"
+Competition = "2023 U.S. Championships"
+Location = "San Jose, CA"
+result <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
+
+identical(champ23_tb, result)
+
+
+### TAMPA 2022 U.S. Championships ##############################################
+m_path <- "../pdf/22uschamps/m_22champs_sraa.pdf"
+w_path <- "../pdf/22uschamps/w_22champs_sraa.pdf"
+Date = "19-20 Aug 2022"
+Competition = "2022 U.S. Championships"
+Location = "Tampa, FL"
+result <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
+
+identical(champ22_tb, result)
