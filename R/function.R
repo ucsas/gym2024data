@@ -699,3 +699,172 @@ extract_uschampionship_data <- function(m_path, w_path, Date, Competition, Locat
   
   return(champ23_tb)
 }
+
+
+### Functions for US Winter Cup type pdfs ####################################
+
+extract_wintercup_data <- function(wc23_m_path, wc23_w_path, Date, Competition, Location) {
+  
+  us_area=list(c(106.851163, 9.628874, 763.505728, 613.347834))
+  
+  m_wc23_ls <- extract_tables(wc23_m_path, guess = F, area = us_area)
+  w_wc23_ls <- extract_tables(wc23_w_path, guess = F, area = us_area)
+  
+  w_qual_ls <- list()
+  m_qual_ls <- list()
+  
+  ### for women ###################
+  for (j in 1:length(w_wc23_ls)) {
+    page <- w_wc23_ls[[j]]
+    for (k in seq(3, nrow(page), 5)) {
+      name <- page[k,2]
+      D_VT <- page[k,5]
+      D_UB <- page[k,6]
+      D_BB <- page[k,7]
+      D_FX <- page[k,8]
+      
+      E_VT <- page[k+1,5]
+      E_UB <- page[k+1,6]
+      E_BB <- page[k+1,7]
+      E_FX <- page[k+1,8]
+      
+      Penalty_VT <- page[k+2,5]
+      Penalty_UB <- page[k+2,6]
+      Penalty_BB <- page[k+2,7]
+      Penalty_FX <- page[k+2,8]
+      
+      Score_VT <- page[k+3,5]
+      Score_UB <- page[k+3,6]
+      Score_BB <- page[k+3,7]
+      Score_FX <- page[k+3,8]
+      
+      Rank_VT <- page[k+4,5]
+      Rank_UB <- page[k+4,6]
+      Rank_BB <- page[k+4,7]
+      Rank_FX <- page[k+4,8]
+      
+      person_qual_df <- data.frame(name, 
+                                   D_VT, D_UB, D_BB, D_FX,
+                                   E_VT, E_UB, E_BB, E_FX,
+                                   Penalty_VT, Penalty_UB, Penalty_BB, Penalty_FX,
+                                   Score_VT, Score_UB, Score_BB, Score_FX,
+                                   Rank_VT, Rank_UB, Rank_BB, Rank_FX)
+      w_qual_ls[[length(w_qual_ls)+1]] <- person_qual_df
+    }
+  }
+  
+  w_tb <- w_qual_ls %>% 
+    bind_rows() %>% 
+    pivot_longer(
+      cols = !1, 
+      names_to = c(".value", "Apparatus"), 
+      names_sep = "_", 
+      values_drop_na = TRUE
+    ) %>% 
+    filter(D != "__.___") %>% 
+    mutate(
+      E_Score = as.numeric(E),
+      D_Score = as.numeric(D),
+      Score = as.numeric(Score),
+      Gender = "w"
+    ) %>% 
+    relocate(name, Gender, Apparatus, Rank, D_Score, E_Score, Score) %>% 
+    select(!D:Penalty)
+  
+  ### for men ####################
+  for (j in 1:length(m_wc23_ls)) {
+    page <- m_wc23_ls[[j]]
+    for (k in seq(3, nrow(page), 6)) {
+      name <- page[k,2]
+      
+      D_FX <- page[k,5]
+      D_PH <- page[k,6]
+      D_SR <- page[k,7]
+      D_VT <- page[k,8]
+      D_PB <- page[k,9]
+      D_HB <- page[k,10]
+      
+      E_FX <- page[k+1,5]
+      E_PH <- page[k+1,6]
+      E_SR <- page[k+1,7]
+      E_VT <- page[k+1,8]
+      E_PB <- page[k+1,9]
+      E_HB <- page[k+1,10]
+      
+      bonus_FX <- page[k+2,5]
+      bonus_PH <- page[k+2,6]
+      bonus_SR <- page[k+2,7]
+      bonus_VT <- page[k+2,8]
+      bonus_PB <- page[k+2,9]
+      bonus_HB <- page[k+2,10]
+      
+      Penalty_FX <- page[k+3,5]
+      Penalty_PH <- page[k+3,6]
+      Penalty_SR <- page[k+3,7]
+      Penalty_VT <- page[k+3,8]
+      Penalty_PB <- page[k+3,9]
+      Penalty_HB <- page[k+3,10]
+      
+      Score_FX <- page[k+4,5]
+      Score_PH <- page[k+4,6]
+      Score_SR <- page[k+4,7]
+      Score_VT <- page[k+4,8]
+      Score_PB <- page[k+4,9]
+      Score_HB <- page[k+4,10]
+      
+      Rank_FX <- page[k+5,5]
+      Rank_PH <- page[k+5,6]
+      Rank_SR <- page[k+5,7]
+      Rank_VT <- page[k+5,8]
+      Rank_PB <- page[k+5,9]
+      Rank_HB <- page[k+5,10]
+      
+      person_qual_df <- data.frame(name, 
+                                   D_FX, D_PH, D_SR, D_VT, D_PB, D_HB,
+                                   E_FX, E_PH, E_SR, E_VT, E_PB, E_HB,
+                                   bonus_FX, bonus_PH, bonus_SR, bonus_VT, bonus_PB, bonus_HB,
+                                   Penalty_FX, Penalty_PH, Penalty_SR, Penalty_VT, Penalty_PB, Penalty_HB,
+                                   Score_FX, Score_PH, Score_SR, Score_VT, Score_PB, Score_HB,
+                                   Rank_FX, Rank_PH, Rank_SR, Rank_VT, Rank_PB, Rank_HB)
+      m_qual_ls[[length(m_qual_ls)+1]] <- person_qual_df
+    }
+  }
+  
+  m_tb <- m_qual_ls %>% 
+    bind_rows() %>% 
+    pivot_longer(
+      cols = !1, 
+      names_to = c(".value", "Apparatus"), 
+      names_sep = "_", 
+      values_drop_na = TRUE
+    ) %>% 
+    filter(D != "__.___") %>% 
+    mutate(
+      E_Score = as.numeric(E),
+      D_Score = as.numeric(D),
+      bonus = as.numeric(bonus),
+      Score = as.numeric(Score)-bonus,
+      Gender = "m"
+    ) %>% 
+    relocate(name, Gender, Apparatus, Rank, D_Score, E_Score, Score) %>% 
+    select(!D:Penalty)
+  
+  ## combine women and men #############
+  
+  wc23_tb <- bind_rows(m_tb, w_tb) %>% 
+    mutate(Rank = as.numeric(gsub("[^0-9]", "", Rank))) %>% 
+    mutate(FirstName = sub("^(\\S+)\\s.*$", "\\1", name),
+           LastName = sub("^\\S+\\s(.*)$", "\\1", name)) %>% 
+    mutate(Round = "AAfinal") %>% 
+    mutate(Date = Date,
+           Competition = Competition,
+           Location = Location,
+           Country = "USA",
+           Penalty = round(D_Score + E_Score - Score, 3)) %>% 
+    mutate(Penalty = ifelse(Penalty == 0, NA, Penalty)) %>% 
+    relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
+             Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
+    select(!name)
+  
+  return(wc23_tb)
+}

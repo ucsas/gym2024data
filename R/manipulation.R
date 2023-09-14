@@ -250,9 +250,7 @@ w_path <- "../pdf/23uschamps_aa/w_23champs_sraa.pdf"
 Date = "26-27 Aug 2023"
 Competition = "2023 U.S. Championships"
 Location = "San Jose, CA"
-result <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
-
-identical(champ23_tb, result)
+champ23_tb <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
 
 
 ### TAMPA 2022 U.S. Championships ##############################################
@@ -261,6 +259,22 @@ w_path <- "../pdf/22uschamps/w_22champs_sraa.pdf"
 Date = "19-20 Aug 2022"
 Competition = "2022 U.S. Championships"
 Location = "Tampa, FL"
-result <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
+champ22_tb <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
 
-identical(champ22_tb, result)
+### 2023 Winter Cup ###############################################################
+m_path <- "../pdf/23wintercup/m_23wc_aa.pdf"
+w_path <- "../pdf/23wintercup/w_23wc_sr.pdf"
+Date = "24-26 Feb 2023"
+Competition = "2023 Winter Cup"
+Location = "Louisville, Kentucky"
+wc23_tb <- extract_wintercup_data(m_path, w_path, Date, Competition, Location)
+write_csv(wc23_tb, "../cleandata/data_new/wintercup_23.csv")
+
+### 2022 Winter Cup ###############################################################
+m_path <- "../pdf/22wintercup/m_22wc_sraa.pdf"
+w_path <- "../pdf/22wintercup/w_22wc_sr.pdf"
+Date = "25-27 Feb 2022"
+Competition = "2022 Winter Cup"
+Location = "Frisco, Texas"
+wc22_tb <- extract_wintercup_data(m_path, w_path, Date, Competition, Location)
+write_csv(wc22_tb, "../cleandata/data_new/wintercup_22.csv")
