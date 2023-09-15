@@ -131,9 +131,22 @@ m_tb <- c(m_qual_ls, m_final_ls) %>%
   separate(DE_PH, into = c("D_PH", "E_PH"), sep = " / ") %>% 
   separate(DE_SR, into = c("D_SR", "E_SR"), sep = " / ") %>%
   separate(DE_VT, into = c("D_VT", "E_VT"), sep = " / ") %>% 
-  separate(score_PB_HB, into = c("score_PB", "score_HB"), sep = " ") %>% 
+  separate(score_PB_HB, into = c("score_PB", "score_HB"), sep = " ") 
+
+# 根据 DE_PB_HB 列中 '/' 的个数来划分数据框
+m_tb_2 <- m_tb %>% 
+  filter(sapply(strsplit(as.character(DE_PB_HB), ""), function(x) sum(x == "/")) == 2) %>% 
   separate(DE_PB_HB, into = c("D_PB", "middle", "E_HB"), sep = " / ") %>% 
-  separate(middle, into = c("E_PB", "D_HB"), sep = " ") %>% 
+  separate(middle, into = c("E_PB", "D_HB"), sep = " ")
+
+m_tb_1 <- m_tb %>% 
+  filter(sapply(strsplit(as.character(DE_PB_HB), ""), function(x) sum(x == "/")) != 2) %>% 
+  mutate(DE_PB = ifelse(score_PB == "__.___", NA, DE_PB_HB)) %>% 
+  mutate(DE_HB = ifelse(score_HB == "__.___", NA, DE_PB_HB)) %>% 
+  separate(DE_PB, into = c("D_PB", "E_PB"), sep = " / ") %>%
+  separate(DE_HB, into = c("D_HB", "E_HB"), sep = " / ")
+
+m_tb <- bind_rows(m_tb_2, m_tb_1) %>% 
   separate(B.ND_PB_HB, into = c("B.ND_PB", "B.ND_HB"), sep = " ") %>% 
   separate(B.ND_FX, into = c("bonus_FX", "pen_FX"), sep = "/") %>% 
   separate(B.ND_PH, into = c("bonus_PH", "pen_PH"), sep = "/") %>% 
@@ -155,7 +168,7 @@ m_tb <- c(m_qual_ls, m_final_ls) %>%
     Gender = "m"
   ) %>% 
   relocate(name, Gender, Round, Apparatus, D_Score, E_Score, Score) %>% 
-  select(!score:pen)
+  select(!score:DE)
 
 ## combine women and men #######################################################
 
