@@ -245,8 +245,8 @@ write_csv(comm_tb, "../cleandata/data_new/commgames_22.csv")
 
 
 ### SAN JOSE 2023 U.S. Championships ###########################################
-m_path <- "../pdf/23uschamps_aa/m_23champs_sraa.pdf"
-w_path <- "../pdf/23uschamps_aa/w_23champs_sraa.pdf"
+m_path <- "../pdf/23uschamps/m_23champs_sraa.pdf"
+w_path <- "../pdf/23uschamps/w_23champs_sraa.pdf"
 Date = "26-27 Aug 2023"
 Competition = "2023 U.S. Championships"
 Location = "San Jose, CA"

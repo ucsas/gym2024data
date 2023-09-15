@@ -5,8 +5,8 @@ library(tidyverse)
 setwd("/Users/minzefang/gym2024data/R")
 # source("function.R")
 
-m_path <- "../pdf/23uschamps_aa/m_23champs_sraa.pdf"
-w_path <- "../pdf/23uschamps_aa/w_23champs_sraa.pdf"
+m_path <- "../pdf/23uschamps/m_23champs_sraa.pdf"
+w_path <- "../pdf/23uschamps/w_23champs_sraa.pdf"
 
 us_area=list(c(106.851163, 9.628874, 763.505728, 613.347834))
 
