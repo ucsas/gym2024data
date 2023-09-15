@@ -251,6 +251,7 @@ Date = "26-27 Aug 2023"
 Competition = "2023 U.S. Championships"
 Location = "San Jose, CA"
 champ23_tb <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
+write_csv(champ23_tb, "../cleandata/data_new/uschamps_23.csv")
 
 
 ### TAMPA 2022 U.S. Championships ##############################################
@@ -260,6 +261,7 @@ Date = "19-20 Aug 2022"
 Competition = "2022 U.S. Championships"
 Location = "Tampa, FL"
 champ22_tb <- extract_uschampionship_data(m_path, w_path, Date, Competition, Location)
+write_csv(champ22_tb, "../cleandata/data_new/uschamps_22.csv")
 
 ### 2023 Winter Cup ###############################################################
 m_path <- "../pdf/23wintercup/m_23wc_aa.pdf"
