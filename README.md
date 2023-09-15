@@ -6,9 +6,9 @@ https://statds.org/events/ucsas2024/challenge.html.
 This repo `gym2024data` contains the scores for all the routines performed in a 
 set of major domestic and international gymnastics competitions in 2022 and 2023.
 
-The CSV files of clean data are in the folder **cleandata**. We also store the 
-original PDF files from which we scrape the data in the folder **pdf** and the 
-corresponding code files in folders **R** and **python**.
+The CSV files of clean data are in the folder `cleandata`. We also store the 
+original PDF files from which we scrape the data in the folder `pdf` and the 
+corresponding code files in folders `R` and `python`.
 
 
 
@@ -43,6 +43,7 @@ in their execution of techniques. If there is no penalty, the value are left
 with NA.\
 `Score`: the total score (D-Score + E-Score – Penalty)
 
+**Note**: A score of zero almost always indicates that the gymnast did not compete on that apparatus. (Except for some rare cases)
 
 ## Acronym Convention for Naming Apparatus
 For women: (4 apparatus)\
@@ -59,13 +60,16 @@ PB = Parallel Bars\
 HB = Horizontal Bars
 FX = Floor Exercise\
 
-Note: For the Apparatus column, there might be "VT1", "VT2" or "VT".
-They all mean vault. The difference is that when doing apparatus games,
+**Note**: For the Apparatus column, there might be "VT1", "VT2" or "VT".
+They all mean vault. The difference is that when doing individual apparatus,
 some gymnasts will do the vault twice. In that case, the first result
 will be denoted as "VT1" and the second result as "VT2".
-In All-Around games, unlike apparatus qual/finals, there is usually only
-one vault that contributes towards an AA game,
-then the Apparatus value for this entry is just "VT" along.
+In All-Around games, unlike individual apparatus, there is usually only
+one vault that contributes towards an All-Around game,
+then the Apparatus value for this entry is just "VT" along. In short: 
++ VT indicates that only 1 vault was performed
++ VT1 may indicate that only 1 vault was performed OR it could indicate the 1st
+of 2 vaults that were performed
 
 ## Data Source
 
