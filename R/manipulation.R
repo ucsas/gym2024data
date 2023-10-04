@@ -3,7 +3,7 @@ source("function.R")
 
 ### 2023 Central American and Caribbean Games San Salvador ################
 
-ca_path <- "../pdfs_2023/central_am"
+ca_path <- "../pdf/central_am"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
                   "Penalty", "Score")
 
@@ -19,7 +19,7 @@ write_csv(ca_tb, "../cleandata/data_new/central_america.csv")
 
 ### 2022 Senior European Championships MUNICH (GER) ############################
 
-eu22_path <- "../pdfs_2023/europe_22"
+eu22_path <- "../pdf/europe_22"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
                   "Penalty", "Score")
 eu_ls_raw <- get_gym_tables(eu22_path) %>% 
@@ -42,7 +42,7 @@ write_csv(eu_tb, "../cleandata/data_new/european_2022.csv")
 
 ### 2023 Senior European Championships ANTALYA (TUR) ###########################
 
-eu23_path <- "../pdfs_2023/europe_23"
+eu23_path <- "../pdf/europe_23"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
                   "Penalty", "Score")
 eu_ls_raw <- get_gym_tables(eu23_path) %>% 
@@ -60,7 +60,7 @@ write_csv(eu_tb, "../cleandata/data_new/european_2023.csv")
 
 ### 2023 Varna World Challenge Cup #############################################
 
-vn_path <- "../pdfs_2023/varna"
+vn_path <- "../pdf/varna"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
                   "Penalty", "Score")
 vn_ls_raw <- get_gym_tables(vn_path)
@@ -81,7 +81,7 @@ vn_ls[vt_names] <- map(vn_ls[vt_names], process_df)
 vn_ls_n <- align_tables_vn(raw_table_list = vn_ls, col_names = col_names_vt)
 vn_tb <- transform_table(table_list = vn_ls_n, 
                          Date = "25-28 May 2023", 
-                         Competition = "2023 Varna World Challenge Cup Results", 
+                         Competition = "2023 Varna World Challenge Cup", 
                          Location = "Varna, Bulgaria")
 write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
@@ -147,7 +147,7 @@ write_csv(osi_tb, "../cleandata/data_new/osijek.csv")
 ### 2023 Cottbus Apparatus World Cup ###########################################
 
 area <- list(c(147, 53, 739, 568))
-folder_path <- "../pdfs_2023/cottbus"
+folder_path <- "../pdf/cottbus"
 cottbus_tb_raw <- extract_data_cot(folder_path, area)
 cottbus_tb <- process_data_cot(cottbus_tb_raw, "Cottbus",
                                    Date = "23-26 Feb 2023", 
@@ -156,7 +156,7 @@ cottbus_tb <- process_data_cot(cottbus_tb_raw, "Cottbus",
 write_csv(cottbus_tb, "../cleandata/data_new/cottbus.csv")  
 
 ## EnBW DTB Pokal Team Challenge 2023
-folder_path <- "../pdfs_2023/dtb_pokal"
+folder_path <- "../pdf/dtb_pokal"
 dtb_tb_raw <- extract_data_cot(folder_path, area)
 ## used a different split name algorithm since names here contains German letters
 dtb_raw_name <- dtb_tb_raw %>% 
@@ -174,7 +174,7 @@ write_csv(dtb_tb, "../cleandata/data_new/dtb_pokal.csv")
 
 
 ### 2022 51st FIG Artistic Gymnastics World Championships ######################
-lvp_path <- "../pdfs_2023/liverpool" 
+lvp_path <- "../pdf/liverpool" 
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
                   "Penalty", "Score")
 lvp_ls_raw <- get_gym_tables(folder_path = lvp_path)
@@ -197,7 +197,7 @@ write_csv(lvp_tb, "../cleandata/data_new/liverpool_event.csv")
 
 
 ### CHENGDU 2023 FISU World University Games ###################################
-uni_path <- "../pdfs_2023/23univgames"
+uni_path <- "../pdf/23univgames"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
                   "Penalty", "Score")
 
@@ -215,13 +215,13 @@ write_csv(uni_tb, "../cleandata/data_new/univgames_23.csv")
 ### BIRMINGHAM 2022 Commonwealth Games #########################################
 ## 和利物浦的51st FIG Artistic Gymnastics World Championships格式相同
 
-comm_path <- "../pdfs_2023/22commgames"
+comm_path <- "../pdf/22commgames"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
                   "Penalty", "Score")
 comm_ls_raw <- get_gym_tables(folder_path = comm_path) %>% 
   unlist(recursive = F, use.names = TRUE)
 
-hb_path <- "../pdfs_2023/22comm_m_qual_HB/m_qual_HB.pdf"
+hb_path <- "../pdf/22comm_m_qual_HB/m_qual_HB.pdf"
 hb_area <- list(c(223.3226, 99.9136, 680.9744, 494.8661))
 comm_m_qual_hb <- extract_tables(hb_path, area = hb_area, guess = FALSE, 
                                  output = "matrix") %>% 
