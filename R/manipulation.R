@@ -120,7 +120,7 @@ tel_tb_ls <- c(tel_m, tel_w) %>%
   update_vt()
 tel_tb <- transform_web_tb(table_list = tel_tb_ls, 
                            Date = "1-4 Jun 2023",
-                           Competition = "2023 Tel Aviv Challenge Cup",
+                           Competition = "2023 Tel Aviv World Challenge Cup",
                            Location = "Tel Aviv, Israel") %>% 
   select(-Nation)
 write_csv(tel_tb, "../cleandata/data_new/telaviv.csv")
@@ -145,7 +145,7 @@ osi_tb_ls <- c(osi_m, osi_w) %>%
 
 osi_tb <- transform_web_tb(table_list = osi_tb_ls, 
                            Date = "8-11 Jun 2023",
-                           Competition = "2023 Osijek Challenge Cup",
+                           Competition = "2023 Osijek World Challenge Cup",
                            Location = "Osijek, Croatia.") %>% 
   select(-Nation)
 write_csv(osi_tb, "../cleandata/data_new/osijek.csv")
