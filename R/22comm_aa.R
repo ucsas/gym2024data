@@ -1,6 +1,6 @@
 ### BIRMINGHAM 2022 Commonwealth Games: All-Around #############################
-
-path_commaa <- "../pdfs_2023/22comm_aa"
+source("function.R")
+path_commaa <- "../pdf/22comm_aa"
 comm_aa_ls_raw <- get_gym_tables(path_commaa)
 
 ###m_aa_final###################################################################
@@ -146,7 +146,7 @@ commaa4_long <- commaa4_wide %>%
 
 
 ### Combine 4 tables ###########################################################
-Date = "29 Jul-2 Aug, 2023"
+Date = "29 Jul-2 Aug 2022"
 Competition = "BIRMINGHAM 2022 Commonwealth Games"
 Location = "Birmingham, England"
 
