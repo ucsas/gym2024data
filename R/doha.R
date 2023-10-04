@@ -2,8 +2,6 @@ library(pdftools)
 library(tabulizer)
 library(tidyverse)
 
-# setwd("/Users/minzefang/gym2024data")
-
 ## Doha World Cup
 
 # set areas of pdf for table extraction
@@ -11,7 +9,7 @@ other_page_area <- list(c(166, 34.14, 767.77, 549))
 last_page_area <- list(c(166, 23, 695, 549)) 
 
 
-folder_path <- "/Users/minzefang/gym2024data/pdf/doha"
+folder_path <- "../pdf/doha"
 all_paths <- list.files(folder_path, full.names = T) |> 
   set_names(basename)
 
@@ -96,7 +94,7 @@ doha_tb <- list_rbind(doha_ls, names_to = "title") |>
   mutate(FirstName = map_chr(str_extract_all(Name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Apparatus = str_replace(Apparatus, "\\.pdf.*$", "")) |> # remove ".pdf" and anything after it
-  mutate(Date = "1-4 Mar 2023", Competition = "FIG Apparatus World Cup 2023", Location = "Doha, Qatar") |> 
+  mutate(Date = "1-4 Mar 2023", Competition = "2023 Doha World Cup", Location = "Doha, Qatar") |> 
   mutate(Country = NOC, D_Score = D, E_Score = E) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score ) |> 

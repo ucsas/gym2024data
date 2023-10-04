@@ -107,7 +107,7 @@ all <- c(p1, p2) |>
   mutate(FirstName = map_chr(str_extract_all(name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Apparatus = str_remove(Apparatus, "\\.pdf$")) |> 
-  mutate(Date = "27-30 Apr 2023", Competition = "FIG Apparatus World Cup 2023", Location = "Cairo, Egypt") |> 
+  mutate(Date = "27-30 Apr 2023", Competition = "2023 Cairo World Cup", Location = "Cairo, Egypt") |> 
   mutate(Country = noc) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score )|> 
@@ -169,7 +169,7 @@ vt_all <- c(vt1, vt2) |>
   mutate(FirstName = map_chr(str_extract_all(name, "\\b[A-Z][a-z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(LastName = map_chr(str_extract_all(name, "\\b[A-Z]+\\b"), ~ paste(.x, collapse = " "))) |> 
   mutate(Apparatus = str_remove(Apparatus, "\\.pdf$")) |> 
-  mutate(Date = "27-30 Apr 2023", Competition = "FIG Apparatus World Cup 2023", Location = "Cairo, Egypt") |> 
+  mutate(Date = "27-30 Apr 2023", Competition = "2023 Cairo World Cup", Location = "Cairo, Egypt") |> 
   mutate(Country = noc) |> 
   relocate(FirstName, LastName, Gender, Country, Date, Competition, Round, Location, 
            Apparatus, Rank, D_Score, E_Score, Penalty, Score )|> 

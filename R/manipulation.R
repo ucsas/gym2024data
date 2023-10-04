@@ -158,7 +158,7 @@ folder_path <- "../pdf/cottbus"
 cottbus_tb_raw <- extract_data_cot(folder_path, area)
 cottbus_tb <- process_data_cot(cottbus_tb_raw, "Cottbus",
                                    Date = "23-26 Feb 2023", 
-                                   Competition = "FIG Apparatus World Cup 2023", 
+                                   Competition = "2023 Cottbus World Cup", 
                                    Location = "Cottbus, Germany")
 write_csv(cottbus_tb, "../cleandata/data_new/cottbus.csv")  
 
