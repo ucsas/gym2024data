@@ -59,6 +59,9 @@ write_csv(eu_tb, "../cleandata/data_new/european_2023.csv")
 
 
 ### 2023 Varna World Challenge Cup #############################################
+## Note: the get_gym_tables() function does not apply anymore after some 
+## changes of function code, any changes are made directly on clean data
+## the following paragraph of codes may not run.
 
 vn_path <- "../pdf/varna"
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
@@ -81,18 +84,22 @@ vn_ls[vt_names] <- map(vn_ls[vt_names], process_df)
 vn_ls_n <- align_tables_vn(raw_table_list = vn_ls, col_names = col_names_vt)
 vn_tb <- transform_table(table_list = vn_ls_n, 
                          Date = "25-28 May 2023", 
-                         Competition = "2023 Varna World Challenge Cup", 
+                         Competition = "2023 Varna World Challenge Cup Results", 
                          Location = "Varna, Bulgaria")
 write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
 
-### 2023 Varna World Challenge Cup Modification : Switch D_Score and E_Score####
+### 2023 Varna World Challenge Cup Modification 1: Switch D_Score and E_Score####
 vn_tb <- read_csv("../cleandata/data_new/varna.csv")
 vn_tb <- vn_tb %>% 
   mutate(D = E_Score, E_Score = D_Score, D_Score = D) %>% 
   select(!D)
 write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
+### 2023 Varna World Challenge Cup Modification 1: remove "Results" from competition name 
+vn_tb <- read_csv("../cleandata/data_new/varna.csv") %>% 
+  mutate(Competition = "2023 Varna World Challenge Cup")
+write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
 ### 2023 Tel Aviv Challenge Cup ################################################
 
