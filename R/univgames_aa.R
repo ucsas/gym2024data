@@ -1,6 +1,6 @@
 ### CHENGDU 2023 FISH World University Games: All-Around Finals ################
 
-path_uniaa <- "../pdfs_2023/23univgames_aa"
+path_uniaa <- "../pdf/23univgames_aa"
 univ_aa_ls_raw <- get_gym_tables(path_uniaa)
 
 ###m_aa_final###################################################################
@@ -92,7 +92,7 @@ univaa3_long <- univaa3_wide %>%
 
 ### Combine 2 tables ###########################################################
 Date = "1-5 Aug 2023"
-Competition = "2023 FISH World University Games"
+Competition = "2023 FISU World University Games"
 Location = "Chengdu, China"
 
 univ_aa_tb <- bind_rows(univaa1_long, univaa3_long) %>% 
