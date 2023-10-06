@@ -112,6 +112,7 @@ full_name <- c("Australia", "Austria", "Azerbaijan", "Belgium", "Croatia",
                "Spain", "Finland", "France", "Great Britain", "Germany",
                "Hong Kong", "Hungary", "Israel", "South Africa", 
                "Slovenia", "Slovakia", "Türkiye")
+## result_df is used as an input value of get_web_tb() function
 result_df <- data.frame(Country_Abbr = country_abbr, Full_Name = full_name)
 
 tel_m <- get_web_tb(url1, gender = "m")
