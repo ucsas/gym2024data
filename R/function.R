@@ -301,7 +301,7 @@ get_web_tb <- function(url, gender) {
   return(tables)
 }
 
-
+# this function is used for change "VT" into "VT1" and "VT2" by line num
 update_vt <- function(table_list) {
   table_list <- lapply(table_list, function(df) {
     if ("VT" %in% df$Apparatus) {
@@ -313,9 +313,9 @@ update_vt <- function(table_list) {
   return(table_list)
 }
 
-transform_web_tb <- function(table_list, Date, Competition, Location) {
+transform_web_tb <- function(table_list, Date, Competition, Location, NOCkey) {
   tel_tb <- list_rbind(table_list)
-  merged_tb <- merge(tel_tb, result_df, by.x = "Nation", by.y = "Full_Name", 
+  merged_tb <- merge(tel_tb, NOCkey, by.x = "Nation", by.y = "Full_Name", 
                      all.x = TRUE)
   
   tel_tb <- merged_tb %>% 
