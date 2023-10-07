@@ -3,8 +3,8 @@ source("function.R")
 ## to replace full names in source data with abbreviations
 noc_key <- read.csv("noc_key.csv")
 new_rows <- data.frame(
-  Full_Name = c("Belarus*", "Norway", "Albania", "Armenia", "Czech Republic", "Great Britain", "Hong Kong", "Turkey", "South Korea", "Russia*"),
-  Country_Abbr = c("BLR", "NOR", "ALB", "ARM", "CZE", "GBR", "HKG", "TUR", "KOR", "RUS")
+  Full_Name = c("Belarus*", "Norway", "Albania", "Armenia", "Czech Republic", "Great Britain", "Hong Kong", "Turkey", "South Korea", "Russia*", "Taiwan"),
+  Country_Abbr = c("BLR", "NOR", "ALB", "ARM", "CZE", "GBR", "HKG", "TUR", "KOR", "RUS", "TPE")
 )
 noc_data <- rbind(noc_key, new_rows)
 
@@ -247,5 +247,51 @@ koper22_tb <- transform_web_tb(table_list = koper22_tb_ls,
 write_csv(koper22_tb, "../cleandata/data_new/koper_22.csv")
 
 
+### 2022 Paris World Challenge Cup ################################################
+
+url1 <- "https://thegymter.net/2022/09/27/2022-paris-challenge-cup-mens-results/"
+url2 <- "https://thegymter.net/2022/09/27/2022-paris-challenge-cup-results/"
+
+paris22_m <- get_web_tb(url1, gender = "m")
+paris22_w <- get_web_tb(url2, gender = "w")
+paris22_tb_ls <- c(paris22_m, paris22_w) %>% 
+  update_vt() %>% 
+  map( ~{
+    # 使用filter函数删除D列为"DNS"的行
+    .x <- .x %>%
+      filter(D != "DNS")
+    return(.x)
+  }) %>% 
+  map( ~{
+    # For Rank, change "—" into NA, then make this column numeric
+    .x$Rank[.x$Rank == "—"] <- NA
+    .x$Rank <- as.numeric(.x$Rank)
+    return(.x)
+  }) %>% 
+  map( ~{
+    # 将E和Total列由字符串转为数值类型
+    .x$E <- as.numeric(.x$E)
+    .x$D <- as.numeric(.x$D)
+    .x$Total <- as.numeric(.x$Total)
+    return(.x)
+  }) %>% 
+  map( ~ {
+    # 检查数据框是否包含名为“Average”的列
+    if ("Average" %in% names(.x)) {
+      .x <- .x %>%
+        select(-Average)  # 删除名为“Average”的列
+    }
+    return(.x)
+  })
+  
+
+paris22_tb <- transform_web_tb(table_list = paris22_tb_ls, 
+                               Date = "24-25 Sept 2022",
+                               Competition = "2022 Paris World Challenge Cup",
+                               Location = "Paris, France",
+                               NOCkey = noc_data) %>% 
+  select(-Nation)
+
+write_csv(paris22_tb, "../cleandata/data_new/paris_22.csv")
 
 
