@@ -133,6 +133,14 @@ write_csv(tel_tb, "../cleandata/data_new/telaviv.csv")
 url_m <- "https://thegymter.net/2023/06/13/2023-osijek-challenge-cup-mens-results/"
 url_w <- "https://thegymter.net/2023/06/12/2023-osijek-challenge-cup-results/"
 
+## to replace full names in source data with abbreviations
+noc_key <- read.csv("noc_key.csv")
+new_rows <- data.frame(
+  Full_Name = c("Belarus*", "Norway", "Albania", "Armenia", "Czech Republic", "Great Britain", "Hong Kong", "Turkey", "South Korea", "Russia*"),
+  Country_Abbr = c("BLR", "NOR", "ALB", "ARM", "CZE", "GBR", "HKG", "TUR", "KOR", "RUS")
+)
+noc_data <- rbind(noc_key, new_rows)
+
 osi_m <- get_web_tb(url_m, gender = "m")
 osi_w <- get_web_tb(url_w, gender = "w")
 osi_tb_ls <- c(osi_m, osi_w) %>% 
@@ -149,7 +157,7 @@ osi_tb <- transform_web_tb(table_list = osi_tb_ls,
                            Date = "8-11 Jun 2023",
                            Competition = "2023 Osijek World Challenge Cup",
                            Location = "Osijek, Croatia.",
-                           NOCkey = result_df) %>% 
+                           NOCkey = noc_data) %>% 
   select(-Nation)
 write_csv(osi_tb, "../cleandata/data_new/osijek.csv")
 
