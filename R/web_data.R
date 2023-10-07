@@ -197,3 +197,55 @@ osijek22_tb <- transform_web_tb(table_list = osijek22_tb_ls,
 
 write_csv(osijek22_tb, "../cleandata/data_new/osijek_22.csv")
 
+
+
+
+### 2022 Koper World Challenge Cup ################################################
+
+url1 <- "https://thegymter.net/2022/06/21/2022-koper-challenge-cup-mens-results/"
+url2 <- "https://thegymter.net/2022/06/21/2022-koper-challenge-cup-results/"
+
+koper22_m <- get_web_tb(url1, gender = "m")
+koper22_w <- get_web_tb(url2, gender = "w")
+koper22_tb_ls <- c(koper22_m, koper22_w) %>% 
+  update_vt() %>% 
+  map( ~{
+    # 使用filter函数删除D列为"DNS"的行
+    .x <- .x %>%
+      filter(D != "DNS")
+    return(.x)
+  }) %>% 
+  map( ~{
+    # For Rank, change "—" into NA, then make this column numeric
+    .x$Rank[.x$Rank == "—"] <- NA
+    .x$Rank <- as.numeric(.x$Rank)
+    return(.x)
+  }) %>% 
+  map( ~{
+    # 将E和Total列由字符串转为数值类型
+    .x$E <- as.numeric(.x$E)
+    .x$D <- as.numeric(.x$D)
+    .x$Total <- as.numeric(.x$Total)
+    return(.x)
+  }) %>% 
+  map( ~ {
+    # 检查数据框是否包含名为“Average”的列
+    if ("Average" %in% names(.x)) {
+      .x <- .x %>%
+        select(-Average)  # 删除名为“Average”的列
+    }
+    return(.x)
+  })
+
+koper22_tb <- transform_web_tb(table_list = koper22_tb_ls, 
+                                Date = "16-19 June 2022",
+                                Competition = "2022 Koper World Challenge Cup",
+                                Location = "Koper, Slovenia",
+                                NOCkey = noc_data) %>% 
+  select(-Nation)
+
+write_csv(koper22_tb, "../cleandata/data_new/koper_22.csv")
+
+
+
+
