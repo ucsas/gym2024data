@@ -151,5 +151,49 @@ write_csv(varna22_tb, "../cleandata/data_new/varna_22.csv")
 
 
 
+### 2022 Osijek World Challenge Cup ################################################
 
+url1 <- "https://thegymter.net/2022/06/13/2022-osijek-challenge-cup-mens-results/"
+url2 <- "https://thegymter.net/2022/06/13/2022-osijek-challenge-cup-results/"
+
+osijek22_m <- get_web_tb(url1, gender = "m")
+osijek22_w <- get_web_tb(url2, gender = "w")
+osijek22_tb_ls <- c(osijek22_m, osijek22_w) %>% 
+  update_vt() %>% 
+  map( ~{
+    # 使用filter函数删除D列为"DNS"的行
+    .x <- .x %>%
+      filter(D != "DNS")
+    return(.x)
+  }) %>% 
+  map( ~{
+    # For Rank, change "—" into NA, then make this column numeric
+    .x$Rank[.x$Rank == "—"] <- NA
+    .x$Rank <- as.numeric(.x$Rank)
+    return(.x)
+  }) %>% 
+  map( ~{
+    # 将E和Total列由字符串转为数值类型
+    .x$E <- as.numeric(.x$E)
+    .x$D <- as.numeric(.x$D)
+    .x$Total <- as.numeric(.x$Total)
+    return(.x)
+  }) %>% 
+  map( ~ {
+    # 检查数据框是否包含名为“Average”的列
+    if ("Average" %in% names(.x)) {
+      .x <- .x %>%
+        select(-Average)  # 删除名为“Average”的列
+    }
+    return(.x)
+  })
+
+osijek22_tb <- transform_web_tb(table_list = osijek22_tb_ls, 
+                                Date = "9-12 June 2022",
+                                Competition = "2022 Osijek World Challenge Cup",
+                                Location = "Osijek, Croatia",
+                                NOCkey = noc_data) %>% 
+  select(-Nation)
+
+write_csv(osijek22_tb, "../cleandata/data_new/osijek_22.csv")
 
