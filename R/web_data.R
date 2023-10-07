@@ -112,6 +112,33 @@ cairo22_tb <- transform_web_tb(table_list = cairo22_tb_ls,
 write_csv(cairo22_tb, "../cleandata/data_new/Cairo_22.csv")
 
 
+### 2022 Baku World Cup ################################################
+
+url1 <- "https://thegymter.net/2022/04/05/2022-baku-world-cup-mens-results/"
+url2 <- "https://thegymter.net/2022/04/04/2022-baku-world-cup-results/"
+
+## to replace full names in source data with abbreviations
+noc_key <- read.csv("noc_key.csv")
+new_rows <- data.frame(
+  Full_Name = c("Belarus*", "Norway", "Albania", "Armenia", "Czech Republic", "Great Britain", "Hong Kong", "Turkey", "South Korea", "Russia*"),
+  Country_Abbr = c("BLR", "NOR", "ALB", "ARM", "CZE", "GBR", "HKG", "TUR", "KOR", "RUS")
+)
+noc_data <- rbind(noc_key, new_rows)
+
+Baku22_m <- get_web_tb(url1, gender = "m")
+Baku22_w <- get_web_tb(url2, gender = "w")
+Baku22_tb_ls <- c(Baku22_m, Baku22_w) %>% 
+  update_vt()
+Baku22_tb <- transform_web_tb(table_list = Baku22_tb_ls, 
+                               Date = "31 Mar 2022 - 3 Apr 2022",
+                               Competition = "2022 Baku World Cup",
+                               Location = "Baku, Azerbaijan",
+                               NOCkey = noc_data) %>% 
+  select(-Nation)
+
+write_csv(Baku22_tb, "../cleandata/data_new/Baku_22.csv")
+
+
 
 
 
