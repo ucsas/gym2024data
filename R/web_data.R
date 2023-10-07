@@ -339,3 +339,49 @@ szombathely22_tb <- transform_web_tb(table_list = szombathely22_tb_ls,
   select(-Nation)
 
 write_csv(szombathely22_tb, "../cleandata/data_new/szombathely_22.csv")
+
+
+### 2022 Mersin World Challenge Cup ################################################
+
+url1 <- "https://thegymter.net/2022/10/11/2022-mersin-challenge-cup-mens-results/"
+url2 <- "https://thegymter.net/2022/10/10/2022-mersin-challenge-cup-results/"
+
+mersin22_m <- get_web_tb(url1, gender = "m")
+mersin22_w <- get_web_tb(url2, gender = "w")
+mersin22_tb_ls <- c(mersin22_m, mersin22_w) %>% 
+  update_vt() %>% 
+  map( ~{
+    # 使用filter函数删除D列为"DNS"的行
+    .x <- .x %>%
+      filter(D != "DNS")
+    return(.x)
+  }) %>% 
+  map( ~{
+    # For Rank, change "—" into NA, then make this column numeric
+    .x$Rank[.x$Rank == "—"] <- NA
+    .x$Rank <- as.numeric(.x$Rank)
+    return(.x)
+  }) %>% 
+  map( ~{
+    # 将E和Total列由字符串转为数值类型
+    .x$E <- as.numeric(.x$E)
+    .x$D <- as.numeric(.x$D)
+    .x$Total <- as.numeric(.x$Total)
+    return(.x)
+  }) %>% 
+  map( ~ {
+    # 检查数据框是否包含名为“Average”的列
+    if ("Average" %in% names(.x)) {
+      .x <- .x %>%
+        select(-Average)  # 删除名为“Average”的列
+    }
+    return(.x)
+  })
+mersin22_tb <- transform_web_tb(table_list = mersin22_tb_ls, 
+                                     Date = "7-9 Oct 2022",
+                                     Competition = "2022 Mersin World Challenge Cup",
+                                     Location = "Mersin, Turkey",
+                                     NOCkey = noc_data) %>% 
+  select(-Nation)
+
+write_csv(mersin22_tb, "../cleandata/data_new/mersin_22.csv")
