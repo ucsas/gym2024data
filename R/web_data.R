@@ -119,7 +119,7 @@ write_csv(Baku22_tb, "../cleandata/data_new/Baku_22.csv")
 
 
 
-### 2022 Varna World Cup ################################################
+### 2022 Varna World Challenge Cup ################################################
 
 url1 <- "https://thegymter.net/2022/05/31/2022-varna-challenge-cup-mens-results/"
 url2 <- "https://thegymter.net/2022/05/30/2022-varna-challenge-cup-results/"
