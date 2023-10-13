@@ -298,3 +298,22 @@ Competition = "2022 Winter Cup"
 Location = "Frisco, Texas"
 wc22_tb <- extract_wintercup_data(m_path, w_path, Date, Competition, Location)
 write_csv(wc22_tb, "../cleandata/data_new/wintercup_22.csv")
+
+### 2023 Core Hydration Classic ################################################
+m_path <- "../pdf/23classic/m_23classic_sr.pdf"
+w_path <- "../pdf/23classic/w_23classic_sr.pdf"
+Date = "4-6 Aug 2023"
+Competition = "2023 Core Hydration Classic"
+Location = "Hoffman Estates, Illinois"
+classic23_tb <- extract_wintercup_data(m_path, w_path, Date, Competition, Location)
+write_csv(classic23_tb, "../cleandata/data_new/classic_23.csv")
+
+### 2022 U.S. Classic ##########################################################
+m_path <- "../pdf/22classic/m_22classic_sr.pdf"
+w_path <- "../pdf/22classic/w_22classic_sr.pdf"
+Date = "28-31 July 2022"
+Competition = "2022 U.S. Classic"
+Location = "West Valley City, Utah"
+classic22_tb <- extract_wintercup_data(m_path, w_path, Date, Competition, Location)
+classic22_tb$LastName <- gsub("\\*", "", classic22_tb$LastName)
+write_csv(classic22_tb, "../cleandata/data_new/classic_22.csv")
