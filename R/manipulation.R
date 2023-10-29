@@ -191,7 +191,7 @@ dtb_tb <- process_data_cot(dtb_raw_name, type = "dtb",
 write_csv(dtb_tb, "../cleandata/data_new/dtb_pokal.csv")
 
 
-### 2022 51st FIG Artistic Gymnastics World Championships ######################
+### 2022 LIVERPOOL 51st FIG Artistic Gymnastics World Championships ############
 lvp_path <- "../pdf/liverpool" 
 col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
                   "Penalty", "Score")
@@ -211,6 +211,41 @@ lvp_tb <- transform_table(table_list = lvp_ls,
                          Location = "Liverpool, England") %>% 
   arrange(LastName, FirstName, Competition, Apparatus)
 write_csv(lvp_tb, "../cleandata/data_new/liverpool_event.csv")
+
+
+### 2023 ANTWERP 52nd FIG Artistic Gymnastics World Championships ##############
+atwp_path <- "../pdf/antwerp_event" 
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
+                  "Penalty", "Score")
+atwp_ls_raw <- get_gym_tables(folder_path = atwp_path)
+atwp_ls_qr <- unlist(atwp_ls_raw, recursive = F, use.names = TRUE) %>% 
+  map(remove_qr_from_total) %>% 
+  imap(function(df, name) {
+    if (grepl("final", name)) {
+      df <- df[,-(ncol(df)-1:0)]
+    }
+    return(df)
+  })
+atwp_ls <- align_tables(raw_table_list = atwp_ls_qr, col_names = col_names_vt)
+atwp_tb <- transform_table(table_list = atwp_ls, 
+                           Date = "30 Sep 2023 - 8 Oct 2023", 
+                           Competition = "2023 52nd FIG Artistic Gymnastics World Championships", 
+                           Location = "Antwerp, Belgium") %>% 
+  arrange(LastName, FirstName, Competition, Apparatus)
+
+# 单独处理两个LastName提取有问题的运动员
+atwp_tb <- atwp_tb %>%
+  mutate(LastName = case_when(
+    LastName == "" & FirstName == "Kate" ~ "McDONALD",
+    TRUE ~ LastName
+  )) %>% 
+  mutate(LastName = case_when(
+    LastName == "" & FirstName == "Vi Luong" ~ "VAN",
+    TRUE ~ LastName
+  )) %>% 
+  arrange(LastName, FirstName, Competition, Apparatus)
+
+write_csv(atwp_tb, "../cleandata/data_new/antwerp_event.csv")
 
 
 
