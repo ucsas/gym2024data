@@ -177,7 +177,13 @@ vt_all <- c(vt1, vt2) |>
   mutate(Penalty = replace(Penalty, Penalty == 0, NA))
 
 
-cairo_all <- bind_rows(all, vt_all)
+cairo_all <- bind_rows(all, vt_all) %>% 
+  mutate(Score = if_else(Apparatus == "FX" & LastName == "ABDELRAHMAN" & Round == "qual", 11.133, Score)) %>%
+  mutate(Penalty = if_else(Apparatus == "FX" & LastName == "ABDELRAHMAN" & Round == "qual", 0.400, Penalty)) %>%
+  mutate(Score = if_else(Apparatus == "FX" & LastName == "CHASAZYROVAS" & Round == "qual", 10.433, Score)) %>%
+  mutate(Penalty = if_else(Apparatus == "FX" & LastName == "CHASAZYROVAS" & Round == "qual", 0.600, Penalty)) %>%
+  mutate(Score = if_else(Apparatus == "FX" & LastName == "HRIBAR" & Round == "qual", 10.566, Score)) %>%
+  mutate(Penalty = if_else(Apparatus == "FX" & LastName == "HRIBAR" & Round == "qual", 0.100, Penalty))
 
 
 write_csv(cairo_all, "../cleandata/data_new/cairo.csv")
