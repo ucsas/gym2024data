@@ -8,6 +8,7 @@ new_rows <- data.frame(
 )
 noc_data <- rbind(noc_key, new_rows)
 
+last_name_first_noc <- c("CHN", "JPN", "KOR", "PRK", "VIE", "HKG", "TPE")
 
 ### 2022 Cottbus World Cup ################################################
 
@@ -385,3 +386,33 @@ mersin22_tb <- transform_web_tb(table_list = mersin22_tb_ls,
   select(-Nation)
 
 write_csv(mersin22_tb, "../cleandata/data_new/mersin_22.csv")
+
+
+
+
+### 2022 9th Senior Artistic Gymnastics Asian Championships ####################
+
+url_m <- "https://thegymter.net/2022/06/21/2022-asian-championships-mens-results/"
+url_w <- "https://thegymter.net/2022/06/20/2022-asian-championships-results/"
+
+asian_tb_list_m <- url_m %>%
+  read_html() %>%
+  html_table(fill = TRUE, header = TRUE) %>%
+  .[-c(1, 8)]
+asian_tb_list_w <- url_w %>%
+  read_html() %>%
+  html_table(fill = TRUE, header = TRUE) %>%
+  .[-c(1, 6)]
+
+asian22_m <- process_web_tb_ls(tables_list = asian_tb_list_m, gender = "m")
+asian22_w <- process_web_tb_ls(tables_list = asian_tb_list_w, gender = "w")
+asian22_tb_ls <- c(asian22_m, asian22_w) %>% 
+  update_vt()
+asian22_tb <- transform_web_tb(table_list = asian22_tb_ls, 
+                               Date = "15-18 June 2022",
+                               Competition = "2022 9th Senior Artistic Gymnastics Asian Championships",
+                               Location = "Doha, Qatar",
+                               NOCkey = noc_data) %>% 
+  select(-Nation)
+
+write_csv(asian22_tb, "../cleandata/data_new/asian_22.csv")
