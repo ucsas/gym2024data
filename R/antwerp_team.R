@@ -185,4 +185,11 @@ atwp_team_final_tb <- bind_rows(atwp_m_final_tb, atwp_w_final_tb) %>%
            Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
   select(!Name:Pen)
 
+# 处理Melanie De Jesus Dos Santos的姓名异常
+atwp_team_final_tb <- atwp_team_final_tb %>%
+  mutate(
+    FirstName = if_else(LastName == "JESUS SANT", "Melanie", FirstName),
+    LastName = if_else(LastName == "JESUS SANT", "DE JESUS DOS SANTOS", LastName)
+  )
+
 write_csv(atwp_team_final_tb, "../cleandata/data_new/antwerp_team.csv")
