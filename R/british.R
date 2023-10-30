@@ -180,7 +180,7 @@ br_tb_22_nonvt <- list_rbind(non_vt_list, names_to = "title") %>%
     D_Score = as.numeric(D),
     Penalty = as.numeric(Pen),
     Score = as.numeric(Score),
-    E_Score = as.numeric(E)
+    E_Score = Score - D_Score + Penalty
   )
 
 
