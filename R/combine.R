@@ -24,7 +24,8 @@ combined_df <- combined_df %>%
   group_by(LastName) %>%
   fill(FirstName, .direction = "downup") %>% 
   mutate(Apparatus = ifelse(Apparatus == "RG", "SR", Apparatus)) %>% 
-  filter(!is.na(D_Score) & !is.na(E_Score) & !is.na(Score)) # 删除combined_df数据框中D_Score、E_Score和Score任一列为NA的行
+  filter(!is.na(D_Score) & !is.na(E_Score) & !is.na(Score)) %>%  # 删除combined_df数据框中D_Score、E_Score和Score任一列为NA的行
+  filter(!Score == 0)
 
 ## 把LastName全大写，有些来自web scraping的数据LastName没有大写
 combined_df <- combined_df %>%
