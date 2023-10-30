@@ -114,7 +114,7 @@ pam_m_final_tb <- m_final_ls %>%
 
 
 ### 2. men qual ################################################################
-locate_areas("../pdf/pan_am/m_qual.pdf")
+# locate_areas("../pdf/pan_am/m_qual.pdf")
 pam_m_qual_ls_raw <- extract_tables("../pdf/pan_am/m_qual.pdf", guess = FALSE,
                                     area = list(c(107.56706,  34.27168, 730.50355, 545.52526 ),
                                                 c(103.01177,  35.41036, 727.08708, 545.52526 ),
@@ -213,7 +213,7 @@ pam_m_qual_tb <- m_qual_ls %>%
 
 
 ### 3. women final ##################################################################
-locate_areas("../pdf/pan_am/w_final.pdf")
+# locate_areas("../pdf/pan_am/w_final.pdf")
 pam_w_final_ls_raw <- extract_tables("../pdf/pan_am/w_final.pdf", guess = FALSE,
                                      area = list(c(121.23294,  35.52481, 708.86590, 533.10396 ),
                                                  c(109.84471,  38.94069 , 700.89413, 533.10396 ),
@@ -293,14 +293,14 @@ for (i in 1:length(result)) {
     BB_E <- page[2,7]
     FX_E <- page[2,9]
     
-    VT_Penalty <- page[2,4]
-    UB_Penalty <- page[2,6]
-    BB_Penalty <- page[2,8]
-    FX_Penalty <- page[2,10]
+    VT_Pen <- page[2,4]
+    UB_Pen <- page[2,6]
+    BB_Pen <- page[2,8]
+    FX_Pen <- page[2,10]
     
     person_final_df <- data.frame(Name, Country, VT_D,UB_D,BB_D,FX_D,
                                   VT_E,UB_E,BB_E,FX_E,
-                                  VT_Penalty,UB_Penalty,BB_Penalty,FX_Penalty,
+                                  VT_Pen,UB_Pen,BB_Pen,FX_Pen,
                                   VT_Score,UB_Score,BB_Score,FX_Score)
     w_final_ls[[length(w_final_ls)+1]] <- person_final_df
   }
@@ -323,7 +323,7 @@ pam_w_final_tb <- w_final_ls %>%
 
 
 ### 4. women qual ##################################################################
-locate_areas("../pdf/pan_am/w_qual.pdf")
+# locate_areas("../pdf/pan_am/w_qual.pdf")
 pam_w_qual_ls_raw <- extract_tables("../pdf/pan_am/w_qual.pdf", guess = FALSE,
                                      area = list(c(115.5388,  32.5036, 706.5883, 535.0532 ),
                                                  c(107.56706,  33.64317, 720.25413, 535.05324 ),
@@ -386,14 +386,14 @@ for (i in 1:length(result)) {
     BB_E <- page[2,7]
     FX_E <- page[2,9]
     
-    VT_Penalty <- page[2,4]
-    UB_Penalty <- page[2,6]
-    BB_Penalty <- page[2,8]
-    FX_Penalty <- page[2,10]
+    VT_Pen <- page[2,4]
+    UB_Pen <- page[2,6]
+    BB_Pen <- page[2,8]
+    FX_Pen <- page[2,10]
     
     person_final_df <- data.frame(Name, Country, VT_D,UB_D,BB_D,FX_D,
                                   VT_E,UB_E,BB_E,FX_E,
-                                  VT_Penalty,UB_Penalty,BB_Penalty,FX_Penalty,
+                                  VT_Pen,UB_Pen,BB_Pen,FX_Pen,
                                   VT_Score,UB_Score,BB_Score,FX_Score)
     w_qual_ls[[length(w_qual_ls)+1]] <- person_final_df
   }

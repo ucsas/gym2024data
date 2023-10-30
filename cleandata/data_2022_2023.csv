@@ -240,9 +240,9 @@ ABOELHASAN,Jana,w,EGY,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics
 ABOELHASAN,Jana,w,EGY,24-25 Sept 2022,2022 Paris World Challenge Cup,qual,"Paris, France",BB,35,4.7,5.8,,10.5
 ABOELHASAN,Jana,w,EGY,24-25 Sept 2022,2022 Paris World Challenge Cup,qual,"Paris, France",FX,27,4.4,6.65,0.4,10.65
 ABREU,Yamilet,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.9,6.2,,10.1
-ABREU,Yamilet,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5,7.467,,12.367
+ABREU,Yamilet,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5,7.467,0.1,12.367
 ABREU,Yamilet,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.5,7.233,,11.733
-ABREU,Yamilet,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.6,8.067,,12.567
+ABREU,Yamilet,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.6,8.067,0.1,12.567
 ABU AL SOUD,Ahmad,m,JOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",PH,2,6.3,8.566,,14.866
 ABU AL SOUD,Ahmad,m,JOR,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",PH,8,6.3,8.066,,14.366
 ABU AL SOUD,Ahmad,m,JOR,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,final,"Antwerp, Belgium",PH,3,6.4,8.233,,14.633
@@ -303,9 +303,9 @@ ACHAMPONG,Ondine,w,ENG,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual
 ACHAMPONG,Ondine,w,ENG,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,AAfinal,"Birmingham, England",VT,1,5,8.9,,13.9
 ACHAMPONG,Ondine,m,ENG,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,AAqual,"Birmingham, England",VT1,,5,9.15,,14.15
 ACHONDO ANDINO,Barbara,w,CHI,9-12 June 2022,2022 Osijek World Challenge Cup,qual,"Osijek, Croatia",FX,13,4.7,7.333,0.1,11.933
-ACHONDO ANDINO,Barbara,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.6,7.433,,10.933
+ACHONDO ANDINO,Barbara,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.6,7.433,0.1,10.933
 ACHONDO ANDINO,Barbara,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.2,8.1,,12.3
-ACHONDO ANDINO,Barbara,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.1,6.933,,10.733
+ACHONDO ANDINO,Barbara,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.1,6.933,0.3,10.733
 ACUNA,Francisco,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,14,4.3,8.2,,12.5
 ACUNA,Francisco,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,19,4.3,8,,12.3
 ACUNA,Francisco,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",HB,10,4.2,7.95,,12.15
@@ -541,7 +541,7 @@ ALFONSO,Javier,m,USA,26-27 Aug 2023,2023 U.S. Championships,final,"San Jose, CA"
 ALFONSO,Javier,m,USA,24-26 Feb 2023,2023 Winter Cup,AAfinal,"Louisville, Kentucky",FX,12,5,8.2,,13.2
 ALFONSO,Javier,m,USA,24-26 Feb 2023,2023 Winter Cup,AAfinal,"Louisville, Kentucky",PB,26,5,7.6,,12.6
 ALFONSO,Javier,m,USA,24-26 Feb 2023,2023 Winter Cup,AAfinal,"Louisville, Kentucky",SR,3,5.6,8.55,,14.15
-ALICEA CARDONA,Katyna Kamila,w,PUR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.1,7.3,,11.3
+ALICEA CARDONA,Katyna Kamila,w,PUR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.1,7.3,0.1,11.3
 ALICEA CARDONA,Katyna Kamila,w,PUR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4,7.233,,11.233
 ALICEA CARDONA,Katyna Kamila,w,PUR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4.1,6.3,,10.4
 ALICEA CARDONA,Katyna Kamila,w,PUR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,3.2,8.067,,11.267
@@ -595,7 +595,7 @@ AMBLIE,Joar,m,NOR,18-21 Aug 2022,2022 Senior European Championships,qual,"Munich
 AMEDE ABSOLAM,Juliana Mya,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.5,5.1,,8.6
 AMEDE ABSOLAM,Juliana Mya,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.1,6.467,,10.567
 AMEDE ABSOLAM,Juliana Mya,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,3.1,6.933,,10.033
-AMEDE ABSOLAM,Juliana Mya,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.2,7.433,,10.333
+AMEDE ABSOLAM,Juliana Mya,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.2,7.433,0.3,10.333
 AMGALAN,Namuunaa,w,MGL,15-18 June 2022,2022 9th Senior Artistic Gymnastics Asian Championships,qual,"Doha, Qatar",BB,38,4.5,4.433,,8.933
 AMGALAN,Namuunaa,w,MGL,15-18 June 2022,2022 9th Senior Artistic Gymnastics Asian Championships,qual,"Doha, Qatar",FX,38,3.5,5.967,,9.467
 AMORELLI,Mei,w,GBR,23-26 Mar 2023,2023 British Gymnastics Championships,qual,"Liverpool, England",BB,22,4.2,7.3,0,11.5
@@ -797,7 +797,7 @@ AQUINO III,Miguel Angel,m,PUR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan
 AQUINO III,Miguel Angel,m,PUR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4,8.667,0.1,12.567
 ARANIBAR RODRIGUEZ,Ariana Paola,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.7,4.7,,8.4
 ARANIBAR RODRIGUEZ,Ariana Paola,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.2,6.533,,9.733
-ARANIBAR RODRIGUEZ,Ariana Paola,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,1,6.233,,3.233
+ARANIBAR RODRIGUEZ,Ariana Paola,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,1,6.233,4,3.233
 ARANIBAR RODRIGUEZ,Ariana Paola,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.2,7.8,,11
 ARCHER,Shannon,w,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,final,"Liverpool, England",BB,8,5.2,5.1,0,10.3
 ARCHER,Shannon,w,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",BB,5,5.2,7.3,0,12.5
@@ -2018,7 +2018,7 @@ BESSIT,Tamsyn,w,RSA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu,
 BESSIT,Tamsyn,w,RSA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",FX,26,4.5,6.966,,11.466
 BESSIT,Tamsyn,w,RSA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",UB,43,4.5,4.4,,8.9
 BESSIT,Tamsyn,w,RSA,1-5 Aug 2023,2023 FISU World University Games,qual,"Chengdu, China",VT1,40,3.4,8.3,,11.7
-BETANCES REYES,Camil,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.9,5.467,,10.267
+BETANCES REYES,Camil,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.9,5.467,0.1,10.267
 BETANCES REYES,Camil,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.3,7.833,,12.133
 BETANCES REYES,Camil,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,3.4,7.7,,11.1
 BETANCES REYES,Camil,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.633,,12.833
@@ -2356,10 +2356,10 @@ BOHORQUEZ,Kristopher,m,COL,24-28 Jun 2023,2023 Central American and Caribbean Ga
 BOHORQUEZ CANTOR,Kristopher Steven,m,COL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",PB,,4.8,7.267,,12.067
 BOHORQUEZ CANTOR,Kristopher Steven,m,COL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",SR,,5.6,8.067,,13.667
 BOHORQUEZ CANTOR,Kristopher Steven,m,COL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",SR,,5.6,7.967,,13.567
-BOHORQUEZ ROMERO,Ashley Nayerly,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.2,5.333,,9.433
+BOHORQUEZ ROMERO,Ashley Nayerly,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.2,5.333,0.1,9.433
 BOHORQUEZ ROMERO,Ashley Nayerly,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.7,7.633,,12.333
 BOHORQUEZ ROMERO,Ashley Nayerly,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.5,7.833,,12.333
-BOHORQUEZ ROMERO,Ashley Nayerly,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.233,,12.133
+BOHORQUEZ ROMERO,Ashley Nayerly,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.233,0.3,12.133
 BOJANC,Luka,m,SLO,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",SR,,,,,
 BOJANC,Luka,m,SLO,31 Mar 2022 - 3 Apr 2022,2022 Baku World Cup,qual,"Baku, Azerbaijan",SR,24,5.2,6.933,,12.133
 BOJANC,Luka,m,SLO,17-20 Mar 2022,2022 Cairo World Cup,qual,"Cairo, Egypt",SR,14,5.2,8.133,,13.333
@@ -2662,7 +2662,7 @@ BROSTELLA ARIAS,Valentina,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior P
 BROSTELLA ARIAS,Valentina,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.5,7.267,,11.767
 BROSTELLA ARIAS,Valentina,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4,6.967,,10.967
 BROSTELLA ARIAS,Valentina,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.1,7.4,,11.5
-BROSTELLA ARIAS,Valentina,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.8,6.8,,10.5
+BROSTELLA ARIAS,Valentina,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.8,6.8,0.1,10.5
 BROSZIO,Pablo,m,PAN,24-27 Feb 2022,2022 Cottbus World Cup,qual,"Cottbus, Germany",SR,28,4.3,5.533,,9.833
 BROSZIO,Pablo,m,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",SR,,3.1,7.533,,10.633
 BROWN,Georgia Rose,w,AUS,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",FX,132,4.3,6.833,,11.133
@@ -2991,7 +2991,7 @@ CAMPOS,Paulina,w,MEX,30 Sept 2022 - 2 Oct 2022,2022 Szombathely World Challenge 
 CAMPOS,Paulina,w,MEX,30 Sept 2022 - 2 Oct 2022,2022 Szombathely World Challenge Cup,qual,"Szombathely, Hungary",UB,10,5.4,6.766,,12.166
 CAMPOS,Paulina,w,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",BB,125,4.7,6.533,0.1,11.133
 CAMPOS,Paulina,w,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",UB,109,5.1,6.533,,11.633
-CAMPOS,Paulina,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.9,7.3,,12.1
+CAMPOS,Paulina,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.9,7.3,0.1,12.1
 CAMPOS,Paulina,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,5.5,7.433,,12.933
 CAMPOS,Paulina,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.5,8,,13.5
 CAMPOS,Paulina,w,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",BB,1,5,7.75,0.1,12.65
@@ -3199,9 +3199,9 @@ CASAMENTO,Marcus,m,AUS,30 Sept 2022 - 2 Oct 2022,2022 Szombathely World Challeng
 CASAMENTO,Marcus,m,AUS,30 Sept 2022 - 2 Oct 2022,2022 Szombathely World Challenge Cup,qual,"Szombathely, Hungary",FX,8,5.4,8.45,0.3,13.55
 CASAMENTO,Marcus,m,AUS,30 Sept 2022 - 2 Oct 2022,2022 Szombathely World Challenge Cup,qual,"Szombathely, Hungary",PB,22,4.4,6.7,,11.1
 CASELLA,Catalina,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.3,6.533,,10.833
-CASELLA,Catalina,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.2,7.467,,11.567
+CASELLA,Catalina,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.2,7.467,0.1,11.567
 CASELLA,Catalina,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,3.8,7.267,,11.067
-CASELLA,Catalina,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,7.767,,11.867
+CASELLA,Catalina,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,7.767,0.1,11.867
 CASSIDY,Charlotte,w,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",BB,42,4.5,6.3,0.6,10.2
 CASSIDY,Charlotte,w,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",FX,55,4.4,6.2,0.3,10.3
 CASSIDY,Charlotte,w,GBR,24-27 Mar 2022,2022 British Gymnastics Championships,qual,"Liverpool, England",UB,46,4.4,5.6,0,10
@@ -3406,7 +3406,7 @@ CHAVEZ,Carmina,w,ESA,24-28 Jun 2023,2023 Central American and Caribbean Games,qu
 CHAVEZ,Carmina,w,ESA,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,25,1.3,8.65,,9.95
 CHAVEZ,Carmina,w,ESA,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,27,3.4,8.5,,11.9
 CHAVEZ MARTINEZ,Carmina Isabella,w,ESA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.5,5.4,,8.9
-CHAVEZ MARTINEZ,Carmina Isabella,w,ESA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.9,7.267,,10.967
+CHAVEZ MARTINEZ,Carmina Isabella,w,ESA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.9,7.267,0.2,10.967
 CHAVEZ MARTINEZ,Carmina Isabella,w,ESA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,1.4,7.4,,8.8
 CHAVEZ MARTINEZ,Carmina Isabella,w,ESA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.4,7.9,,11.3
 CHELADYN,Addyson,m,CAN,7-9 Oct 2022,2022 Mersin World Challenge Cup,qual,"Mersin, Turkey",HB,14,4.8,7.75,,12.55
@@ -4228,9 +4228,9 @@ DAS,Tapeswaranath,m,IND,31 Mar 2022 - 3 Apr 2022,2022 Baku World Cup,qual,"Baku,
 DAS,Tapeswaranath,m,IND,31 Mar 2022 - 3 Apr 2022,2022 Baku World Cup,qual,"Baku, Azerbaijan",VT1,23,4.8,8.633,0.3,13.133
 DAS,Tapeswaranath,m,IND,31 Mar 2022 - 3 Apr 2022,2022 Baku World Cup,qual,"Baku, Azerbaijan",VT2,23,4,8.966,,12.966
 DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5.2,7.1,,12.3
-DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.2,7.333,,12.433
-DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5.1,8.133,,13.033
-DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.3,7.8,,12.9
+DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.2,7.333,0.1,12.433
+DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5.1,8.133,0.2,13.033
+DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.3,7.8,0.2,12.9
 DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4.9,7.1,,12
 DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.9,7.733,,12.633
 DAS NEVES BOTEGA SOARES,Julia,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.333,,12.533
@@ -5633,7 +5633,7 @@ ESCALERA,Natalia,w,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,
 ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5.3,6.833,,12.133
 ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.2,7.833,,13.033
 ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5.1,8.133,,13.233
-ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.2,8.1,,13.2
+ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.2,8.1,0.1,13.2
 ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,5.8,6.633,,12.433
 ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.9,7.7,,13.6
 ESCALERA,Natalia Isabel,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.6,8.867,,13.467
@@ -6315,7 +6315,7 @@ FUALLEN,William,m,NZL,05-06 May 2023,Oceania Continental Championships 2023,AAfi
 FUENTES DE LA CRUZ,Ana Patricia,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.7,6.167,,9.867
 FUENTES DE LA CRUZ,Ana Patricia,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.9,7.233,,11.133
 FUENTES DE LA CRUZ,Ana Patricia,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,3.3,7.567,,10.867
-FUENTES DE LA CRUZ,Ana Patricia,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.6,7.833,,11.333
+FUENTES DE LA CRUZ,Ana Patricia,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.6,7.833,0.1,11.333
 FUKASAWA,Kokoro,w,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",UB,25,6.2,7.3,,13.5
 FUKASAWA,Kokoro,w,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,TeamFinal,"Liverpool, England",UB,,5.2,4.2,,9.4
 FUKASAWA,Kokoro,w,JPN,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,TeamFinal,"Liverpool, England",VT,,4.6,9,,13.6
@@ -6937,7 +6937,7 @@ GODWIN,Georgia,w,AUS,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,final,
 GODWIN,Georgia,w,AUS,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",VT2,4,4,8.8,0.1,12.7
 GOMES MAIA,Luisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.8,6.367,,11.167
 GOMES MAIA,Luisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5,7.833,,12.833
-GOMES MAIA,Luisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.1,,12
+GOMES MAIA,Luisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.1,0.3,12
 GOMEZ,Rodrigo,m,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",FX,28,5.6,8.4,,14
 GOMEZ,Rodrigo,m,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",HB,102,3.9,8.466,,12.366
 GOMEZ,Rodrigo,m,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",PB,139,4.6,5.7,,10.3
@@ -7835,8 +7835,8 @@ HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senio
 HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.9,7.733,,12.633
 HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4.7,7.1,,11.8
 HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.7,6.933,,11.633
-HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,5.4,7.167,,12.267
-HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.6,7.167,,10.667
+HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,5.4,7.167,0.3,12.267
+HERON SOTO,Hillary Alexandra,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.6,7.167,0.1,10.667
 HERON SOTO,Hillary Alexandra,w,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,5,4.6,7.45,0.3,11.75
 HERON SOTO,Hillary Alexandra,w,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,5,4.2,8.55,0.1,12.65
 HERRERA,Lana,w,PAN,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",BB,129,4.4,6.633,,11.033
@@ -7849,7 +7849,7 @@ HERRERA,Lana,w,PAN,27-30 Apr 2023,2023 Cairo World Cup,qual,"Cairo, Egypt",UB,15
 HERRERA,Lana,w,PAN,27-30 Apr 2023,2023 Cairo World Cup,qual,"Cairo, Egypt",VT1,12,4.2,8.633,,12.833
 HERRERA,Lana,w,PAN,27-30 Apr 2023,2023 Cairo World Cup,qual,"Cairo, Egypt",VT2,12,3.8,8.466,,12.266
 HERRERA,Lana Raquel,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.7,6.6,,11.3
-HERRERA,Lana Raquel,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.4,7.367,,11.467
+HERRERA,Lana Raquel,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.4,7.367,0.3,11.467
 HERRERA,Lana Raquel,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.4,7.2,,11.6
 HERRERA,Lana Raquel,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.4,,12.6
 HERRERA RODRIGUEZ,Lana,w,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,27,4.6,5.5,,10.1
@@ -8456,8 +8456,8 @@ IRIBARNE,Nicole,w,ARG,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics
 IRIBARNE,Nicole,w,ARG,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",UB,103,4.2,7.466,,11.666
 IRIBARNE,Nicole,w,ARG,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",VT1,104,4.4,8.5,,12.9
 IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.5,5.8,,10.3
-IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.7,7.533,,12.133
-IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.8,7.5,,11.9
+IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.7,7.533,0.1,12.133
+IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.8,7.5,0.4,11.9
 IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.3,8.267,,12.567
 IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.4,8.5,,12.9
 IRIBARNE APARICIO,Nicole,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.4,8.367,,12.767
@@ -11117,7 +11117,7 @@ LAIHO,Sara,w,FIN,7-9 Oct 2022,2022 Mersin World Challenge Cup,qual,"Mersin, Turk
 LAIHO,Sara,w,FIN,7-9 Oct 2022,2022 Mersin World Challenge Cup,qual,"Mersin, Turkey",FX,15,4,6.5,0.3,10.2
 LALONDE,Jenna,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,4.7,6.6,,11.3
 LALONDE,Jenna,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.9,7.633,,12.533
-LALONDE,Jenna,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.7,8.033,,12.333
+LALONDE,Jenna,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.7,8.033,0.4,12.333
 LALONDE,Jenna,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4.9,8.133,,13.033
 LALONDE,Jenna,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.7,7.4,,12.1
 LALONDE,Jenna,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.6,,12.8
@@ -11726,11 +11726,11 @@ LIM,Kaitlyn,w,SGP,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Bir
 LIMA,Ana Luiza,w,BRA,8-11 Jun 2023,2023 Osijek World Challenge Cup,qual,"Osijek, Croatia.",BB,22,5.1,5.7,,10.8
 LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5,6.467,,11.467
 LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.3,6.833,,12.133
-LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.3,6.767,,11.967
+LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.3,6.767,0.1,11.967
 LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4.9,7.267,,12.167
 LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.9,7.367,,12.267
-LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.2,8.333,,12.433
-LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.2,,12.1
+LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.2,8.333,0.1,12.433
+LIMA DE LIMA,Andreza Heloisa,w,BRA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.2,0.3,12.1
 LIN,Chaopan,m,CHN,15-18 June 2022,2022 9th Senior Artistic Gymnastics Asian Championships,qual,"Doha, Qatar",FX,23,5.3,7.567,,12.867
 LIN,Chaopan,m,CHN,15-18 June 2022,2022 9th Senior Artistic Gymnastics Asian Championships,qual,"Doha, Qatar",HB,5,5.9,8.067,,13.967
 LIN,Chaopan,m,CHN,15-18 June 2022,2022 9th Senior Artistic Gymnastics Asian Championships,final,"Doha, Qatar",HB,2,6.1,8.067,,14.167
@@ -12080,7 +12080,7 @@ LOUSTALOT,Cassandra,w,MEX,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnas
 LOUSTALOT,Cassandra,w,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",BB,60,5.1,7.2,,12.3
 LOUSTALOT,Cassandra,w,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",FX,32,5.1,7.766,,12.866
 LOUSTALOT,Cassandra,w,MEX,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",VT1,77,4,9.066,,13.066
-LOUSTALOT,Cassandra,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5,7.4,,12.3
+LOUSTALOT,Cassandra,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5,7.4,0.1,12.3
 LOUSTALOT,Cassandra,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.1,8.033,,13.133
 LOUSTALOT,Cassandra,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5,7.833,,12.833
 LOUSTALOT,Cassandra,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.9,8.1,,13
@@ -12232,7 +12232,7 @@ MACIAS,Sira,w,ARG,24-25 Sept 2022,2022 Paris World Challenge Cup,qual,"Paris, Fr
 MACIAS,Sira,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4.9,6.8,,11.7
 MACIAS,Sira,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5,8.033,,13.033
 MACIAS,Sira,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.2,8.767,,12.967
-MACIAS,Sira,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8,,10.9
+MACIAS,Sira,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8,1.3,10.9
 MADER,Jasmin,w,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",BB,88,4.6,6.633,,11.233
 MADER,Jasmin,w,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",FX,36,4.7,8.2,,12.9
 MADER,Jasmin,w,AUT,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",UB,72,4.6,7.733,,12.333
@@ -12921,7 +12921,7 @@ MATTHEWS,Nola,w,USA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stut
 MATTHEWS,Nola,w,USA,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",VT2,15,0,0,,0
 MATTHEWS,Nola Rhianne,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.1,7.6,,12.7
 MATTHEWS,Nola Rhianne,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5.1,8,,13.1
-MATTHEWS,Nola Rhianne,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.2,7.767,,12.667
+MATTHEWS,Nola Rhianne,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.2,7.767,0.3,12.667
 MATTHEWS,Nola Rhianne,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,5.5,8.567,,14.067
 MATTHEWS,Nola Rhianne,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.5,8.5,,14
 MATTHEWS,Nola Rhianne,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.7,,12.9
@@ -12943,8 +12943,8 @@ MATTIS,Tyesha,w,JAM,24-28 Jun 2023,2023 Central American and Caribbean Games,fin
 MATTIS,Tyesha,w,JAM,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,5,5.1,7.65,,12.75
 MATTIS,Tyesha,w,JAM,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,4,4.2,8.7,,12.9
 MATTIS,Tyesha,w,JAM,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,8,4.2,8.65,,12.85
-MATTIS,Tyesha Tinekai,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.8,6.233,,10.733
-MATTIS,Tyesha Tinekai,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4,6.667,,10.367
+MATTIS,Tyesha Tinekai,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.8,6.233,0.3,10.733
+MATTIS,Tyesha Tinekai,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4,6.667,0.3,10.367
 MATTIS,Tyesha Tinekai,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.9,5.633,,10.533
 MATTIS,Tyesha Tinekai,w,JAM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.667,,12.867
 MATYOLO,Nkazimlo,w,RSA,1-4 Jun 2023,2023 Tel Aviv World Challenge Cup,qual,"Tel Aviv, Israel",FX,20,4.1,6.4,0.5,10
@@ -13316,8 +13316,8 @@ MESROPIAN,Meline,w,ARG,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastic
 MESROPIAN,Meline,w,ARG,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",UB,91,5,6.766,,11.766
 MESROPIAN,Meline,w,ARG,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",VT1,94,4.2,8.433,,12.633
 MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5.1,5.8,,10.9
-MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.3,5,,9.9
-MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5,7.7,,12.4
+MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.3,5,0.4,9.9
+MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5,7.7,0.3,12.4
 MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5,8,,13
 MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,4.8,6.567,,11.367
 MESROPIAN,Meline,w,ARG,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.8,8.333,,13.133
@@ -14103,10 +14103,10 @@ MORENO,Alexa,w,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,qual
 MORENO,Alexa,w,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,1,4.4,8.85,,13.25
 MORENO,Alexa,w,MEX,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,1,4.4,8.85,,13.25
 MORENO,Sergio,m,ESP,25-28 May 2023,2023 Varna World Challenge Cup,qual,"Varna, Bulgaria",PH,24,4.2,6.2,0,10.4
-MORENO MEDINA,Alexa,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5.1,6.667,,11.667
+MORENO MEDINA,Alexa,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5.1,6.667,0.1,11.667
 MORENO MEDINA,Alexa,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,5.1,7.733,,12.833
 MORENO MEDINA,Alexa,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,5.4,8.7,,14.1
-MORENO MEDINA,Alexa Citlali,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.1,7.233,,12.233
+MORENO MEDINA,Alexa Citlali,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.1,7.233,0.1,12.233
 MORENO MEDINA,Alexa Citlali,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.4,7.5,,12.9
 MORENO MEDINA,Alexa Citlali,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.5,6.8,,12.3
 MORENO MEDINA,Alexa Citlali,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5.4,8.767,,14.167
@@ -14602,9 +14602,9 @@ NAVAS,Karla,w,PAN,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics Wor
 NAVAS BOYD,Karla,w,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,final,"San Salvador, El Salvador",VT2,4,4.6,8.7,,13.3
 NAVAS BOYD,Karla,w,PAN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT2,11,4,7.25,,11.25
 NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,4.8,5.967,,10.767
-NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.8,6.833,,11.533
+NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.8,6.833,0.1,11.533
 NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.4,7.667,,12.067
-NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.4,7.333,,11.633
+NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.4,7.333,0.1,11.633
 NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,5.4,7.167,,12.567
 NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.4,7.6,,13
 NAVAS BOYD,Karla Andrea,w,PAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.6,8.6,,13.2
@@ -15293,10 +15293,10 @@ ONOSHIMA,Takumi,m,BEL,11-16 Apr 2023,2023 Senior European Championships,qual,"An
 ONOSHIMA,Takumi,m,BEL,11-16 Apr 2023,2023 Senior European Championships,qual,"Antalya, Turkey",VT1,54,4.8,9.033,,13.833
 OORSCHOT,Shade van,w,NED,26-29 Mar 2022,2022 Varna World Challenge Cup,qual,"Varna, Bulgaria",BB,9,4.5,7.7,,12.2
 OORSCHOT,Shade van,w,NED,26-29 Mar 2022,2022 Varna World Challenge Cup,qual,"Varna, Bulgaria",FX,12,4.6,7.85,0.1,12.35
-ORTIZ ZABALA,Salme Stephanie,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,2.8,5.633,,8.333
-ORTIZ ZABALA,Salme Stephanie,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.2,5.733,,8.333
+ORTIZ ZABALA,Salme Stephanie,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,2.8,5.633,0.1,8.333
+ORTIZ ZABALA,Salme Stephanie,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.2,5.733,0.6,8.333
 ORTIZ ZABALA,Salme Stephanie,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,1.1,5.433,,6.533
-ORTIZ ZABALA,Salme Stephanie,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.6,7.9,,11.2
+ORTIZ ZABALA,Salme Stephanie,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.6,7.9,0.3,11.2
 OSBERGER,Benjamin,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,final,"Liverpool, England",FX,4,5.6,8.633,,14.233
 OSBERGER,Benjamin,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",FX,10,5.6,8.666,,14.266
 OSBERGER,Benjamin,m,FRA,29 Oct 2022 - 6 Nov 2022,2022 51st FIG Artistic Gymnastics World Championships,qual,"Liverpool, England",PH,33,5.8,7.5,,13.3
@@ -15801,14 +15801,14 @@ PEREA,Alais,w,ECU,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics Wor
 PEREA,Alais,w,ECU,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",FX,122,4.2,7.433,,11.633
 PEREA,Alais,w,ECU,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",UB,99,4.4,7.366,,11.766
 PEREA,Alais,w,ECU,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",VT1,118,4.2,8.5,,12.7
-PEREA PONCE,Alais Natasha,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.6,7.167,,11.667
+PEREA PONCE,Alais Natasha,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.6,7.167,0.1,11.667
 PEREA PONCE,Alais Natasha,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.3,7.767,,12.067
 PEREA PONCE,Alais Natasha,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.4,7.867,,12.267
 PEREA PONCE,Alais Natasha,w,ECU,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.467,,12.667
 PERERA,Isuamy,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.1,4.6,,8.7
-PERERA,Isuamy,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.4,6.2,,10.4
+PERERA,Isuamy,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.4,6.2,0.2,10.4
 PERERA,Isuamy,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,3.4,6.067,,9.467
-PERERA,Isuamy,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,7.233,,11.133
+PERERA,Isuamy,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,7.233,0.3,11.133
 PERERA,Isuamy,w,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",BB,10,4.8,6.45,,11.25
 PERERA,Isuamy,w,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,19,4.7,6.25,,10.95
 PERERA,Isuamy,w,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",FX,17,4.5,6.95,0.6,10.85
@@ -16188,8 +16188,8 @@ PINDER,Erin,w,BAR,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Bir
 PINDER,Erin,w,BAR,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",FX,37,2.2,6.15,,8.35
 PINDER,Erin,w,BAR,29 Jul-2 Aug 2022,BIRMINGHAM 2022 Commonwealth Games,qual,"Birmingham, England",UB,36,1.9,5.6,,7.5
 PINDER,Erin Gianna,w,BAR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,2.6,4.867,,7.467
-PINDER,Erin Gianna,w,BAR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.1,6.233,,9.033
-PINDER,Erin Gianna,w,BAR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,2,5.533,,3.533
+PINDER,Erin Gianna,w,BAR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.1,6.233,0.3,9.033
+PINDER,Erin Gianna,w,BAR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,2,5.533,4,3.533
 PINDER,Erin Gianna,w,BAR,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.2,7.1,,10.3
 PINEDA,Michelle,w,USA,4-6 Aug 2023,2023 Core Hydration Classic,AAfinal,"Hoffman Estates, Illinois",BB,8,5,8.1,,13.1
 PINEDA,Michelle,w,USA,4-6 Aug 2023,2023 Core Hydration Classic,AAfinal,"Hoffman Estates, Illinois",FX,12,5.1,7.55,,12.65
@@ -16214,7 +16214,7 @@ PINTO ADASME,Makarena,w,CHI,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymn
 PINTO ADASME,Makarena,w,CHI,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",VT1,107,4.4,8.466,,12.866
 PINTO ADASME,Makarena,w,CHI,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",VT2,24,3.8,8.666,,12.466
 PINTO ADASME,Makarena Daisy,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.3,6.733,,11.033
-PINTO ADASME,Makarena Daisy,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.7,7.8,,12.4
+PINTO ADASME,Makarena Daisy,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.7,7.8,0.1,12.4
 PINTO ADASME,Makarena Daisy,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.1,7.3,,11.4
 PINTO ADASME,Makarena Daisy,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.6,8.267,,12.867
 PINXTEN,Erika,w,BEL,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",BB,40,5.3,7.4,,12.7
@@ -16377,7 +16377,7 @@ POLANCO,Jabiel,m,DOM,1-4 Mar 2023,2023 Doha World Cup,qual,"Doha, Qatar",VT1,25,
 POLANCO,Jabiel,m,DOM,1-4 Mar 2023,2023 Doha World Cup,qual,"Doha, Qatar",VT2,25,5.2,8.8,,14
 POLANCO ACOSTA,Jabiel De Jesus,m,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",SR,,4.7,7.633,,12.333
 POLANCO ACOSTA,Jabiel De Jesus,m,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5.2,8.767,0.1,13.867
-POLANCO VIDAL,Karla Marie,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.7,4.367,,7.967
+POLANCO VIDAL,Karla Marie,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.7,4.367,0.1,7.967
 POLANCO VIDAL,Karla Marie,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.4,5.933,,9.333
 POLANCO VIDAL,Karla Marie,w,DOM,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,1.8,8.233,,10.033
 PONCE,Angelissa,w,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",BB,29,4.3,5.65,,9.95
@@ -16385,7 +16385,7 @@ PONCE,Angelissa,w,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,q
 PONCE,Angelissa,w,CUB,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,30,3.4,8.35,,11.75
 PONCE VILLALPANDO,Angelissa,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.9,4.6,,8.5
 PONCE VILLALPANDO,Angelissa,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.5,6.133,,10.633
-PONCE VILLALPANDO,Angelissa,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.4,7.667,,11.967
+PONCE VILLALPANDO,Angelissa,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.4,7.667,0.1,11.967
 PONIZILOVA,Dominika,w,CZE,16-19 June 2022,2022 Koper World Challenge Cup,qual,"Koper, Slovenia",VT1,6,4.4,8.6,,13
 PONIZILOVA,Dominika,w,CZE,16-19 June 2022,2022 Koper World Challenge Cup,final,"Koper, Slovenia",VT1,7,4.4,8.55,,12.95
 PONIZILOVA,Dominika,w,CZE,16-19 June 2022,2022 Koper World Challenge Cup,qual,"Koper, Slovenia",VT2,6,3.8,8.75,,12.55
@@ -17182,9 +17182,9 @@ RODRIGUEZ JOHANNING,Anelena,w,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior
 RODRIGUEZ MIRANDA,Rachel,w,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.6,5.7,,10.3
 RODRIGUEZ MIRANDA,Rachel,w,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.3,6.6,,10.9
 RODRIGUEZ MIRANDA,Rachel,w,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.3,7.333,,11.633
-RODRIGUEZ MIRANDA,Rachel,w,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.2,7.767,,10.667
+RODRIGUEZ MIRANDA,Rachel,w,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.2,7.767,0.3,10.667
 RODRÍGUEZ GARCÍA,Sarai,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4,5.467,,9.467
-RODRÍGUEZ GARCÍA,Sarai,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.6,6.433,,9.633
+RODRÍGUEZ GARCÍA,Sarai,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.6,6.433,0.4,9.633
 RODRÍGUEZ GARCÍA,Sarai,w,CUB,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,1.3,3.6,,4.9
 ROENBECK,Marie,w,NOR,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",BB,146,4.7,5.833,,10.533
 ROENBECK,Marie,w,NOR,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastics World Championships,qual,"Antwerp, Belgium",FX,142,4.5,6.833,0.4,10.933
@@ -17656,7 +17656,7 @@ SALMINA,Deborah,w,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,A
 SALMINA,Deborah,w,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",UB,14,4.8,7.2,,12
 SALMINA,Deborah,w,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,AAfinal,"San Salvador, El Salvador",VT1,7,4.2,8.55,,12.75
 SALMINA,Deborah,w,VEN,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,12,4.2,8.6,,12.8
-SALMINA ARROYO,Deborah Mersedes,w,VEN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.9,5.2,,10
+SALMINA ARROYO,Deborah Mersedes,w,VEN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.9,5.2,0.1,10
 SALMINA ARROYO,Deborah Mersedes,w,VEN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.4,7.2,,11.6
 SALMINA ARROYO,Deborah Mersedes,w,VEN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.5,7.5,,12
 SALMINA ARROYO,Deborah Mersedes,w,VEN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.567,,12.767
@@ -17724,7 +17724,7 @@ SANDOVAL,Ahtziri Viridiana,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior 
 SANDOVAL,Ahtziri Viridiana,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,5.8,7.233,,13.033
 SANDOVAL,Ahtziri Viridiana,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.6,7.9,,13.5
 SANDOVAL,Ahtziri Viridiana,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,5.2,8.533,,13.733
-SANDOVAL,Ahtziri Viridiana,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5.2,8.3,,13.4
+SANDOVAL,Ahtziri Viridiana,w,MEX,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5.2,8.3,0.1,13.4
 SANDOVAL,Ian,m,USA,26-27 Aug 2023,2023 U.S. Championships,qual,"San Jose, CA",FX,,5,7.85,,12.85
 SANDOVAL,Ian,m,USA,26-27 Aug 2023,2023 U.S. Championships,final,"San Jose, CA",FX,,5.2,8.3,,13.5
 SANDOVAL,Ian,m,USA,26-27 Aug 2023,2023 U.S. Championships,qual,"San Jose, CA",HB,,4.7,7.75,,12.45
@@ -17779,7 +17779,7 @@ SANTI,Franchesca,w,CHI,30 Sep 2023 - 8 Oct 2023,2023 52nd FIG Artistic Gymnastic
 SANTI,Franchesca Antonella,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,3.9,7.3,,11.2
 SANTI,Franchesca Antonella,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.3,7.767,,12.067
 SANTI,Franchesca Antonella,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,4.3,6.533,,10.833
-SANTI,Franchesca Antonella,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5,8.233,,13.133
+SANTI,Franchesca Antonella,w,CHI,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5,8.233,0.1,13.133
 SANTOS,Mélanie De Jesus Dos,w,FRA,24-25 Sept 2022,2022 Paris World Challenge Cup,final,"Paris, France",BB,6,5.5,7.15,,12.65
 SANTOS,Mélanie De Jesus Dos,w,FRA,24-25 Sept 2022,2022 Paris World Challenge Cup,qual,"Paris, France",BB,3,5.3,7.95,,13.25
 SANTOS,Mélanie De Jesus Dos,w,FRA,24-25 Sept 2022,2022 Paris World Challenge Cup,qual,"Paris, France",UB,27,5.6,5.3,,10.9
@@ -19364,7 +19364,7 @@ SUMANASEKERA,Tiana,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan Amer
 SUMANASEKERA,Tiana,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,5.3,8.267,,13.567
 SUMANASEKERA,Tiana,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.3,7.333,,12.633
 SUMANASEKERA,Tiana,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,5,9.233,,14.233
-SUMANASEKERA,Tiana,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5,9.033,,13.933
+SUMANASEKERA,Tiana,w,USA,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,5,9.033,0.1,13.933
 SUMANASEKERA,Tiana,w,USA,4-6 Aug 2023,2023 Core Hydration Classic,AAfinal,"Hoffman Estates, Illinois",BB,5,5.8,7.7,,13.5
 SUMANASEKERA,Tiana,w,USA,4-6 Aug 2023,2023 Core Hydration Classic,AAfinal,"Hoffman Estates, Illinois",FX,10,5.7,7.2,,12.9
 SUMANASEKERA,Tiana,w,USA,4-6 Aug 2023,2023 Core Hydration Classic,AAfinal,"Hoffman Estates, Illinois",UB,27,5,6.55,,11.55
@@ -20758,7 +20758,7 @@ TURNER,Sydney,w,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stut
 TURNER,Sydney,w,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",VT1,28,4.2,8.65,,12.85
 TURNER,Sydney,w,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",VT2,28,0,0,,0
 TURNER,Sydney Leslie,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",BB,,5.4,7.633,,13.033
-TURNER,Sydney Leslie,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.2,6.267,,11.367
+TURNER,Sydney Leslie,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,5.2,6.267,0.1,11.367
 TURNER,Sydney Leslie,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.6,8.033,,12.633
 TURNER,Sydney Leslie,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.8,7.967,,12.767
 TURNER,Sydney Leslie,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",UB,,5.3,7.067,,12.367
@@ -21123,7 +21123,7 @@ VASHCHENKO,Roman,m,UKR,2-5 Mar 2022,2022 Doha World Cup,final,"Doha, Qatar",SR,7
 VASHCHENKO,Roman,m,UKR,2-5 Mar 2022,2022 Doha World Cup,qual,"Doha, Qatar",SR,5,6,7.733,,13.733
 VASILOPOULOU,Christina,w,GRE,11-14 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",UB,107,4.3,4.833,,9.133
 VASILOPOULOU,Christina,w,GRE,11-14 Aug 2022,2022 Senior European Championships,qual,"Munich, Germany",VT1,119,3,7.266,0.3,9.966
-VASQUEZ SEOANE,Diana Stephany,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.3,4.967,,9.167
+VASQUEZ SEOANE,Diana Stephany,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.3,4.967,0.1,9.167
 VASQUEZ SEOANE,Diana Stephany,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.1,7.267,,11.367
 VASQUEZ SEOANE,Diana Stephany,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,2.1,8,,10.1
 VASQUEZ SEOANE,Diana Stephany,w,BOL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,4.2,8.333,,12.533
@@ -21385,7 +21385,7 @@ VILLEGAS,Andres,m,CRC,24-28 Jun 2023,2023 Central American and Caribbean Games,q
 VILLEGAS,Maria,w,COL,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",FX,31,4.2,7,0.6,10.6
 VILLEGAS,Maria,w,COL,24-28 Jun 2023,2023 Central American and Caribbean Games,qual,"San Salvador, El Salvador",VT1,26,3.6,8.5,,12.1
 VILLEGAS JIMENEZ,Maria Jose,w,COL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",BB,,4.3,5.967,,10.267
-VILLEGAS JIMENEZ,Maria Jose,w,COL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.2,7.2,,11.1
+VILLEGAS JIMENEZ,Maria Jose,w,COL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.2,7.2,0.3,11.1
 VILLEGAS JIMENEZ,Maria Jose,w,COL,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",VT,,3.2,8.167,,11.367
 VILLEGAS ROBLES,Felipe,m,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,3.8,8.167,,11.967
 VILLEGAS ROBLES,Felipe,m,CRC,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",HB,,3.1,8.367,,11.467
@@ -22885,10 +22885,10 @@ ZLATANOV,Bozhidar,m,BUL,25-28 May 2023,2023 Varna World Challenge Cup,final,"Var
 ZLATANOV,Bozhidar,m,BUL,25-28 May 2023,2023 Varna World Challenge Cup,qual,"Varna, Bulgaria",VT1,3,5.2,9.05,0,14.25
 ZLATANOV,Bozhidar,m,BUL,25-28 May 2023,2023 Varna World Challenge Cup,final,"Varna, Bulgaria",VT2,4,4.8,9.1,0.1,13.8
 ZLATANOV,Bozhidar,m,BUL,25-28 May 2023,2023 Varna World Challenge Cup,qual,"Varna, Bulgaria",VT2,3,4.8,9.3,0,14.1
-ZLOBEC,Evandra,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.7,7.833,,12.333
+ZLOBEC,Evandra,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",FX,,4.7,7.833,0.2,12.333
 ZLOBEC,Evandra,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",FX,,4.7,8.267,,12.967
 ZLOBEC,Evandra,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamQual,"Medellin, Colombia",UB,,5.3,7.367,,12.667
-ZLOBEC,Evandra,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.2,8.533,,12.433
+ZLOBEC,Evandra,w,CAN,26-28 May 2023,2023 Artistic Gymnastics Senior Pan American Championships,TeamFinal,"Medellin, Colombia",VT,,4.2,8.533,0.3,12.433
 ZLOBEC,Evandra,w,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",BB,38,4.5,6.7,,11.2
 ZLOBEC,Evandra,w,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",FX,11,4.9,7.75,,12.65
 ZLOBEC,Evandra,w,CAN,17-19 Mar 2023,EnBW DTB Pokal Team Challenge 2023,qual,"Stuttgart, Germany",UB,36,5.3,5.9,,11.2
