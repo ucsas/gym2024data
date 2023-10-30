@@ -35,6 +35,15 @@ nrow_after <- nrow(combined_df)
 rows_deleted <- nrow_before - nrow_after
 print(rows_deleted)
 
+## 获得各分数的描述性统计，确保在合理范围区间
+combined_df %>%
+  select_if(is.numeric) %>%  # 选择数值型变量
+  select(last_col(offset = 4):last_col()) %>%  # 选择最后五列
+  summary()  # 得到描述性统计
+
+## 查看combined_df数据框中D_Score、E_Score和Score任一列为0的行
+zero_score_rows <- combined_df %>%
+  filter(D_Score == 0 | E_Score == 0 | Score == 0)
 
 
 
