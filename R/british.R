@@ -4,7 +4,7 @@ source("function.R")
 
 # locate_areas("../pdfs_2023/british_23/m_qual_VT.pdf", pages = 2)
 
-folder_path <- "../pdfs_2023/british_23"
+folder_path <- "../pdf/british_23"
 first_page_area <- list(c(176.27017,  30.66901, 796.18054 ,565.40909 )) 
 other_page_area <- list(c(85.70935,  32.82522, 749.82202, 567.56530 ))
 
@@ -43,7 +43,14 @@ br23_tb <- list_rbind(br_ls, names_to = "title") %>%
   relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
            Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
   select(!Bib:vt_round)
-  
+
+## 修改数据的问题
+br23_tb <- br23_tb %>% 
+  filter(!D_Score==0) %>%  # 删掉D=0的行，基本上都是VT2没参加的情况
+  mutate(E_Score = if_else(is.na(E_Score), 
+                           Score - D_Score + if_else(is.na(Penalty), 0, Penalty), 
+                           E_Score))
+
 write_csv(br23_tb, "../cleandata/data_new/british_23.csv")
 
 
@@ -52,7 +59,7 @@ write_csv(br23_tb, "../cleandata/data_new/british_23.csv")
 
 ### 2022 British Gymnastics Championships ######################################
 
-folder_path <- "../pdfs_2023/british_22"
+folder_path <- "../pdf/british_22"
 col_names_nonvt_br <- c("Rank", "Bib", "Name","D","E","Pen", "Score")
 col_names_vt_qual_p1 <- c("Rank", "Bib", "Name", "Club","D_VT1","Score_VT1","Pen_VT1",
                           "D_VT2","Score_VT2","Pen_VT2")
