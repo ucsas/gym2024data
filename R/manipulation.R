@@ -89,16 +89,21 @@ vn_tb <- transform_table(table_list = vn_ls_n,
 write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
 
-### 2023 Varna World Challenge Cup Modification 1: Switch D_Score and E_Score####
+### 2023 Varna Challenge Cup Modification 1: Switch D_Score and E_Score####
 vn_tb <- read_csv("../cleandata/data_new/varna.csv")
 vn_tb <- vn_tb %>% 
   mutate(D = E_Score, E_Score = D_Score, D_Score = D) %>% 
   select(!D)
 write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
-### 2023 Varna World Challenge Cup Modification 1: remove "Results" from competition name 
+### 2023 Varna Challenge Cup Modification 2: remove "Results" from competition name 
 vn_tb <- read_csv("../cleandata/data_new/varna.csv") %>% 
   mutate(Competition = "2023 Varna World Challenge Cup")
+write_csv(vn_tb, "../cleandata/data_new/varna.csv")
+
+### 2023 Varna Challenge Cup Modification 3: cancel the unintended rounding up to 2 digits for Score
+vn_tb <- read_csv("../cleandata/data_new/varna.csv") %>% 
+  mutate(Score = D_Score + E_Score - if_else(is.na(Penalty), 0, Penalty))
 write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
 ### 2023 Tel Aviv Challenge Cup ################################################
