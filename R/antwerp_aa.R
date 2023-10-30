@@ -1,4 +1,4 @@
-# 2022 51st FIG Artistic Gymnastics World Championships antwerp (GBR) All-Around ##
+# 2023 51st FIG Artistic Gymnastics World Championships Antwerp (BEL) All-Around ##
 
 path1 <- "../pdf/antwerp_aa"
 atwp_aa_ls_raw <- get_gym_tables(path1)

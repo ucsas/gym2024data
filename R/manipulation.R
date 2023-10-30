@@ -250,6 +250,10 @@ atwp_tb <- atwp_tb %>%
   )) %>% 
   arrange(LastName, FirstName, Competition, Apparatus)
 
+# 对数据框atwp_tb，检查如果有完全相同的行，则删去其中一行
+atwp_tb <- atwp_tb %>%
+  distinct()
+
 write_csv(atwp_tb, "../cleandata/data_new/antwerp_event.csv")
 
 

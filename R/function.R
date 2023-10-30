@@ -157,12 +157,12 @@ align_tables <- function(raw_table_list, col_names) {
     return(df)
   })
   
-  ca_ls <- map(ca_ls, function(df) {
-    if ("vault" %in% names(df)) {
-      df <- df %>% filter(vault != "1")
-    }
-    return(df)
-  })
+  # ca_ls <- map(ca_ls, function(df) {
+  #   if ("vault" %in% names(df)) {
+  #     df <- df %>% filter(vault != "1")
+  #   }
+  #   return(df)
+  # })
   
   return(ca_ls)
 }
