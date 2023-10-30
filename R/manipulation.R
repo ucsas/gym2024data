@@ -261,6 +261,9 @@ uni_tb <- transform_table(table_list = uni_ls,
                           Date = "1-5 Aug 2023", 
                           Competition = "2023 FISU World University Games", 
                           Location = "Chengdu, China")
+## 修改总分Score有时舍弃最后一位小数的问题
+uni_tb <- uni_tb %>% 
+  mutate(Score = D_Score + E_Score - if_else(is.na(Penalty), 0, Penalty))
 write_csv(uni_tb, "../cleandata/data_new/univgames_23.csv")
 
 
