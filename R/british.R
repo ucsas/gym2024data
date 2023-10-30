@@ -165,7 +165,7 @@ br_tb_22_vt <- list_rbind(vt_list, names_to = "title") %>%
     D_Score = as.numeric(D),
     Penalty = as.numeric(Pen),
     Score = as.numeric(Score),
-    E_Score = round(Score - D_Score - Penalty, 2)
+    E_Score = round(Score - D_Score + Penalty, 3)
   ) %>% 
   filter(!is.na(Score))
 
