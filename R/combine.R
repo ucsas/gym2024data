@@ -25,5 +25,19 @@ combined_df <- combined_df %>%
   fill(FirstName, .direction = "downup") %>% 
   mutate(Apparatus = ifelse(Apparatus == "RG", "SR", Apparatus))
 
+## manually adjust for name differences
+combined_df <- combined_df %>%
+  mutate(LastName = str_to_upper(LastName)) %>% 
+  arrange(LastName, FirstName, Competition, Apparatus)
+
+# combined_df <- combined_df %>%
+#   mutate(FirstName = ifelse(LastName == "AAS", "Fredrik", FirstName)) %>%
+#   mutate(FirstName = ifelse(LastName == "ABIYURAFI", ".", FirstName)) %>%
+#   mutate(FirstName = if_else(LastName == "ANTILA" & FirstName == "Misella Alli Helena", "Misella", FirstName)) %>%
+#   mutate(LastName = if_else(LastName == "ACHONDO", "ACHONDO ANDINO", LastName)) %>%
+#   mutate(FirstName = if_else(LastName == "ACHONDO ANDINO", "Barbara", FirstName)) %>%
+
+
+
 ## Write to a new csv file
 write_csv(combined_df, file.path(path_to_dir, "data_2022_2023.csv"), na = "")
