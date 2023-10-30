@@ -10,7 +10,6 @@ area_1 <- list(c(124, 8.9, 810, 585))   # Page 1: Let top=124 to include the col
 area_2 <- list(c(73, 9, 810, 585)) # Page 2
 
 
-
 # get file paths for each PDF
 folder_path <- "/Users/minzefang/gym2024data/pdf/cairo"
 all_paths <- list.files(folder_path, full.names = T)
