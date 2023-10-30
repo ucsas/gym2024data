@@ -364,7 +364,7 @@ mersin22_tb_ls <- c(mersin22_m, mersin22_w) %>%
     return(.x)
   }) %>% 
   map( ~{
-    # 将E和Total列由字符串转为数值类型
+    # 将E, D和Total列由字符串转为数值类型
     .x$E <- as.numeric(.x$E)
     .x$D <- as.numeric(.x$D)
     .x$Total <- as.numeric(.x$Total)
@@ -416,3 +416,60 @@ asian22_tb <- transform_web_tb(table_list = asian22_tb_ls,
   select(-Nation)
 
 write_csv(asian22_tb, "../cleandata/data_new/asian_22.csv")
+
+
+
+### 2023 10th Senior Artistic Gymnastics Asian Championships ####################
+
+url_m <- "https://thegymter.net/2023/06/22/2023-asian-championships-mens-results/"
+url_w <- "https://thegymter.net/2023/06/21/2023-asian-championships-results/"
+asian23_tb_list_m <- url_m %>%
+  read_html() %>%
+  html_table(fill = TRUE, header = TRUE) %>%
+  .[-c(1, 8, 15:28)]
+asian23_tb_list_w <- url_w %>%
+  read_html() %>%
+  html_table(fill = TRUE, header = TRUE) %>%
+  .[-c(1, 6, 11:20)]
+
+asian23_m <- process_web_tb_ls(tables_list = asian23_tb_list_m, gender = "m")
+asian23_w <- process_web_tb_ls(tables_list = asian23_tb_list_w, gender = "w")
+
+asian23_tb_ls <- c(asian23_m, asian23_w) %>% 
+  update_vt() %>% 
+  map( ~{
+    # 使用filter函数删除D列为"DNS"的行
+    .x <- .x %>%
+      filter(D != "DNS")
+    return(.x)
+  }) %>% 
+  map( ~{
+    # For Rank, change "—" into NA, then make this column numeric
+    .x$Rank[.x$Rank == "—"] <- NA
+    .x$Rank <- as.numeric(.x$Rank)
+    return(.x)
+  }) %>% 
+  map( ~{
+    # 将E, D和Total列由字符串转为数值类型
+    .x$E <- as.numeric(.x$E)
+    .x$D <- as.numeric(.x$D)
+    .x$Total <- as.numeric(.x$Total)
+    return(.x)
+  }) %>% 
+  map( ~ {
+    # 检查数据框是否包含名为“Average”的列
+    if ("Average" %in% names(.x)) {
+      .x <- .x %>%
+        select(-Average)  # 删除名为“Average”的列
+    }
+    return(.x)
+  })
+asian23_tb <- transform_web_tb(table_list = asian23_tb_ls, 
+                               Date = "10-18 June 2023",
+                               Competition = "2023 10th Senior Artistic Gymnastics Asian Championships",
+                               Location = "Singapore",
+                               NOCkey = noc_data) %>% 
+  select(-Nation)
+
+write_csv(asian23_tb, "../cleandata/data_new/asian_23.csv")
+
