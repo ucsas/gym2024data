@@ -17,6 +17,31 @@ ca_tb <- transform_table(table_list = ca_ls,
 write_csv(ca_tb, "../cleandata/data_new/central_america.csv")
 
 
+### SANTIAGO 2023 XIX Pan American Games #######################################
+
+pam_path <- "../pdf/23pan_am_event"
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "E_Score","D_Score", 
+                  "Penalty", "Score")
+
+pam_ls_raw <- get_gym_tables(folder_path = pam_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
+pam_ls <- align_tables(raw_table_list = pam_ls_raw, col_names = col_names_vt)
+pam_tb <- transform_table(table_list = pam_ls, 
+                          Date = "21-25 Oct 2023", 
+                          Competition = "SANTIAGO 2023 XIX Pan American Games", 
+                          Location = "Santiago, Chile") %>% 
+  filter(!is.na(Score))
+
+pam_tb <- pam_tb %>% 
+  mutate(FirstName = ifelse(LastName == "VILLAVERDE", "Yohendry", FirstName)) %>% 
+  mutate(FirstName = ifelse(LastName == "VELASQUEZ CANDRAY", "Pablo Natanael", FirstName)) %>% 
+  mutate(FirstName = ifelse(LastName == "RODRIGUEZ JOHANNING", "Anelena", FirstName)) %>% 
+  mutate(FirstName = ifelse(LastName == "PINTO ADASME", "Makarena", FirstName)) %>% 
+  mutate(FirstName = ifelse(LastName == "DE LA CRUZ", "	Alejandro", FirstName))
+
+write_csv(pam_tb, "../cleandata/data_new/pan_am_games_23_event.csv")
+
+
 ### 2022 Senior European Championships MUNICH (GER) ############################
 
 eu22_path <- "../pdf/europe_22"
