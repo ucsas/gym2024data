@@ -130,8 +130,8 @@ get_gym_tables <- function(folder_path) {
 ## for row_binding.
 align_tables <- function(raw_table_list, col_names) {  
   ca_ls <- raw_table_list %>% 
-    map(remove_column_if_q) %>%
-    map(function(df) {
+    map(remove_column_if_q) %>% # 删除qual表格中最后一列为Q/R的列
+    map(function(df) { #如果此时大于8列，说明是VT，则删掉最后一列
       if (ncol(df) > 8) { 
         df <- df[, -ncol(df)]
       } else { 
