@@ -180,7 +180,7 @@ br_tb_22_nonvt <- list_rbind(non_vt_list, names_to = "title") %>%
     D_Score = as.numeric(D),
     Penalty = as.numeric(Pen),
     Score = as.numeric(Score),
-    E_Score = Score - D_Score + Penalty ##在这里如此计算因为原pdf的E_Score保留了两位小数因而是不准确的
+    E_Score = round(Score - D_Score + Penalty, digits = 3) ##在这里如此计算因为原pdf的E_Score保留了两位小数因而是不准确的
   )
 
 
