@@ -278,6 +278,34 @@ write_csv(uni_tb, "../cleandata/data_new/univgames_23.csv")
 
 
 
+### HANGZHOU 2022 19th Asian Games #############################################
+asian_path <- "../pdf/23asiangames_event"
+col_names_vt <- c("Rank", "Bib", "Name", "NOC", "vault", "D_Score","E_Score", 
+                  "Penalty", "Score")
+
+asian_ls_raw <- get_gym_tables(folder_path = asian_path) %>% 
+  unlist(recursive = F, use.names = TRUE)
+
+asian_ls_raw1
+
+## 杭州亚运和成都大运会的区别在于，final最后多一列qual rank，VT final还多一列start order
+asian_ls_raw1 <- imap(asian_ls_raw, ~ if (grepl("final_VT", .y)) select(.x, -ncol(.x)) else .x) %>% 
+  imap(~ if (grepl("final", .y)) select(.x, -ncol(.x)) else .x)
+
+asian_ls <- align_tables(raw_table_list = asian_ls_raw1, col_names = col_names_vt)
+
+asian_tb <- transform_table(table_list = asian_ls, 
+                            Date = "24-29 Sep 2023", 
+                            Competition = "HANGZHOU 2022 19th Asian Games", 
+                            Location = "Hangzhou, China") %>% 
+  filter(!D_Score == 0) %>% 
+  mutate(LastName = ifelse(FirstName == "De Leon Justine Ace", "DE LEON", LastName)) %>%
+  mutate(FirstName = ifelse(LastName == "DE LEON", "Justine Ace", FirstName)) %>% 
+  mutate(LastName = ifelse(FirstName == "Thanh Tung", "LE", LastName))
+
+write_csv(asian_tb, "../cleandata/data_new/asiangames_23.csv")
+
+
 ### BIRMINGHAM 2022 Commonwealth Games #########################################
 ## 和利物浦的51st FIG Artistic Gymnastics World Championships格式相同
 
