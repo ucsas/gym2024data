@@ -391,4 +391,3 @@ pam_aa_tb <- bind_rows(pam_m_aa_final_tb, pam_w_aa_final_tb) %>%
   select(!Name:E)
 
 write_csv(pam_aa_tb, "../cleandata/data_new/pan_am_games_23_aa.csv")
-
