@@ -388,6 +388,333 @@ pam_aa_tb <- bind_rows(pam_m_aa_final_tb, pam_w_aa_final_tb) %>%
   mutate(Date = Date, Competition = Competition, Location = Location) %>% # 加上赛事信息
   relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
            Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
-  select(!Name:E)
+  select(!Name:E) %>% 
+  mutate(Penalty = replace(Penalty, Penalty == 0.000, NA)) 
 
 write_csv(pam_aa_tb, "../cleandata/data_new/pan_am_games_23_aa.csv")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### SANTIAGO 2023 XIX Pan American Games: Women AA qual, only VT ###############
+
+pam_w_aa_qual_page1 <- pdf_data("../pdf/23pan_am_aa/w_aa_qual.pdf")[[1]] %>%
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>%
+  filter(y > 194 & y < 526) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_w_aa_qual_list1 <- split(pam_w_aa_qual_page1, pam_w_aa_qual_page1$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+pam_w_aa_qual_page2 <- pdf_data("../pdf/23pan_am_aa/w_aa_qual.pdf")[[2]] %>% 
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>%
+  filter(y > 194 & y < 526) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_w_aa_qual_list2 <- split(pam_w_aa_qual_page2, pam_w_aa_qual_page2$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+
+pam_w_aa_qual_page3 <- pdf_data("../pdf/23pan_am_aa/w_aa_qual.pdf")[[3]] %>%
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>%
+  filter(y > 194 & y < 526) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_w_aa_qual_list3 <- split(pam_w_aa_qual_page3, pam_w_aa_qual_page3$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+pam_w_aa_qual_page4 <- pdf_data("../pdf/23pan_am_aa/w_aa_qual.pdf")[[4]] %>% 
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>% 
+  filter(y > 194 & y < 480) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_w_aa_qual_list4 <- split(pam_w_aa_qual_page4, pam_w_aa_qual_page4$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+pam_w_aa_qual_list_combined <- c(pam_w_aa_qual_list1, pam_w_aa_qual_list2, 
+                                 pam_w_aa_qual_list3, pam_w_aa_qual_list4)
+
+# View(pam_w_aa_qual_list_combined[[38]])
+
+
+### 开始循环
+w_qual_ls <- list()
+
+for (i in 1:length(pam_w_aa_qual_list_combined)) {
+  gymnast <- pam_w_aa_qual_list_combined[[i]]
+  
+  Name <- gymnast %>%
+    filter(y_rank == 3) %>%
+    slice(-n()) %>%
+    pull(text) %>%
+    paste(collapse = " ")
+  
+  Country <- gymnast %>%
+    filter(y_rank == 3) %>%
+    slice(n()) %>%
+    pull(text)
+  
+  VT_D <- gymnast %>%
+    filter(y_rank == 1 & x_rank == 1) %>%
+    pull(text)
+  VT_Score <- gymnast %>%
+    filter(y_rank == 1 & x_rank == 2) %>%
+    pull(text)
+  VT_Rank <- gymnast %>%
+    filter(y_rank == 1 & x_rank == 3) %>%
+    pull(text)
+  VT_E <- gymnast %>%
+    filter(y_rank == 5 & x_rank == 1) %>%
+    pull(text)
+  VT_Penalty <- gymnast %>%
+    filter(y_rank == 5 & x_rank == 2) %>%
+    pull(text)
+  
+  person_qual_df <- data.frame(Name, Country, 
+                               VT_Rank,
+                               VT_D,
+                               VT_E,
+                               VT_Penalty,
+                               VT_Score)
+  w_qual_ls[[length(w_qual_ls)+1]] <- person_qual_df
+}
+
+# w_qual_ls
+
+pam_w_aa_qual_tb_wide <- list_rbind(w_qual_ls) 
+
+pam_w_aa_qual_tb <- pam_w_aa_qual_tb_wide %>%  
+  pivot_longer(
+    cols = !1:2, 
+    names_to = c("Apparatus",".value"), 
+    names_sep = "_", 
+    values_drop_na = TRUE
+  ) %>% 
+  mutate(Gender = "w", Round = "qual")
+
+
+
+### SANTIAGO 2023 XIX Pan American Games: Men AA qual, only VT #######################
+
+pam_m_aa_qual_page1 <- pdf_data("../pdf/23pan_am_aa/m_aa_qual.pdf")[[1]] %>%
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>%
+  filter(y > 194 & y < 526) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_m_aa_qual_list1 <- split(pam_m_aa_qual_page1, pam_m_aa_qual_page1$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+pam_m_aa_qual_page2 <- pdf_data("../pdf/23pan_am_aa/m_aa_qual.pdf")[[2]] %>% 
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>%
+  filter(y > 194 & y < 526) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_m_aa_qual_list2 <- split(pam_m_aa_qual_page2, pam_m_aa_qual_page2$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+
+pam_m_aa_qual_page3 <- pdf_data("../pdf/23pan_am_aa/m_aa_qual.pdf")[[3]] %>%
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>%
+  filter(y > 194 & y < 526) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_m_aa_qual_list3 <- split(pam_m_aa_qual_page3, pam_m_aa_qual_page3$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+pam_m_aa_qual_page4 <- pdf_data("../pdf/23pan_am_aa/m_aa_qual.pdf")[[4]] %>% 
+  arrange(y,x) %>% 
+  filter(!text %in% c("!", "Q", "R1", "R2", "R3")) %>% 
+  filter(y > 194 & y < 480) %>% 
+  mutate(y_rank = dense_rank(y)) %>% 
+  mutate(group = ceiling(y_rank / 5))
+
+pam_m_aa_qual_list4 <- split(pam_m_aa_qual_page4, pam_m_aa_qual_page4$group) %>% 
+  lapply( function(df) {
+    df %>% mutate(y_rank = dense_rank(y))
+  }) %>% 
+  lapply( function(df) {
+    df %>%
+      group_by(y_rank) %>%
+      mutate(x_rank = dense_rank(x)) %>%
+      ungroup()
+  })
+
+pam_m_aa_qual_list_combined <- c(pam_m_aa_qual_list1, pam_m_aa_qual_list2, 
+                                 pam_m_aa_qual_list3, pam_m_aa_qual_list4)
+
+# View(pam_m_aa_qual_list_combined[[34]])
+
+pam_m_aa_qual_list_combined <- head(pam_m_aa_qual_list_combined, -2)
+
+
+### 开始循环
+m_qual_ls <- list()
+
+for (i in 1:length(pam_m_aa_qual_list_combined)) {
+  gymnast <- pam_m_aa_qual_list_combined[[i]]
+  
+  Name <- gymnast %>%
+    filter(y_rank == 3) %>%
+    slice(-n()) %>%
+    pull(text) %>%
+    paste(collapse = " ")
+  
+  Country <- gymnast %>%
+    filter(y_rank == 3) %>%
+    slice(n()) %>%
+    pull(text)
+  
+  VT_D <- gymnast %>%
+    filter(y_rank == 1 & x_rank == 10) %>%
+    pull(text)
+  VT_Score <- gymnast %>%
+    filter(y_rank == 1 & x_rank == 11) %>%
+    pull(text)
+  VT_Rank <- gymnast %>%
+    filter(y_rank == 1 & x_rank == 12) %>%
+    pull(text)
+  VT_E <- gymnast %>%
+    filter(y_rank == 5 & x_rank == 7) %>%
+    pull(text)
+  VT_Penalty <- gymnast %>%
+    filter(y_rank == 5 & x_rank == 8) %>%
+    pull(text)
+  
+  person_qual_df <- data.frame(Name, Country, 
+                               VT_Rank,
+                               VT_D,
+                               VT_E,
+                               VT_Penalty,
+                               VT_Score)
+  m_qual_ls[[length(m_qual_ls)+1]] <- person_qual_df
+}
+
+m_qual_ls
+
+pam_m_aa_qual_tb_wide <- list_rbind(m_qual_ls) 
+
+pam_m_aa_qual_tb <- pam_m_aa_qual_tb_wide %>%  
+  pivot_longer(
+    cols = !1:2, 
+    names_to = c("Apparatus",".value"), 
+    names_sep = "_", 
+    values_drop_na = TRUE
+  ) %>% 
+  mutate(Gender = "m", Round = "qual")
+
+
+### Combine 2 tables ###########################################################
+Date = "21-25 Oct 2023"
+Competition = "SANTIAGO 2023 XIX Pan American Games"
+Location = "Santiago, Chile"
+
+pam_aa_qual_tb <- bind_rows(pam_m_aa_qual_tb, pam_w_aa_qual_tb) %>% 
+  filter(D != "DNS") %>% # 删掉D==DNS的列
+  mutate(Penalty = as.numeric(Penalty), # 把D E Score Rank转成数值
+         Rank = as.numeric(Rank), # D E P列重命名
+         E_Score = as.numeric(E),
+         D_Score = as.numeric(D),
+         Score = as.numeric(Score),
+         Penalty = ifelse(Penalty < 0, -Penalty, Penalty)) %>% 
+  mutate(FirstName = map_chr(str_extract_all(Name, "\\b[A-Z][a-z]+\\b"), # 拆分姓名
+                             ~ paste(.x, collapse = " "))) %>% 
+  mutate(LastName = map_chr(str_extract_all(Name, "\\b[A-Z]+\\b"), 
+                            ~ paste(.x, collapse = " "))) %>% 
+  mutate(Date = Date, Competition = Competition, Location = Location) %>% # 加上赛事信息
+  relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
+           Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
+  select(!Name:E) %>% 
+  mutate(Apparatus = "VT1") %>% # 从VT改为VT1，方便删除duplicate
+  mutate(Penalty = replace(Penalty, Penalty == 0.000, NA)) # Penalty 从0改为NA，方便删除duplicate
+
+write_csv(pam_aa_qual_tb, "../cleandata/data_new/pan_am_games_23_aa_qual.csv")
