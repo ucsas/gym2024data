@@ -473,3 +473,32 @@ asian23_tb <- transform_web_tb(table_list = asian23_tb_ls,
 
 write_csv(asian23_tb, "../cleandata/data_new/asian_23.csv")
 
+
+
+### HANGZHOU 2022 19th Asian Games: Men's HB qual ##############################
+url_hangzhou <- "https://en.wikipedia.org/wiki/Gymnastics_at_the_2022_Asian_Games_%E2%80%93_Men%27s_artistic_team"
+
+Date = "24-29 Sep 2023"
+Competition = "HANGZHOU 2022 19th Asian Games"
+Location = "Hangzhou, China"
+
+m_qual_HB <- url_hangzhou %>%
+  read_html() %>%
+  html_table(fill = TRUE, header = TRUE) %>% 
+  .[[13]] %>% 
+  rename(D_Score = `D Score`,
+         E_Score = `E Score`,
+         Penalty = Pen.) %>% 
+  mutate(Gender = "m", Round = "qual", Apparatus = "HB",
+         Country = str_extract(Gymnast, "(?<=\\().*?(?=\\))"), # Gymnast这一列的第一个单词存为LastName这一新列，其后的部分存为FirstName
+         Gymnast = str_extract(Gymnast, "^[^(]+")) %>% 
+  mutate(LastName = word(Gymnast, 1),
+         FirstName = str_remove(Gymnast, str_c(LastName, " "))) %>% 
+  mutate(LastName = if_else(row_number() %in% 14:16, FirstName, LastName), # 14，15，16三行，把FirstName和LastName的值对调
+         FirstName = if_else(row_number() %in% 14:16, LastName, FirstName)) %>% 
+  mutate(Date = Date, Competition = Competition, Location = Location) %>% # 加上赛事信息
+  relocate(LastName, FirstName, Gender, Country, Date, Competition, Round, 
+           Location, Apparatus, Rank, D_Score, E_Score, Penalty, Score ) %>% 
+  select(!Gymnast:Qual.)
+
+write_csv(m_qual_HB, "../cleandata/data_new/asiangames_m_qual_HB.csv")
