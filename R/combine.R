@@ -25,7 +25,8 @@ combined_df <- combined_df %>%
   fill(FirstName, .direction = "downup") %>% 
   mutate(Apparatus = ifelse(Apparatus == "RG", "SR", Apparatus)) %>% 
   filter(!is.na(D_Score) & !is.na(E_Score) & !is.na(Score)) %>%  # 删除combined_df数据框中D_Score、E_Score和Score任一列为NA的行
-  filter(!Score == 0)
+  filter(!Score == 0) %>% 
+  distinct() # 删除完全相同的行
 
 ## 把LastName全大写，有些来自web scraping的数据LastName没有大写
 combined_df <- combined_df %>%
