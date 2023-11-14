@@ -131,6 +131,10 @@ vn_tb <- read_csv("../cleandata/data_new/varna.csv") %>%
   mutate(Score = D_Score + E_Score - if_else(is.na(Penalty), 0, Penalty))
 write_csv(vn_tb, "../cleandata/data_new/varna.csv")
 
+vn_tb <- read_csv("../cleandata/data_new/varna.csv") %>% 
+  mutate(LastName = if_else(FirstName == "Daria Angelina", "HARTMANN", LastName))
+write_csv(vn_tb, "../cleandata/data_new/varna.csv")
+
 ### 2023 Tel Aviv Challenge Cup ################################################
 
 url1 <- "https://thegymter.net/2023/06/05/2023-tel-aviv-challenge-cup-mens-results/"
@@ -240,7 +244,8 @@ lvp_tb <- transform_table(table_list = lvp_ls,
                          Competition = "2022 51st FIG Artistic Gymnastics World Championships", 
                          Location = "Liverpool, England") %>% 
   arrange(LastName, FirstName, Competition, Apparatus)%>%
-  distinct()
+  distinct() %>% 
+  mutate(LastName = if_else(FirstName == "Kate", "McDONALD", LastName))
 write_csv(lvp_tb, "../cleandata/data_new/liverpool_event.csv")
 
 
@@ -359,7 +364,9 @@ comm_ls <- align_tables(raw_table_list = comm_ls_qr, col_names = col_names_vt)
 comm_tb <- transform_table(table_list = comm_ls, 
                            Date = "29 Jul-2 Aug 2022", 
                            Competition = "BIRMINGHAM 2022 Commonwealth Games", 
-                           Location = "Birmingham, England")
+                           Location = "Birmingham, England") %>% 
+  mutate(LastName = if_else(FirstName == "Kate", "McDONALD", LastName))
+  
 write_csv(comm_tb, "../cleandata/data_new/commgames_22.csv")
 
 
