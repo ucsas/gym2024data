@@ -99,7 +99,30 @@ combined_df <- combined_df %>%
   mutate(
     Country = ifelse(LastName == "DARIES", "RSA", Country),
     Country = ifelse(LastName == "SIMONOV", "AZE", Country)
-  )
+  ) %>% 
+  mutate(FirstName = ifelse(LastName == "BERNARD", "Cameron-Lie", FirstName)) %>% 
+  mutate(FirstName = sub(" Guest$", "", FirstName)) %>% 
+  mutate(LastName = ifelse(FirstName == "Jorden", "OCONNELL-INNS", LastName)) %>% 
+  mutate(LastName = ifelse(FirstName == "Derin", "TANRIYASUKUR", LastName)) %>% 
+  mutate(LastName = ifelse(FirstName == "Jimi", "PAEIVAENEN", LastName)) %>% 
+  mutate(LastName = ifelse(FirstName == "Akhmejanov ", "PAEIVAENEN", LastName)) %>% 
+  mutate(LastName = ifelse(FirstName == "Jimi", "PAEIVAENEN", LastName)) %>% 
+  mutate(FirstName = ifelse(LastName == "AKHMEJANOV", "Emil", FirstName))
+
+# replace all non-English letters
+replacement_map <- c("Ã" = "A", "Ü" = "UE", "Ä" = "AE", "Ó" = "O", 
+                     "Í" = "I", "Ö" = "OE", "Ø" = "OE", "Ê" = "E", 
+                     "É" = "E", "Ñ" = "N", "O’" = "O", "Á" = "A",
+                     "ù" = "u", "é"="e", "ö"="o", "á"="a")
+combined_df <- combined_df %>%
+  mutate(LastName = Reduce(function(x, y) gsub(y, replacement_map[[y]], x), 
+                           names(replacement_map), init = LastName)) %>% 
+  mutate(FirstName = Reduce(function(x, y) gsub(y, replacement_map[[y]], x), 
+                           names(replacement_map), init = FirstName))
+# quick way to check
+# non_english_rows_LastName <- combined_df[grepl("[^\x01-\x7F]", combined_df$LastName), ]
+# non_eng_rows_FirstName <- combined_df[grepl("[^\x01-\x7F]", combined_df$FirstName), ]
+
 
 ## Write to a new csv file
 write_csv(combined_df, file.path(path_to_dir, "data_2022_2023.csv"), na = "")
