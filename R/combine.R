@@ -1,5 +1,6 @@
 ## Load necessary libraries
 library(tidyverse)
+library(rlang)
 
 ## Define path to the directory
 path_from_dir <- "../cleandata/data_new"
@@ -51,8 +52,54 @@ combined_df <- combined_df %>%
   mutate(FirstName = ifelse(LastName == "BLIXT", "Landen", FirstName)) %>%
   mutate(FirstName = ifelse(LastName == "	CHRISTOPULOS", "Taylor", FirstName)) %>%
   mutate(FirstName = ifelse(LastName == "FATTA", "Addison", FirstName)) %>%
-  mutate(FirstName = ifelse(LastName == "JOHNSON"& FirstName == "Madray Emmanuelle", "Madray", FirstName))
-  
+  mutate(FirstName = ifelse(LastName == "JOHNSON"& FirstName == "Madray Emmanuelle", "Madray", FirstName)) %>% 
+  mutate(FirstName = ifelse(LastName == "ABIYURAFI", "", FirstName)) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "VANESSA", "Vanessa", FirstName),
+    LastName = ifelse(LastName == "VANESSA", "WONG", LastName)
+  ) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "KAKERU", "Kakeru", FirstName),
+    LastName = ifelse(LastName == "KAKERU", "TANIGAWA", LastName)
+  ) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "SHOHEI", "Shohei", FirstName),
+    LastName = ifelse(LastName == "SHOHEI", "KAWAKAMI", LastName)
+  ) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "TAKERU", "Takeru", FirstName),
+    LastName = ifelse(LastName == "TAKERU", "KITAZONO", LastName)
+  ) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "WATARU", "Wataru", FirstName),
+    LastName = ifelse(LastName == "WATARU", "TANIGAWA", LastName)
+  ) %>% 
+  mutate(FirstName = ifelse(LastName == "YONEKURA", "Hidenobu", FirstName)) %>% 
+  mutate(FirstName = ifelse(LastName == "JESUS SANT", "Melanie", FirstName)) %>% 
+  mutate(LastName = ifelse(LastName == "JESUS SANT", "DE JESUS DOS SANTOS", LastName)) %>% 
+  mutate(LastName = ifelse(LastName == "JESUS SANTOS", "DE JESUS DOS SANTOS", LastName)) %>% 
+  mutate(FirstName = ifelse(LastName == "ELPITIYA BADALG D", "Milka Gehani", FirstName)) %>% 
+  mutate(Gender = ifelse(LastName == "ELPITIYA BADALG D", "w", Gender)) %>% 
+  mutate(LastName = ifelse(LastName == "ELPITIYA BADALG D", "ELPITIYA BADALGE DONA", LastName)) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "SOUZA BITENCOU", "Lucas", FirstName),
+    LastName = ifelse(LastName == "SOUZA BITENCOU", "DE SOUZA BITENCOURT", LastName)
+  ) %>% 
+  mutate(LastName = ifelse(LastName == "SOUZA BITENCOURT", "DE SOUZA BITENCOURT", LastName)) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "KUMARASINGHEGE HG", "Hansa Gayashan", FirstName),
+    LastName = ifelse(LastName == "KUMARASINGHEGE HG", "KUMARASINGHEGE", LastName)
+  ) %>% 
+  mutate(FirstName = ifelse(LastName == "NOURISHOURAKCHALI", "Hossein", FirstName)) %>% 
+  mutate(
+    FirstName = ifelse(LastName == "AQUINO III", "Miguel", FirstName),
+    LastName = ifelse(LastName == "AQUINO III", "AQUINO", LastName),
+    Country = ifelse(LastName == "AQUINO", "PUR", Country)
+  ) %>% 
+  mutate(
+    Country = ifelse(LastName == "DARIES", "RSA", Country),
+    Country = ifelse(LastName == "SIMONOV", "AZE", Country)
+  )
 
 ## Write to a new csv file
 write_csv(combined_df, file.path(path_to_dir, "data_2022_2023.csv"), na = "")

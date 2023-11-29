@@ -2,7 +2,7 @@ library(pdftools)
 library(tabulizer)
 library(tidyverse)
 library(rvest)
-
+library(rlang)
 
 ### Functions for general type pdfs ############################################
 
@@ -351,6 +351,8 @@ update_vt <- function(table_list) {
 # 中日韩越南香港台湾是姓在前，其他皆为姓在后（包括新加坡蒙古匈牙利），
 # 香港有些情况会英文名在前（当香港且姓名为四个单词，如A B C D，姓为 B，名为 C D A）
 # 例如Frankie Lee Man Hin, 应转写为 LastName: Lee, FirstName: Man Hin Frankie
+
+last_name_first_noc <- c("CHN", "JPN", "KOR", "PRK", "VIE", "HKG", "TPE")
 
 transform_web_tb <- function(table_list, Date, Competition, Location, NOCkey) {
   tel_tb <- list_rbind(table_list)
@@ -928,4 +930,17 @@ extract_wintercup_data <- function(wc23_m_path, wc23_w_path, Date, Competition, 
     select(!name)
   
   return(wc23_tb)
+}
+
+
+
+### Functions for name adjustment in the final dataset: combined_df ############
+flip_first_last <- function(data, condition) {
+  # 使用mutate和ifelse来根据条件交换列的值
+  data <- data %>%
+    mutate(
+      LastName = ifelse(!!condition, FirstName, LastName),
+      FirstName = ifelse(!!condition, LastName, FirstName)
+    )
+  return(data)
 }

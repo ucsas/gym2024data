@@ -190,7 +190,7 @@ osi_tb_ls <- c(osi_m, osi_w) %>%
 osi_tb <- transform_web_tb(table_list = osi_tb_ls, 
                            Date = "8-11 Jun 2023",
                            Competition = "2023 Osijek World Challenge Cup",
-                           Location = "Osijek, Croatia.",
+                           Location = "Osijek, Croatia",
                            NOCkey = noc_data) %>% 
   select(-Nation)
 write_csv(osi_tb, "../cleandata/data_new/osijek.csv")
